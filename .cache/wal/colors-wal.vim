@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/asuna/Downloads/127524.jpg"
+let background = "#0a1124"
+let foreground = "#ecc29a"
+let cursor     = "#ecc29a"
+
+" Colors
+let color0  = "#0a1124"
+let color1  = "#63504E"
+let color2  = "#A33A4E"
+let color3  = "#EB3247"
+let color4  = "#F35743"
+let color5  = "#F6A73B"
+let color6  = "#F9D42E"
+let color7  = "#ecc29a"
+let color8  = "#a5876b"
+let color9  = "#63504E"
+let color10 = "#A33A4E"
+let color11 = "#EB3247"
+let color12 = "#F35743"
+let color13 = "#F6A73B"
+let color14 = "#F9D42E"
+let color15 = "#ecc29a"

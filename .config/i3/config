@@ -1,0 +1,199 @@
+# My bar -> Polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+#exec --no-startup-id feh --bg-scale ~/Pictures/dek.png
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id redshift
+exec --no-startup-id compton
+
+#.......
+# Font
+#.......
+
+set $ft pango:gomono nerd font 10
+font $ft
+
+#..........
+# Look
+#..........
+
+new_window pixel 2
+new_float pixel 2
+floating_minimum_size 10x10
+floating_maximum_size -1x-1
+focus_follows_mouse yes
+title_align center
+
+# solarized colors
+#set $bg                #002b36
+#set $fg                #BCC3C3
+#set $gg                #1D2445
+
+# owl colors
+set_from_resource $bg	i3wm.background
+set_from_resource $fg   i3wm.foreground
+set_from_resource $gg   i3wm.color3
+
+#class                  border      backgr     text        split
+client.focused          $bg         $bg         $gg         $bg
+client.focused_inactive $bg         $bg         $fg         $bg
+client.unfocused        $bg         $bg         $fg         $bg
+client.urgent           $bg         $bg         $fg         $bg
+client.background       $bg
+
+#..........
+# Applications
+#..........
+
+# Principal mod key (Super = Win key)
+# mod1 = Alt (xmodmap to show)
+# mod4 = Winkey (xmodmap to show)
+set $mod Mod4
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# Terminal (mod+Enter)
+bindsym $mod+Mod1+p exec networkmanager_dmenu
+bindsym $mod+Return exec xst
+bindsym $mod+Shift+Return exec urxvt
+# GTK Theme sector (mod+alt+a)
+bindsym $mod+Mod1+a exec lxappearance
+# QT5 Theme sector (mod+alt+q)
+bindsym $mod+Mod1+q exec qt5ct
+# Color picker (mod+alt+g)
+bindsym $mod+Mod1+g exec gcolor2
+# Thunar
+bindsym $mod++Shift+f exec thunar
+#bindsym $mod+x exec dmenu_run -fn "$ft" -nb "$back" -nf "$white" -sb "$yellow" -sf "$black"
+bindsym $mod+x exec bash -i -c "rofi -show run"
+# start rofi window list (mod+w)
+bindsym $mod+w exec rofi -show drun
+## clearine
+bindsym	$mod+c exec clearine
+
+# Laptop keys
+bindsym XF86AudioRaiseVolume exec "amixer sset Master 5%+"
+bindsym XF86AudioLowerVolume exec "amixer sset Master 5%-"
+bindsym XF86AudioMute exec "amixer -q sset Master toggle"
+bindsym XF86AudioMic exec "amixer -q sset Mic toggle"
+bindsym XF86MonBrightnessDown exec "light -U 5"
+bindsym XF86MonBrightnessUp exec "light -A 5"
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioStop exec mpc stop
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioNext exec mpc next
+
+# Layout
+for_window [class="(?i)feh"] floating enable
+for_window [class="(?i)gcolor2"] floating enable
+#for_window [class="(?i)gucharmap"] floating enable
+for_window [class="(?i)lxappearance"] floating enable
+for_window [class="(?i)qt5ct"] floating enable
+for_window [instance="(?i)TeamViewer.exe"] floating enable
+for_window [class="(?i)VirtualBox"] floating enable
+for_window [class="(?i)mpv"] floating enable
+for_window [class="(?i)vlc"] floating enable
+for_window [class="(?i)VirtualBox Machine"] resize set 1024 768
+for_window [workspace=10] floating enable
+
+#...........
+# Keybinds i3
+#...........
+
+# kill focused window (mod+q)
+bindsym $mod+q kill
+
+# Cursor key for focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Shitf+cursor for move windows
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation (mod+h)
+bindsym $mod+h split h
+
+# split in vertical orientation (mod+v)
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container (mod+f)
+bindsym $mod+f fullscreen
+
+# change container layout (stacked (mod+s), tabbed (mod+t), default(mod+e))
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+e layout default
+#bindsym $mod+space layout toggle split
+
+# toggle tiling / floating (mod+shitf+space)
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+Mod1+space floating toggle
+
+# change focus between tiling / floating windows (mod+space)
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container (mod+a)
+bindsym $mod+a focus parent
+
+# focus the child container (mod+z)
+bindsym $mod+z focus child
+
+# switch to workspace
+bindsym $mod+1 workspace  NGOPI
+bindsym $mod+2 workspace  BROWSER
+bindsym $mod+3 workspace  CODE
+bindsym $mod+4 workspace  GRAPHICS
+bindsym $mod+5 workspace 5:vid
+bindsym $mod+6 workspace 6:img
+bindsym $mod+7 workspace 7:misc
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10:float
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace  NGOPI
+bindsym $mod+Shift+2 move container to workspace  BROWSER
+bindsym $mod+Shift+3 move container to workspace  CODE
+bindsym $mod+Shift+4 move container to workspace  GRAPHICS
+bindsym $mod+Shift+5 move container to workspace 5:vid
+bindsym $mod+Shift+6 move container to workspace 6:img
+bindsym $mod+Shift+7 move container to workspace 7:misc
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10:float
+
+# reload the configuration file (mod+shitf+c)
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3) (mod+shitf+r)
+bindsym $mod+Shift+r restart
+
+
+# resize window (you can also use the mouse for that) (mod+r)
+mode "resize" {
+  # These bindings trigger as soon as you enter the resize mode
+
+  # Pressing left will shrink the window’s width.
+  # Pressing right will grow the window’s width.
+  # Pressing up will shrink the window’s height.
+  # Pressing down will grow the window’s height.
+  bindsym a resize shrink width 10 px or 10 ppt
+  bindsym s resize grow height 10 px or 10 ppt
+  bindsym w resize shrink height 10 px or 10 ppt
+  bindsym d resize grow width 10 px or 10 ppt
+
+  # same bindings, but for the arrow keys
+  bindsym Left resize shrink width 1 px or 1 ppt
+  bindsym Down resize grow height 1 px or 1 ppt
+  bindsym Up resize shrink height 1 px or 1 ppt
+  bindsym Right resize grow width 1 px or 1 ppt
+
+  # back to normal: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
