@@ -20,45 +20,24 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive.git'
-Plugin 'fatih/vim-go'
 Plugin 'dylanaraps/wal.vim'
 Plugin 'vim-airline/vim-airline'
-Plugin 'tpope/vim-surround'
-Plugin 'kien/ctrlp.vim'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/syntastic'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'altercation/vim-colors-solarized'
+"Plugin 'vim-colorschemes'
 Plugin 'majutsushi/tagbar'
-Plugin 'mattn/emmet-vim'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'w0rp/ale'
-Plugin 'godlygeek/tabular.git'
-Plugin 'junegunn/vim-easy-align'
 Plugin 'morhetz/gruvbox'
 Plugin 'Shougo/deoplete.nvim'
-"Plugin 'Shougo/neocomplete.vim'
 Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'roxma/nvim-yarp'
 
 call vundle#end()            
 filetype plugin indent on
 
-" youcomplete
-"let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-
 " deoplete
 let g:deoplete#enable_at_startup = 1
-
-" neoplete
-"let g:neocomplete#enable_at_startup = 1
-
-" Emmet 
-let g:user_emmet_mode='a'
-let g:user_emmet_leader_key='<C-Z>'
 
 " ctrlp configuration
 let g:ctrlp_map = '<c-o>'
@@ -71,15 +50,6 @@ nnoremap <C-i> :CtrlPTag<CR>
 " tagbar configuration
 nnoremap <C-m> :TagbarToggle<CR>
 
-" ale configuration 
-let g:ale_lint_on_text_changed = 0
-let g:ale_lint_on_enter = 0
-let g:ale_lint_on_save = 1
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\   'vue': ['eslint']
-\}
-
 " nerdtree configuration
 autocmd StdinReadPre * let S:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
@@ -89,9 +59,14 @@ map <C-n> :NERDTreeToggle<CR>
 
 " airline
 let g:airline_powerline_fonts = 1
+"let g:airline_theme='solarized'
+"let g:airline_theme='gruvbox'
 
 " colorscheme
 colorscheme wal
+"colorscheme gruvbox
+"colorscheme solarized
+set background=dark
 
 " neosnippet
 " Plugin key-mappings.
@@ -99,15 +74,6 @@ colorscheme wal
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
-
-" SuperTab like snippets behavior.
-" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-"imap <expr><TAB>
-" \ pumvisible() ? "\<C-n>" :
-" \ neosnippet#expandable_or_jumpable() ?
-" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " For conceal markers.
 if has('conceal')

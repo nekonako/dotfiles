@@ -1,0 +1,13 @@
+
+### compositor
+compton &
+
+### wallpaper
+nitrogen --restore &
+
+### polybar
+polybar --config=/home/asuna/.config/polybar/openbox bottom &
+
+### redshift
+redshift &
+
