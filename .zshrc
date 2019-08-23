@@ -15,9 +15,9 @@ zgen oh-my-zsh plugins/zsh-autosuggestions
 zgen load subnixr/minimal
 
 # Minimal zsh theme
-MNML_USER_CHAR='asuna'
+MNML_USER_CHAR='asuna =>'
 source "$HOME/.zgen/subnixr/minimal-master/minimal.zsh"
-MNML_PROMPT=(mnml_status mnml_git mnml_keymap)
+MNML_PROMPT=(mnml_status mnml_git mnml_cwd mnml_keymap)
 MNML_RPROMPT=()
 
 # zsh autosuggestion

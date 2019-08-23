@@ -8,7 +8,7 @@
 * **Icon**: Dark icon => https://gitlab.com/sixsixfive/dark-icons
 
 # [i3 wm] gruvbox
-![](/gruvbox1.png)
+        ![](/gruvbox1.png)
 ![](/gruvbox.png)
 # [i3 wm ] solarized
 ![](/i3-solarized.png)
