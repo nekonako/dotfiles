@@ -45,5 +45,6 @@ URxvt.depth: 32
 !----------------------------------------------------------------------
 !#include ".config/colorscheme/solarized"
 !#include ".config/colorscheme/gruvbox"
-#include ".cache/wal/colors.Xresources"
+!#include ".cache/wal/colors.Xresources"
+#include ".config/colorscheme/pastel"
 

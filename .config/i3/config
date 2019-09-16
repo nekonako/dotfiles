@@ -1,23 +1,37 @@
+# i3 config file (v4)
+# v4.16
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# 04 nov 2018 - Electro7
+
+#..........#606974
+# Init run
+#..........
+
 # My bar -> Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 #exec --no-startup-id feh --bg-scale ~/Pictures/dek.png
-exec --no-startup-id nitrogen --restore
+exec_always --no-startup-id nitrogen --restore
+#exec_always hsetroot -add "#282A36" -add "#282A36" -gradient 0
 exec --no-startup-id redshift
-exec --no-startup-id compton
-
+exec --no-startup-id compton --corner-radius 10
+exec --no-startup-id gnome-settings-daemon
 #.......
 # Font
 #.......
 
-set $ft pango:gomono nerd font 10
+#set $ft xft:Inconsolata Nerd Font Mono:size=10
+#set $ft -xos4-terminesspowerline-medium-r-normal--12-120-72-72-c-60-iso10646-1
+set $ft pango:fantasquesans mono nerd font 10
+#set $ft terminus12
 font $ft
 
 #..........
 # Look
 #..........
 
-new_window pixel 2
-new_float pixel 2
+new_window pixel 0
+new_float pixel 0
 floating_minimum_size 10x10
 floating_maximum_size -1x-1
 focus_follows_mouse yes
@@ -25,20 +39,46 @@ title_align center
 
 # solarized colors
 #set $bg                #002b36
-#set $fg                #BCC3C3
-#set $gg                #1D2445
+#set $fg                #B58900
+#set $gg                #A2A8B0
+
+# gruvbox
+# set $bg #262626
+# set $fg #ECC29A
+# set $gg #969519
 
 # owl colors
 set_from_resource $bg	i3wm.background
 set_from_resource $fg   i3wm.foreground
-set_from_resource $gg   i3wm.color3
+set_from_resource $gg   i3wm.color5
+set_from_resource $jg   i3wm.color0
+# Reading colors from resources
+#set_from_resource $back			i3wm.background 
+#set_from_resource $black		i3wm.color0		
+#set_from_resource $grey			i3wm.color8		
+#set_from_resource $lightgrey		i3wm.color7		
+#set_from_resource $white		i3wm.color15	
+#set_from_resource $yellow		i3wm.color11
+#set_from_resource $red			i3wm.color9		
+#set_from_resource $darkred		i3wm.color1		
+#set_from_resource $green		i3wm.color10	
 
-#class                  border      backgr     text        split
-client.focused          $bg         $bg         $gg         $bg
-client.focused_inactive $bg         $bg         $fg         $bg
-client.unfocused        $bg         $bg         $fg         $bg
-client.urgent           $bg         $bg         $fg         $bg
-client.background       $bg
+#class                  back      border     text        split
+client.focused          $bg         $fg         $bg         $bg
+client.focused_inactive $bg         $jg         $fg         $gg
+client.unfocused        $bg         $jg         $fg         $gg
+client.urgent           $bg         $bg         $fg         $gg
+client.background       $bg	        $gg
+
+
+#class                   border  backgr. text    indic.   child_border
+#  client.focused           #839496 #839496 $black #green
+#  client.focused_inactive  #839496 #839496 $lightgrey #green
+#  client.unfocused         #839496 #839496 $lightgrey #green
+#  client.urgent            #839496 $red #black $green
+#  client.placeholder       #839496 $red #ffffff $green
+
+#  client.background       #2B2C2B
 
 #..........
 # Applications
@@ -63,7 +103,8 @@ bindsym $mod+Mod1+q exec qt5ct
 # Color picker (mod+alt+g)
 bindsym $mod+Mod1+g exec gcolor2
 # Thunar
-bindsym $mod++Shift+f exec thunar
+bindsym $mod++Shift+f exec pcmanfm
+# start dmenu/rofi (mod+x)
 #bindsym $mod+x exec dmenu_run -fn "$ft" -nb "$back" -nf "$white" -sb "$yellow" -sf "$black"
 bindsym $mod+x exec bash -i -c "rofi -show run"
 # start rofi window list (mod+w)
@@ -80,21 +121,8 @@ bindsym XF86MonBrightnessDown exec "light -U 5"
 bindsym XF86MonBrightnessUp exec "light -A 5"
 bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
-bindsym XF86AudioPrev exec mpc prev
-bindsym XF86AudioNext exec mpc next
-
-# Layout
-for_window [class="(?i)feh"] floating enable
-for_window [class="(?i)gcolor2"] floating enable
-#for_window [class="(?i)gucharmap"] floating enable
-for_window [class="(?i)lxappearance"] floating enable
-for_window [class="(?i)qt5ct"] floating enable
-for_window [instance="(?i)TeamViewer.exe"] floating enable
-for_window [class="(?i)VirtualBox"] floating enable
-for_window [class="(?i)mpv"] floating enable
-for_window [class="(?i)vlc"] floating enable
-for_window [class="(?i)VirtualBox Machine"] resize set 1024 768
-for_window [workspace=10] floating enable
+bindsym XF86AudioPrev exec mpc prev & notify-send "Now Playing ♫" "$(mpc current)"
+bindsym XF86AudioNext exec mpc next & notify-send "Now Playing ♫" "$(mpc current)"
 
 #...........
 # Keybinds i3
@@ -160,12 +188,6 @@ bindsym $mod+Shift+1 move container to workspace  NGOPI
 bindsym $mod+Shift+2 move container to workspace  BROWSER
 bindsym $mod+Shift+3 move container to workspace  CODE
 bindsym $mod+Shift+4 move container to workspace  GRAPHICS
-bindsym $mod+Shift+5 move container to workspace 5:vid
-bindsym $mod+Shift+6 move container to workspace 6:img
-bindsym $mod+Shift+7 move container to workspace 7:misc
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10:float
 
 # reload the configuration file (mod+shitf+c)
 bindsym $mod+Shift+c reload
@@ -175,12 +197,7 @@ bindsym $mod+Shift+r restart
 
 # resize window (you can also use the mouse for that) (mod+r)
 mode "resize" {
-  # These bindings trigger as soon as you enter the resize mode
-
-  # Pressing left will shrink the window’s width.
-  # Pressing right will grow the window’s width.
-  # Pressing up will shrink the window’s height.
-  # Pressing down will grow the window’s height.
+  
   bindsym a resize shrink width 10 px or 10 ppt
   bindsym s resize grow height 10 px or 10 ppt
   bindsym w resize shrink height 10 px or 10 ppt
