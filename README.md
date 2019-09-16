@@ -1,5 +1,5 @@
 ## Dots
-![](/img/coffe.png)
+![](/img/coffee.png)
 <br/>
 ![](/img/i3-pywall.png)
 
