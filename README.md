@@ -1,7 +1,6 @@
 ## Dots
 ![](/img/coffee.png)
 <br/>
-![](/img/i3-pywall.png)
 
 ## System information
 
@@ -11,3 +10,7 @@
 * **Bar/panel**: Polybar
 * **Text editor**: vim
 * **Icon**: Dark icon => https://gitlab.com/sixsixfive/dark-icons
+* **GTK theme**: https://github.com/galihx11/GTK-themes-collections
+
+see my another rice https://github.com/galihx11/ricing-collection
+
