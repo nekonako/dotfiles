@@ -19,44 +19,44 @@
     <primaryMonitor>Mouse</primaryMonitor>
   </placement>
   <theme>
-    <cornerRadius>6</cornerRadius>
-    <cornerRadius menu="yes">6</cornerRadius>
-    <name>Vent</name>
-    <titleLayout>CMILSD</titleLayout>
+    <cornerRadius>3</cornerRadius>
+    <cornerRadius menu="yes">3</cornerRadius>
+    <name>Blocks</name>
+    <titleLayout>IMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Iosevka</name>
+      <name>GoMono Nerd Font</name>
       <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Iosevka</name>
+      <name>GoMono Nerd Font</name>
       <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>FantasqueSansMono Nerd Font</name>
-      <size>11</size>
+      <name>GoMono Nerd Font</name>
+      <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>FantasqueSansMono Nerd Font</name>
+      <name>GoMono Nerd Font</name>
       <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>FantasqueSansMono Nerd Font</name>
+      <name>GoMono Nerd Font</name>
       <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>FantasqueSansMono Nerd Font</name>
+      <name>GoMono Nerd Font</name>
       <size>10</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
@@ -400,12 +400,12 @@
     </keybind>
     <keybind key="XF86AudioStop">
       <action name="Execute">
-        <command>mpc pause</command>
+        <command>mpc stop</command>
       </action>
     </keybind>
     <keybind key="XF86AudioPlay">
       <action name="Execute">
-        <command>mpc play</command>
+        <command>mpc toggle</command>
       </action>
     </keybind>
     <keybind key="XF86AudioPrev">

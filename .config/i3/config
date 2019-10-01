@@ -1,30 +1,24 @@
-# i3 config file (v4)
-# v4.16
-#
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
-# 04 nov 2018 - Electro7
 
-#..........#606974
-# Init run
+#..........
+# Autostart
 #..........
 
-# My bar -> Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-#exec --no-startup-id feh --bg-scale ~/Pictures/dek.png
 exec_always --no-startup-id nitrogen --restore
-#exec_always hsetroot -add "#282A36" -add "#282A36" -gradient 0
+# exec_always hsetroot -add "#282A36" -add "#282A36" -gradient 0
 exec --no-startup-id redshift
-exec --no-startup-id compton --corner-radius 10
+exec --no-startup-id compton
+# is using compton round corner
+# exec --no-startup-id compton
 exec --no-startup-id gnome-settings-daemon
+exec --no-startup-id xsettingsd
+# exec --no-startup-id tint2
+
 #.......
 # Font
 #.......
 
-#set $ft xft:Inconsolata Nerd Font Mono:size=10
-#set $ft -xos4-terminesspowerline-medium-r-normal--12-120-72-72-c-60-iso10646-1
-set $ft pango:fantasquesans mono nerd font 10
-#set $ft terminus12
-font $ft
+font pango:fantasquesans mono nerd font 10
 
 #..........
 # Look
@@ -37,31 +31,11 @@ floating_maximum_size -1x-1
 focus_follows_mouse yes
 title_align center
 
-# solarized colors
-#set $bg                #002b36
-#set $fg                #B58900
-#set $gg                #A2A8B0
-
-# gruvbox
-# set $bg #262626
-# set $fg #ECC29A
-# set $gg #969519
-
-# owl colors
+# colors
 set_from_resource $bg	i3wm.background
 set_from_resource $fg   i3wm.foreground
 set_from_resource $gg   i3wm.color5
 set_from_resource $jg   i3wm.color0
-# Reading colors from resources
-#set_from_resource $back			i3wm.background 
-#set_from_resource $black		i3wm.color0		
-#set_from_resource $grey			i3wm.color8		
-#set_from_resource $lightgrey		i3wm.color7		
-#set_from_resource $white		i3wm.color15	
-#set_from_resource $yellow		i3wm.color11
-#set_from_resource $red			i3wm.color9		
-#set_from_resource $darkred		i3wm.color1		
-#set_from_resource $green		i3wm.color10	
 
 #class                  back      border     text        split
 client.focused          $bg         $fg         $bg         $bg
@@ -69,16 +43,6 @@ client.focused_inactive $bg         $jg         $fg         $gg
 client.unfocused        $bg         $jg         $fg         $gg
 client.urgent           $bg         $bg         $fg         $gg
 client.background       $bg	        $gg
-
-
-#class                   border  backgr. text    indic.   child_border
-#  client.focused           #839496 #839496 $black #green
-#  client.focused_inactive  #839496 #839496 $lightgrey #green
-#  client.unfocused         #839496 #839496 $lightgrey #green
-#  client.urgent            #839496 $red #black $green
-#  client.placeholder       #839496 $red #ffffff $green
-
-#  client.background       #2B2C2B
 
 #..........
 # Applications
@@ -103,7 +67,7 @@ bindsym $mod+Mod1+q exec qt5ct
 # Color picker (mod+alt+g)
 bindsym $mod+Mod1+g exec gcolor2
 # Thunar
-bindsym $mod++Shift+f exec pcmanfm
+bindsym $mod++Shift+f exec thunar
 # start dmenu/rofi (mod+x)
 #bindsym $mod+x exec dmenu_run -fn "$ft" -nb "$back" -nf "$white" -sb "$yellow" -sf "$black"
 bindsym $mod+x exec bash -i -c "rofi -show run"

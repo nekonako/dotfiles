@@ -1,5 +1,5 @@
 " Special
-let wallpaper  = "/home/asuna/Downloads/127524.jpg"
+let wallpaper  = "/home/asuna/Pictures/127524.jpg"
 let background = "#0a1124"
 let foreground = "#ecc29a"
 let cursor     = "#ecc29a"

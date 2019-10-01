@@ -53,7 +53,7 @@
     # Draw a line of "separator_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 10
+    separator_height = 1
 
     # Padding between text and separator.
     padding = 10
@@ -159,6 +159,7 @@
 
     # Scale larger icons down to this size, set to 0 to disable
     max_icon_size = 128
+    corner_radius = 3
 
     # Paths to default icons.
     icon_folders = /usr/share/icons/Paper/48x48@2x/status/:/usr/share/icons/Paper/48x48@2x/devices/:/usr/share/icons/Paper/48x48@2x/apps:/usr/share/icons/Paper/48x48@2x/categories:/usr/share/icons/Paper/48x48@2x/emblems
@@ -241,25 +242,25 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#ECECEC"
-    foreground = "#DFD6D5"
-    frame_color = "#3c3836"
+    background = "#E9D9B0"
+    foreground = "#262626"
+    frame_color = "#262626"
     timeout = 20
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#5D4347"
-    foreground = "#DFD6D5"
-    frame_color = "#DFD6D5"
-    timeout = 20
+    background = "#ffffff"
+    foreground = "#2f343f"
+    frame_color = "#262626"
+    timeout = 60
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_critical]
-    background = "#D1BEBC"
-    foreground = "#DFD6D5"
-    frame_color = "#3c3836"
+    background = "#E9D9B0"
+    foreground = "#262626"
+    frame_color = "#262626"
     timeout = 20
     # Icon for notifications with critical urgency, uncomment to enable
     #icon = /path/to/icon

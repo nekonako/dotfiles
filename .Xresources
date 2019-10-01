@@ -1,50 +1,59 @@
+! ------------------------------------------------------------------------------
+! URxvt colorscheme
+! ------------------------------------------------------------------------------
 
-Xft.dpi: 96
-Xft.antialias: true
-Xft.hinting: true
-Xft.rgba: rgb
-Xft.autohint: true
-Xft.hintstyle: hintfull
-Xft.lcdfilter: lcdfilter
-
-URxvt*imLocale: en_US.UTF-8
-URxvt*termName: xterm-256color
-Urxvt*buffered: false
-URxvt.intensityStyles: false
-URxvt.font: xft:gomono Nerd Font:size=10, \
-            xft:mplus Nerd Font Mono:size=14, \
-            xft:monoki Nerd Font:size=10, \
-            xft:gohu Nerd Font:size=11, \
-            xft:FuraMono Nerd Font:size=11, \
-            xft:RobotoMono Nerd Font:size=11 
-URxvt.saveLines: 2000
-URxvt.scrollBar: false
-URxvt.cursorColor: white
-URxvt.internalBorder : 15
-URxvt.geometry : 74x17
-
-!! Extensions
-URxvt.perl-ext-common: default,matcher,resize-font,url-select,keyboard-select,clipboard
-URxvt.colorUL: #4682B4
-!! url-select
-URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.url-select.launcher: urxvt -e lynx -cfg=~/.lynx.cfg -lss=~/.lynx.lss
-URxvt.url-select.underline: true
-!! keyboard-select:
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
-!! resize-font
-URxvt.resize-font.smaller: C-j
-URxvt.resize-font.bigger:  C-k
-!!clipboard
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-URxvt.depth: 32
-
-
-! Colores
-!----------------------------------------------------------------------
-!#include ".config/colorscheme/solarized"
-!#include ".config/colorscheme/gruvbox"
 !#include ".cache/wal/colors.Xresources"
-#include ".config/colorscheme/pastel"
+#include ".config/colorschemes/dracula"
 
+! ------------------------------------------------------------------------------
+! URxvt font
+! ------------------------------------------------------------------------------
+
+URxvt*font:				xft:gomono nerd font:regular:size=10
+URxvt*boldFont:			xft:gomono nerd font:bold:size=10
+URxvt*italicFont:		xft:gomono nerd font:italic:size=10
+URxvt*boldItalicFont:	xft:gomono nerd font:bold italic:size=10
+
+! ------------------------------------------------------------------------------
+! URxvt configs
+! ------------------------------------------------------------------------------
+
+URxvt.geometry: 		69x12
+URxvt*letterSpace: 	    -1
+URxvt.lineSpace: 		0
+URxvt*internalBorder:   24
+URxvt*externalBorder:   0
+URxvt*depth:            32
+URxvt*saveline:         2000
+URxvt*termName:         rxvt-256color
+URxvt*iso14755:         false
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:  false
+URxvt.perl-ext-common:  default,clipboard,url-select,keyboard-select
+URxvt.copyCommand:      xclip -i -selection clipboard
+URxvt.pasteCommand:     xclip -o -selection clipboard
+URxvt.keysym.M-c:       perl:clipboard:copy
+URxvt.keysym.M-v:       perl:clipboard:paste
+URxvt.keysym.M-C-v:     perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape:  perl:keyboard-select:activate
+URxvt.keysym.Shift-Up:	command:\033]720;1\007
+URxvt.keysym.Shift-Down:command:\033]721;1\007
+URxvt.keysym.M-s:       perl:keyboard-select:search
+URxvt.keysym.M-u:       perl:url-select:select_next
+URxvt.urlLauncher:      firefox
+URxvt.underlineURLs:    true
+URxvt.urlButton:        1
+URxvt*buffered:         false          
+URxvt.urgentOnBell: 	True
+
+! ------------------------------------------------------------------------------
+! Xft Font Configuration
+! ------------------------------------------------------------------------------
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+                                                           

@@ -20,18 +20,22 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'dylanaraps/wal.vim'
+"Plugin 'dylanaraps/wal.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'altercation/vim-colors-solarized'
-"Plugin 'vim-colorschemes'
+"Plugin 'altercation/vim-colors-solarized'
 Plugin 'majutsushi/tagbar'
-Plugin 'morhetz/gruvbox'
+"Plugin 'morhetz/gruvbox'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'roxma/nvim-yarp'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'dracula/vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'rakr/vim-one'
 
 call vundle#end()            
 filetype plugin indent on
@@ -58,14 +62,22 @@ let g:NERDTreeDirArrowCollapsible = " "
 map <C-n> :NERDTreeToggle<CR>
 
 " airline
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=1
+let g:airline_layout = 'powerline'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'default'
+let g:airline_theme='dracula'
 "let g:airline_theme='solarized'
 "let g:airline_theme='gruvbox'
+"let g:airline_theme='wal'
 
 " colorscheme
-colorscheme wal
+let g:dracula_colorterm=0
+let g:dracula_italic=0
+"colorscheme wal
 "colorscheme gruvbox
 "colorscheme solarized
+colorscheme dracula
 set background=dark
 
 " neosnippet
@@ -84,4 +96,14 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
+"syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 

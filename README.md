@@ -1,16 +1,28 @@
 ## Dots
-![](/img/coffee.png)
-<br/>
+![](/.img/X!.png)
+![](/.img/X!!.png)
+![](/.img/sweetnes.png)
+![](/.img/rem.png)
+![](/.img/pink-flower.png)
+![](/.img/ok.png)
 
-## System information
+## Environment information
+* OS : Manjaro
+* Windows Manager : openbox & i3wm
+* File Manager : PCmanfm  Thunar
+* Terminal : Xst
+* Notification : Dunst
+* Music Player : Mpd + ncmpcpp
+* Font : Nerd font complete,font awesome,noto sans
+* bar/panel : tint2 & polybar
 
-* **OS**: Manjaro
-* **Terminal**: Xst => https://github.com/gnotclub/xst
-* **Karnel**: 5.2.4-1
-* **Bar/panel**: Polybar
-* **Text editor**: vim
-* **Icon**: Dark icon => https://gitlab.com/sixsixfive/dark-icons
-* **GTK theme**: https://github.com/galihx11/GTK-themes-collections
 
-see my another rice https://github.com/galihx11/ricing-collection
+## Vim guide
+Buka vim lalu ketikn perintah `:PluginInstall`
 
+## Shoortzz
+* [Adhi Pambudi](https://github.com/addy-dclxvi)
+* [Fikri Omar](https://github.com/fikriomar16)
+* [Yunee Okitavera](https://github.com/okitavera)
+* [BanditHijo](https://bandithijo.com)
+* [elenapan](https://github.com/elenapan/dotfiles)

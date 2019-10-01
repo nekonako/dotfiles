@@ -15,7 +15,7 @@
 
     selected-active-background: #63504E;
     selected-active-foreground: @foreground;
-    selected-normal-background: #E93247;
+    selected-normal-background: #A33A4E;
     selected-normal-foreground: @foreground;
     selected-urgent-background: #EB3247;
     selected-urgent-foreground: @foreground;
@@ -23,13 +23,13 @@
     background-color: @background;
     background: #0a1124;
     foreground: #ecc29a;
-    border-color: #EA3247;
+    border-color: @background;
     spacing: 2;
 }
 
 #window {
     background-color: @background;
-    border: 2px;
+    border: 0;
     padding: 2.5ch;
 }
 
@@ -39,7 +39,7 @@
 }
 
 #message {
-   // border: 2px 0px 0px;
+    border: 2px 0px 0px;
     border-color: @border-color;
     padding: 1px;
 }
@@ -61,7 +61,7 @@
 
 #listview {
     fixed-height: 0;
-    //border: 2px 0px 0px;
+    border: 2px 0px 0px;
     border-color: @border-color;
     spacing: 2px;
     scrollbar: true;
@@ -135,7 +135,7 @@
 }
 
 #button.selected {
-    background-color: #EA3247;
+    background-color: @selected-normal-background;
     text-color: @selected-normal-foreground;
 }
 

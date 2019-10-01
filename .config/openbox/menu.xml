@@ -3,11 +3,11 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://openbox.org/">
   <menu id="root-menu" label="Applications">
-  <separator label="Openbox"/>
-    <item label=" File Manager"><action name="Execute"><command><![CDATA[thunar]]></command></action></item>
+  <separator label="   Openbox   "/>
+    <item label=" File Manager"><action name="Execute"><command><![CDATA[pcmanfm]]></command></action></item>
     <item label=" Terminal"><action name="Execute"><command><![CDATA[xst]]></command></action></item>
     <item label=" Web Browser"><action name="Execute"><command><![CDATA[firefox]]></command></action></item>
-    <item label=" Run command"><action name="Execute"><command><![CDATA[rofi -show combi]]></command></action></item>
+    <item label=" Run command"><action name="Execute"><command><![CDATA[rofi -show drun]]></command></action></item>
   <separator/>
   <menu id="0.752424082559632" label=" Accessories">
     <item label="About Xfce"><action name="Execute"><command><![CDATA[xfce4-about]]></command></action></item>
@@ -183,5 +183,6 @@
   <separator/>
     <item label=" Lock"><action name="Execute"><command><![CDATA[xscreensaver-command -lock]]></command></action></item>
     <item label=" Exit"><action name="Exit"/></item>
-  </menu>
+  <separator/>
+</menu>
 </openbox_menu>
