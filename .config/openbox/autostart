@@ -1,23 +1,21 @@
 
 ### compositor
 compton &
-### if using compton round corner
-# compton --corner-radius 5
 
 ### wallpaper
 nitrogen --restore &
 
 ### polybar
-# polybar --config=~/.config/polybar/openbox bottom &
+#polybar --config=/home/asuna/.config/polybar/openbox bottom &
 
-### Mpd
+###
 mpd &
 
 ### redshift
-redshift &
+#redshift &
 
 ### Tint2
-tint2 &
+tint2 -c ~/.config/tint2/dark.tint2rc
 
 ### xsettingsd
 xsettingsd & 

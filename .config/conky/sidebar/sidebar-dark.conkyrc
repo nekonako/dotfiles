@@ -1,0 +1,104 @@
+conky.config = {
+own_window = true,
+own_window_type = 'normal',
+own_window_transparent = true,
+own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',
+own_window_colour = '#000000',
+own_window_class = 'Conky',
+own_window_title = 'sidebar Conky',
+
+minimum_width = 400, 
+minimum_height = 880,
+maximum_width = 400,
+
+gap_x = 40,--## left | right
+gap_y = -22,--## up | down
+
+
+use_xft = true,
+font = 'gomono nerd font:size=10',
+
+override_utf8_locale = true,
+
+uppercase = false,
+draw_shades = false,--yes
+default_shade_color = 'black',
+
+draw_outline = false,-- amplifies text if yes
+default_outline_color = 'black',
+
+default_color = '#F7F7F1',-- light
+color1 = '#2f343f',-- dark
+color2 = '#bf616a',-- Red
+color3 = '#a3be8c',-- Green
+color4 = '#ebcb8b',-- Yellow
+color5 = '#81a1c1',-- Blue
+
+draw_borders = false,
+stippled_borders = 0,
+border_inner_margin = 0,
+border_outer_margin = 0,
+border_width = 0,
+draw_graph_borders = true,--no
+background = true,
+use_spacer = 'none',
+no_buffers = true,
+short_units = true,
+pad_percents = 2,
+imlib_cache_size = 0,
+double_buffer = true,
+update_interval = 1,
+
+};
+
+conky.text = [[
+
+${image ~/.icons/custom/linebit/bg-dark.png -p 0,0}
+${voffset 0}
+
+${voffset -30}${offset 90}${font gomono nerd font:Bold:size=50}${time %H:%M}
+
+${voffset -140}${offset 135}${font gomono nerd font:Bold:size=10}${time %a %-d %B}
+
+
+${image ~/.icons/custom/linebit/ram.png -p 20,180 -s 50x50}
+${voffset 20}${offset 80}${font gomono nerd font:Bold:size=11}RAM
+${voffset 0}${offset 80}${font gomono nerd font:size=10}$mem / $memmax
+
+${image ~/.icons/custom/linebit/cpu.png -p 20,240 -s 50x50}
+${voffset -3}${offset 80}${font gomono nerd font:Bold:size=11}CPU
+${voffset 0}${offset 80}${font gomono nerd font:size=10}${cpu cpu0}%
+
+${image ~/.icons/custom/linebit/temperature.png -p 20,300 -s 50x50}
+${voffset -3}${offset 80}${font gomono nerd font:Bold:size=11}Temp
+${voffset 0}${offset 80}${font gomono nerd font:size=10}${hwmon temp 1}°C
+
+${image ~/.icons/custom/linebit/home.png -p 20,360 -s 50x50}
+${voffset -10}${offset 80}${font gomono nerd font:Bold:size=11}Storage
+${voffset 0}${offset 80}${font gomono nerd font:size=10}${fs_used /home} / ${fs_size /home}
+
+${image ~/.icons/custom/linebit/battery.png -p 20,420 -s 50x50}
+${voffset -8}${offset 80}${font gomono nerd font:Bold:size=11}Battery
+${voffset 0}${offset 80}${font gomono nerd font:size=10}${battery}
+
+${image ~/.icons/custom/linebit/wifi.png -p 25,485 -s 38x40}
+${voffset -3}${offset 80}${font gomono nerd font:Bold:size=11}Wifi
+${voffset 0}${offset 80}${font gomono nerd font:size=10}${wireless_essid wlo1}
+
+${image ~/.icons/custom/linebit/volume.png -p 10,610 -s 120x120}
+
+${voffset 60}${offset 130}${font gomono nerd font:Bold:size=20} ${if_running mpd}${mpd_artist}${else}Is not playing${endif}
+
+${voffset -40}${offset 135}${font gomono nerd font:size=12} ${if_running mpd}${font Noto Sans CJK JP:size=10}${mpd_title}${else}Music${endif}
+]];
+
+
+
+
+
+
+
+
+
+
+

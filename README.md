@@ -1,10 +1,8 @@
 ## Dots
 ![](/.img/X!.png)
 ![](/.img/X!!.png)
-![](/.img/sweetnes.png)
-![](/.img/rem.png)
-![](/.img/pink-flower.png)
-![](/.img/ok.png)
+![](/.img/X!-dark.png)
+![](/.img/kopi.png)
 
 ## Environment information
 * OS : Manjaro
