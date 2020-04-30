@@ -1,0 +1,83 @@
+.putih {
+	background-color: rgba(207, 123, 74, 0.788);
+}
+.hijau {
+	background-color: #50FA7B;
+}
+.merah {
+	background-color: #FF5555;
+}
+.pink {
+	background-color: #F663B7
+}
+.kuning {
+	background-color : #F6F868;
+}
+.ungu {
+	background-color :#AD74FF;
+}
+.violet {
+	background-color: #5B79D3;
+}
+.hijau-muda {
+	background-color : #25E98C;
+}
+.coklat {
+	background-color : #E4793C;
+}
+.biru {
+	background-color : #8BE9FD;
+}
+body {
+	background-color: #161925;
+	font-family: google sans;
+	color: #F2F2F8;
+}
+.container-1 {
+  position: fixed;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  }
+.container-2 {
+	display: flex;
+	position: fixed;
+  top: 8%;
+  flex-wrap: wrap;
+  left: 50%;
+  
+}
+header {
+	text-align: center;
+}
+  .search-bar {
+	  margin-top: 1rem;
+	  height: 4rem;
+	  width: 40rem;
+	 text-align: center;
+	 border: 0;
+	 font-size: 1.5rem;
+  }
+  .clock {
+	  margin-left: 50%;
+	  font-size: 8rem;
+  }
+  #date {
+	margin-left: 60%;
+	  font-size: 2rem;
+	  margin-top: -15px;
+  }
+  .box {
+	width: 14rem;
+	height: 14rem;
+	margin: 1rem;
+	padding: 0;
+	border-radius: 10px;
+  }
+  .box-img {
+	  padding: 0;
+	 text-align: center;
+	  width: 8rem;
+	  margin-top: 3rem;
+	margin-left: 3rem;
+  }

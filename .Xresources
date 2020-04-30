@@ -1,59 +1,11 @@
-! ------------------------------------------------------------------------------
-! URxvt colorscheme
-! ------------------------------------------------------------------------------
+!! ------------------------------------------------------------------------------
+!! Import other Configuration from ~/.Xresources.d
+!! ------------------------------------------------------------------------------
+!#include "/home/yuunel/.Xresources.d/xautolock"
+#include "/home/yuune/.Xresources.d/color/dracula"
+#include "/home/yuune/.Xresources.d/cursor"
+#include "/home/yuune/.Xresources.d/urxvt"
+#include "/home/yuune/.Xresources.d/xterm"
+#include "/home/yuune/.Xresources.d/font"
+!! ------------------------------------------------------------------------------
 
-!#include ".cache/wal/colors.Xresources"
-#include ".config/colorschemes/dracula"
-
-! ------------------------------------------------------------------------------
-! URxvt font
-! ------------------------------------------------------------------------------
-
-URxvt*font:				xft:gomono nerd font:regular:size=10
-URxvt*boldFont:			xft:gomono nerd font:bold:size=10
-URxvt*italicFont:		xft:gomono nerd font:italic:size=10
-URxvt*boldItalicFont:	xft:gomono nerd font:bold italic:size=10
-
-! ------------------------------------------------------------------------------
-! URxvt configs
-! ------------------------------------------------------------------------------
-
-URxvt.geometry: 		69x12
-URxvt*letterSpace: 	    -1
-URxvt.lineSpace: 		0
-URxvt*internalBorder:   24
-URxvt*externalBorder:   0
-URxvt*depth:            32
-URxvt*saveline:         2000
-URxvt*termName:         rxvt-256color
-URxvt*iso14755:         false
-URxvt*scrollBar:        false
-URxvt*scrollBar_right:  false
-URxvt.perl-ext-common:  default,clipboard,url-select,keyboard-select
-URxvt.copyCommand:      xclip -i -selection clipboard
-URxvt.pasteCommand:     xclip -o -selection clipboard
-URxvt.keysym.M-c:       perl:clipboard:copy
-URxvt.keysym.M-v:       perl:clipboard:paste
-URxvt.keysym.M-C-v:     perl:clipboard:paste_escaped
-URxvt.keysym.M-Escape:  perl:keyboard-select:activate
-URxvt.keysym.Shift-Up:	command:\033]720;1\007
-URxvt.keysym.Shift-Down:command:\033]721;1\007
-URxvt.keysym.M-s:       perl:keyboard-select:search
-URxvt.keysym.M-u:       perl:url-select:select_next
-URxvt.urlLauncher:      firefox
-URxvt.underlineURLs:    true
-URxvt.urlButton:        1
-URxvt*buffered:         false          
-URxvt.urgentOnBell: 	True
-
-! ------------------------------------------------------------------------------
-! Xft Font Configuration
-! ------------------------------------------------------------------------------
-
-Xft.autohint: 0
-Xft.lcdfilter: lcddefault
-Xft.hintstyle: hintslight
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.rgba: rgb
-                                                           

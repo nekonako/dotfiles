@@ -1,0 +1,32 @@
+!! ------------------------------------------------------------------------------
+!! Xscreensaver
+!! ------------------------------------------------------------------------------
+!general options
+xscreensaver.visualID        : best
+xscreensaver.installColormap : true
+xscreensaver.captureStderr   : false
+xscreensaver.splash          : false
+
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground        : #cfd8dc
+xscreensaver.Dialog.background        : #131c26
+xscreensaver.Dialog.topShadowColor    : #131c26
+xscreensaver.Dialog.bottomShadowColor : #131c26
+xscreensaver.Dialog.Button.foreground : #cfd8dc
+xscreensaver.Dialog.Button.background : #2d393f
+
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground     : #cfd8dc
+xscreensaver.Dialog.text.background     : #131c26
+xscreensaver.Dialog.internalBorderWidth : 30
+xscreensaver.Dialog.borderWidth         : 20
+xscreensaver.Dialog.borderColor         : #131c26
+xscreensaver.Dialog.shadowThickness     : 2
+
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground : #c67d6f
+xscreensaver.passwd.thermometer.background : #131c26
+xscreensaver.passwd.thermometer.width      : 10
+
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%P %b %d

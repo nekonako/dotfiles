@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        バカ!!
+    </title>
+    <link rel="stylesheet" href="style.css"/>
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m ;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+    <body onload="startTime()">
+        <div class="container-1">
+                <div id="txt" class="clock"></div>
+                <div id="date"></div>
+                <form method="get" action="https://www.google.com/search">
+					<input type="text" autofocus="autofocus" name="q"  class="search-bar" placeholder="グーグル"\>
+				</form>
+        </div>
+        <div class="container-2">
+           <a href="https://twitter.com"><div class="box biru"><img src="img/twitter.svg" class="box-img"></div></a>
+           <a href="https://facebook.com"><div class="box violet"><img src="img/facebook-square.svg" class="box-img"></div></a>
+           <a href="https://github.com"><div class="box hijau"><img src="img/git-square.svg" class="box-img"></div></a>
+           <a href="https://reddit.com"><div class="box kuning"><img src="img/reddit.svg" class="box-img"></div></a>
+           <a href="https://instagram.com"><div class="pink box"><img src="img/instagram-square.svg" class="box-img"></div></a>
+           <a href="https://dev.to"><div class="box coklat"><img src="img/dev.svg" class="box-img"></div></a>
+           <a href="https://youtube.com"><div class="merah box"><img src="img/youtube.svg" class="box-img"></div></a>
+           <a href="https://pinterest.com"><div class="box ungu"><img src="img/pinterest.svg" class="box-img"></div></a>
+           <a href="https://google.com"><div class="box hijau-muda"><img src="img/google.svg" class="box-img"></div></a>
+           
+            </div>
+        <script>
+const d = new Date()
+const year = d.getFullYear() // 2019
+const date = d.getDate() // 23
+            const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+]
+const monthIndex = d.getMonth()
+const monthName = months[monthIndex]
+const days = [
+  'Sun',
+  'Mon',
+  'Tue',
+  'Wed',
+  'Thu',
+  'Fri',
+  'Sat'
+]
+const dayIndex = d.getDay()
+const dayName = days[dayIndex] // Thu
+const formatted = `${date} ${monthName} ${year}` // ${dayName}, ${date} /${monthName} ${year}`
+     var dt = new Date();
+    document.getElementById("date").innerHTML = formatted;
+            </script>
+    </body>
+</html>
