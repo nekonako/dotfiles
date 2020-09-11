@@ -5,13 +5,19 @@ foreground = ${xrdb:foreground}
 background = ${xrdb:background}
 foreground-alt = ${xrdb:color2}
 background-alt = ${xrdb:color1}
+merah = ${xrdb:color1}
+hijau = ${xrdb:color2}
+kuning = ${xrdb:color3}
+biru = ${xrdb:color4}
+ungu = ${xrdb:color5}
+cyan = ${xrdb:color6}
 alert = ${xrdb:color3}
 
 [fonts]
-font-0 = "gomono nerd font:size=10:antialias=true;2"
-font-1 = "FontAwesome:pixelsize=10;2"
-font-2 = "FontAwesome:weight=Bold:pixelsize=4;-2"
-font-3 = "Noto Sans CJK JP:size=10:antialias=true;2"
+font-0 = "fantasquesansmono nerd font:size=10:antialias=true;3"
+font-1 = "Gomono nerd font:size=12:antialias=true;5"
+font-2 = "FontAwesome:weight=Bold:pixelsize=4;-3"
+font-3 = "noto sans CJK jp:size=10:antialias=true;3"
 
 [global/wm]
 margin-top = 10
@@ -20,7 +26,7 @@ margin-bottom = 2
 [variables]
 bar-height = 25
 bar-border-size = 0
-border-color = ${xrdb:background}
+border-color = ${xrdb:color5}
 
 label-padding = 1
 label-maxlen = 50
@@ -31,7 +37,7 @@ wlan=wlo1
 #### /Varieable #####
 
 [bar/top]
-monitor = ${env:MONITOR:eDP}
+monitor = ${env:MONITOR:eDP-1}
 height = ${variables.bar-height}
 bottom = false
 fixed-center = true
@@ -64,7 +70,7 @@ modules-right = netspdwlan netspdeth wlan sp1 battery sp1 date sp1 time sp1
 
 
 [bar/bottom]
-monitor = ${env:MONITOR:eDP}
+monitor = ${env:MONITOR:eDP-1}
 height = ${variables.bar-height}
 bottom = true
 fixed-center = true
@@ -84,9 +90,9 @@ font-1 = ${fonts.font-1}
 font-2 = ${fonts.font-2}
 font-3 = ${fonts.font-3}
 
-modules-left = sp1 mpd
+modules-left = sp1 i3 sp1 mpd
 modules-center = 
-modules-right = netspdwlan netspdeth sp1 wlan sp1 battery sp1 date sp1 time sp1
+modules-right = cpu sp1 memory sp1 temperature sp1 pulseaudio sp1 wlan sp1 date sp1 time sp1
 
 ;tray-position = right
 ;tray-detached = false
@@ -139,46 +145,51 @@ strip-wsnumbers = true
 pin-workspaces = false
 fuzzy-match = true
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
-ws-icon-7 = 8;
-ws-icon-8 = 9;
-ws-icon-9 = 0;
+ws-icon-0 = 1; 
+ws-icon-1 = 2; 
+ws-icon-2 = 3; 
+ws-icon-3 = 4; 
+ws-icon-4 = 5; 
+ws-icon-5 = 6; 
+ws-icon-6 = 7; 
+ws-icon-7 = 8; 
+ws-icon-8 = 9; 
+ws-icon-9 = 0; 
 
 format-background = ${colors.background}
 format-foreground = ${colors.foreground}
 
-label-focused-foreground = ${colors.foreground-alt}
-label-focused-background =${colors.background-alt}
-label-unfocused-foreground = ${colors.foreground-alt}
-label-unfocused-background = ${colors.background-alt}
+label-focused-foreground = ${colors.biru}
+label-focused-background =${colors.background}
+
+label-unfocused-foreground = ${colors.ungu}
+label-unfocused-background = ${colors.background}
+
 label-visible-foreground = ${colors.foreground-alt}
 label-visible-background = ${colors.background-alt}
 label-urgent-foreground = ${colors.foreground-alt}
 label-urgent-background = ${colors.background-alt}
 
-label-focused = %{T3}%icon% %{T-}
-label-unfocused = %{T3}%icon% %{T-}
-label-visible = %{T3}%icon% %{T-}
-label-urgent = %{T3}%icon% %{T-}
+label-focused = %{T2}%icon% %{T-}
+label-focused-padding = 0.5
+
+label-unfocused = %{T2}%icon% %{T-}
+label-unfocused-padding = 0.5
+
+label-visible = %{T2}%icon% %{T-}
+label-urgent = %{T2}%icon% %{T-}
 
 label-mode = %mode%
-label-mode-padding = 2
-label-mode-background = ${colors.background-alt}
-label-mode-foreground = ${colors.foreground-alt}
+label-mode-padding = 1
+label-mode-background = ${colors.background}
+label-mode-foreground = ${colors.hijau}
 
-
------Xwindow -----
+;-----Xwindow -----
 
 [module/xwindow]
 type = internal/xwindow
 format = <label>
-format-padding = 0
+;format-padding = 0
 
 label = " %title:0:30:...%"
 label-foreground = ${colors.foreground}
@@ -187,7 +198,7 @@ label-background = ${colors.background}
 label-empty =
 label-empty-foreground = ${colors.background}
 
------Xkeyboard------
+;-----Xkeyboard------
 
 
 [module/xkeyboard]
@@ -221,7 +232,7 @@ use-ui-max = true
 
 interval = 5
 
-format-volume = <ramp-volume> <label-volume>
+format-volume ="<ramp-volume> <label-volume>"
 
 label-muted = 
 label-muted-foreground = ${colors.alert}
@@ -229,6 +240,7 @@ label-muted-foreground = ${colors.alert}
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
+ramp-volume-foreground = ${colors.hijau}
 
 ;-----------------------------------------------------------------MODUL:MEMORY
 
@@ -238,17 +250,18 @@ host = 127.0.0.1
 port = 6600
 interval = 1
 
-format-online = <label-song>
-label-song =  %title:0:30:...%
-label-offline = 
+format-online = <icon-random>  <label-song>
+label-song = %artist% - %title%
+label-offline =  mpd is offline
 
-icon-play = 
+icon-play = 
 icon-next = 
-icon-pause = 
+icon-pause = 
 icon-prev = 
+icon-random = 
 
-toggle-on-foreground = ${colors.foreground-alt}
-toggle-off-foreground = ${colors.foreground}
+toggle-on-foreground = ${colors.merah}
+toggle-off-foreground = ${colors.merah}
 
 
 [module/memory]
@@ -256,10 +269,10 @@ type = internal/memory
 interval = 1
 
 format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
+format-prefix-foreground = ${colors.ungu}
 format-prefix-background = ${colors.background}
 
-label = "%percentage_used%%"
+label = "%percentage_used%% "
 label-foreground = ${colors.foreground}
 label-background = ${colors.background}
 
@@ -269,10 +282,10 @@ label-background = ${colors.background}
 type = internal/cpu
 interval = 1
 format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
+format-prefix-foreground = ${colors.merah}
 format-prefix-background = ${colors.background}
 ;format-underline = ${colors.foreground}
-label = "%percentage:2%%"
+label = "%percentage:2%% "
 label-foreground = ${colors.foreground}
 label-background = ${colors.background}
 
@@ -298,7 +311,7 @@ type = internal/temperature
 thermal-zone = 0
 warn-temperature = 80
 
-format = "<ramp><label>"
+format = "<ramp><label> "
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 label = "%temperature-c%"
@@ -314,7 +327,7 @@ ramp-1 = " "
 ramp-2 = " "
 ramp-3 = " "
 ramp-4 = " "
-ramp-foreground = ${colors.foreground}
+ramp-foreground = ${colors.kuning}
 ramp-background = ${colors.background}
 
 ;------------------------------------------------------------------MODULE:DATE
@@ -323,17 +336,17 @@ ramp-background = ${colors.background}
 type = internal/date
 interval = 1
 
-date = %a %d %b
+date = %A %d %b %y
 date-alt = "%a %Y/%m/%d"
 
 time = %H:%M
 time-alt = " %H:%M"
 
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
+format-prefix = "  "
+format-prefix-foreground = ${colors.ungu}
 format-prefix-background = ${colors.background}
 
-label = %date%
+label ="%date%"
 label-foreground = ${colors.foreground}
 label-background = ${colors.background}
 
@@ -355,20 +368,20 @@ type = internal/network
 interface = wlo1
 interval = 1.0
 
-format-connected = "<ramp-signal>"
+format-connected = "<ramp-signal> <label-connected>"
 label-connected = " %essid:0:10:% "
 label-connected-foreground = ${colors.foreground}
 label-connected-background = ${colors.background}
 
 format-disconnected = <label-disconnected>
-label-disconnected = " off"
-label-disconnected-foreground = ${colors.foreground}
+label-disconnected = " "
+label-disconnected-foreground = ${colors.biru}
 
 ramp-signal-0 = %{T5}%{T-}
 ramp-signal-1 = %{T5}%{T-}
 ramp-signal-2 = %{T5}%{T-}
 ramp-signal-3 = %{T5}%{T-}
-ramp-signal-foreground = ${colors.foreground}
+ramp-signal-foreground = ${colors.biru}
 ramp-signal-background = ${colors.background}
 
 ;-----------------------------------------------------------------------------
@@ -405,18 +418,18 @@ battery = BAT0
 adapter = AC
 full-at = 95
 
-format-charging = "<animation-charging><label-charging>"
+format-charging = "<animation-charging> <label-charging>"
 ;format-charging-underline = ${colors.foreground}
 label-charging-foreground = ${colors.foreground}
 label-charging-background = ${colors.background}
 
-format-discharging = "<ramp-capacity><label-discharging>"
+format-discharging = "%{T2}<ramp-capacity>%{T-} <label-discharging>"
 ;format-discharging-underline = ${self.format-charging-underline}
 label-discharging-foreground = ${colors.foreground}
 label-discharging-background = ${colors.background}
 
-format-full-prefix = "  "
-format-full-prefix-foreground = ${colors.foreground}
+format-full-prefix = "   "
+format-full-prefix-foreground = ${colors.kuning}
 format-full-prefix-background = ${colors.background}
 ;format-full-underline = ${self.format-charging-underline}
 
@@ -425,14 +438,14 @@ ramp-capacity-0-foreground = ${colors.alert}
 ramp-capacity-1 = "  "
 ramp-capacity-2 = "  "
 ramp-capacity-3 = "  "
-ramp-capacity-foreground = ${colors.foreground}
+ramp-capacity-foreground = ${colors.kuning}
 ramp-capacity-background = ${colors.background}
 
-animation-charging-0 = "  "
-animation-charging-1 = "  "
-animation-charging-2 = "  "
-animation-charging-3 = "  "
-animation-charging-foreground = ${colors.foreground}
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-foreground = ${colors.kuning}
 animation-charging-background = ${colors.background}
 animation-charging-framerate = 750
 
@@ -455,14 +468,14 @@ type = custom/script
 exec = /home/asuna/.config/polybar/polybar-scripts/info-redshift-temp/info-redshift-temp.sh
 interval = 5
 label-foreground=${colors.foreground}
-format-padding
+;format-padding
 
 [module/karnel]
 type = custom/script
 exec = ~/.config/polybar/karnel.sh
 interval = 5
 label-foreground=${colors.foreground}
-format-padding
+;format-padding
 
 [module/profile]
 type = custom/text
@@ -502,7 +515,7 @@ interval = 1
 time = %H:%M
 
 format-prefix = ""
-format-prefix-foreground = ${colors.foreground}
+format-prefix-foreground = ${colors.cyan}
 format-prefix-background = ${colors.background}
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}

@@ -29,14 +29,14 @@
 	background-color : #8BE9FD;
 }
 body {
-	background-color: #161925;
-	font-family: google sans;
-	color: #F2F2F8;
+	background-color: #292D3E;
+	font-family: PragmataPro;
+	color: #D9D9E5;
 }
 .container-1 {
   position: fixed;
   top: 50%;
-  left: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
   }
 .container-2 {
@@ -52,19 +52,22 @@ header {
 }
   .search-bar {
 	  margin-top: 1rem;
-	  height: 4rem;
+	  height: 3rem;
 	  width: 40rem;
 	 text-align: center;
 	 border: 0;
-	 font-size: 1.5rem;
+     color:  #D9D9E5;
+     border-radius: 12px;
+	 font-size: 1rem;
+     background-color: #2F3345;
   }
   .clock {
-	  margin-left: 50%;
-	  font-size: 8rem;
+      text-align: center;
+	  font-size: 7rem;
   }
   #date {
-	margin-left: 60%;
-	  font-size: 2rem;
+	  text-align: center;
+	  font-size: 1rem;
 	  margin-top: -15px;
   }
   .box {

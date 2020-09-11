@@ -23,29 +23,17 @@
         </script>
     <body onload="startTime()">
         <div class="container-1">
-                <div id="txt" class="clock"></div>
-                <div id="date"></div>
+                <div class="clock">グーグル</div>
+                <!-- <div style="text-align: center;"><span id="date"></span> <span id="txt" ></span></div>-->
                 <form method="get" action="https://www.google.com/search">
-					<input type="text" autofocus="autofocus" name="q"  class="search-bar" placeholder="グーグル"\>
-				</form>
+                  <input type="text" autofocus="autofocus" name="q"  class="search-bar"\>
+                </form>
         </div>
-        <div class="container-2">
-           <a href="https://twitter.com"><div class="box biru"><img src="img/twitter.svg" class="box-img"></div></a>
-           <a href="https://facebook.com"><div class="box violet"><img src="img/facebook-square.svg" class="box-img"></div></a>
-           <a href="https://github.com"><div class="box hijau"><img src="img/git-square.svg" class="box-img"></div></a>
-           <a href="https://reddit.com"><div class="box kuning"><img src="img/reddit.svg" class="box-img"></div></a>
-           <a href="https://instagram.com"><div class="pink box"><img src="img/instagram-square.svg" class="box-img"></div></a>
-           <a href="https://dev.to"><div class="box coklat"><img src="img/dev.svg" class="box-img"></div></a>
-           <a href="https://youtube.com"><div class="merah box"><img src="img/youtube.svg" class="box-img"></div></a>
-           <a href="https://pinterest.com"><div class="box ungu"><img src="img/pinterest.svg" class="box-img"></div></a>
-           <a href="https://google.com"><div class="box hijau-muda"><img src="img/google.svg" class="box-img"></div></a>
-           
-            </div>
         <script>
-const d = new Date()
-const year = d.getFullYear() // 2019
-const date = d.getDate() // 23
-            const months = [
+          const d = new Date()
+          const year = d.getFullYear() // 2019
+          const date = d.getDate() // 23
+          const months = [
   'January',
   'February',
   'March',

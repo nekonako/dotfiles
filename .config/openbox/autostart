@@ -1,12 +1,12 @@
 
 ### compositor
-compton &
+picom &
 
 ### wallpaper
 nitrogen --restore &
 
 ### polybar
-#polybar --config=/home/asuna/.config/polybar/openbox bottom &
+#polybar --config=/home/yune/.config/polybar/openbox bottom &
 
 ###
 mpd &
@@ -20,5 +20,8 @@ tint2 -c ~/.config/tint2/dark.tint2rc
 ### xsettingsd
 xsettingsd & 
 
-###
+### notify
 dunst &
+
+### polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

@@ -1,0 +1,1463 @@
+Sep 06 18:19 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 18:19 : update: added /Feby Putri - Halu.flac
+Sep 06 18:19 : update: added /Fix You - Coldplay.flac
+Sep 06 18:19 : client: [0] opened from 127.0.0.1:57916
+Sep 06 18:19 : client: [1] opened from [::1]:44712
+Sep 06 18:19 : exception: Failed to open /home/yune/.mpd/playlists: No such file or directory
+Sep 06 18:19 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 18:19 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 18:19 : client: [2] opened from [::1]:44714
+Sep 06 18:19 : client: [2] closed
+Sep 06 18:19 : client: [1] closed
+Sep 06 18:19 : client: [3] opened from [::1]:44716
+Sep 06 18:19 : client: [4] opened from [::1]:44718
+Sep 06 18:19 : client: [4] closed
+Sep 06 18:20 : update: added /Eine Kleine - Kenshi Yonezu.mp3
+Sep 06 18:20 : update: added /Renai Circulation - Hanazawa Kana.flac
+Sep 06 18:20 : update: added /Orion - Kenshi Yonezu.flac
+Sep 06 18:20 : update: added /Tsuki no Okisa Naruto Shippuden OP 14_ -.flac
+Sep 06 18:20 : update: added /Blue Bird - Ikimono Gakari.flac
+Sep 06 18:20 : update: added /Sing Me To Sleep - Alan Walker.flac
+Sep 06 18:20 : update: added /See You Again - Wiz Khalifa_ Charlie Put.flac
+Sep 06 18:20 : update: added /Summertime - Cinnamons_ evening cinema.flac
+Sep 06 18:20 : update: added /Ano Yume wo Nazotte.flac
+Sep 06 18:20 : update: added /You Are The Reason - Calum Scott.flac
+Sep 06 18:20 : update: added /女性が歌う PretenderOfficial髭男dism (Covered by コバソロ & 春茶).mp3
+Sep 06 18:20 : update: added /Hikaru Nara - Goose House.flac
+Sep 06 18:20 : update: added /Uchiagehanabi - Kenshi Yonezu.flac
+Sep 06 18:20 : update: added /Faded - Alan Walker.flac
+Sep 06 18:20 : update: added /Kimi no Shiranai Monogatari - Supercell.flac
+Sep 06 18:20 : update: added /Uchiage Hanabi - DAOKO_ Yonezu Kenshi.flac
+Sep 06 18:20 : update: added /Manaka Iwami - Love Song.mp3
+Sep 06 18:20 : update: added /Closer - The Chainsmokers_ Halsey.flac
+Sep 06 18:20 : update: added /Lemon - Harutya.mp3
+Sep 06 18:20 : update: added /Uchiage Hanabi - Harutya.mp3
+Sep 06 18:20 : update: added /Heikousen - Sayuri.flac
+Sep 06 18:20 : update: added /kobasolo - 夏恋慕 (feat. 春茶).flac
+Sep 06 18:20 : update: added /Peace Sign - Kenshi Yonezu.flac
+Sep 06 18:20 : update: added /Young_ Wild And Free - Snoop Dogg_ Wiz K.flac
+Sep 06 18:20 : update: added /Memories - Maroon 5.flac
+Sep 06 18:20 : update: added /1. 夜に駆ける.flac
+Sep 06 18:20 : update: added /Pretender - コバソロ & 春茶.mp3
+Sep 06 18:20 : update: added /Eine Kleine - Yonezu Kenshi_Hachi.flac
+Sep 06 18:20 : update: added /Haiirotoao - Kenshi Yonezu_ Masaki Suda.flac
+Sep 06 18:20 : update: added /Maroon 5 - Girls Like You.flac
+Sep 06 18:20 : update: added /Zen Zen Zense Movie Version_ - RADWIMPS.flac
+Sep 06 18:20 : update: added /Official髭男dism - コバソロ & 春茶).mp3
+Sep 06 18:20 : update: added /Yesterday-KobasoloHarutya-6239767.mp3
+Sep 06 18:20 : update: added /女性が歌うイエスタデイOfficial髭男dism(Covered by コバソロ & 春茶).mp3
+Sep 06 18:20 : update: added /Yesterday - Kobasolo & Harutya.mp3
+Sep 06 18:20 : update: added /Lemon - Kenshi Yonezu.flac
+Sep 06 18:20 : update: added /Sparkle Movie Version_ - RADWIMPS.flac
+Sep 06 18:20 : update: added /Haiiro to Ao - kobasolo.mp3
+Sep 06 18:20 : update: added /Alone - Alan Walker_ Noonie Bao.flac
+Sep 06 18:20 : update: added /RADWIMPS - Grand Escape (feat. Toko Miura).flac
+Sep 06 18:20 : update: added /On My Way - Alan Walker_Sabrina Carpente.flac
+Sep 06 18:20 : update: added /Orange - 7__.flac
+Sep 06 18:20 : update: added /Tada kun wa koi wo shinai ED FULL [lyrics] Manaka Iwami - Love Song.mp3
+Sep 06 18:20 : exception: Failed to open /home/yune/.mpd/playlists: No such file or directory
+Sep 06 18:20 : client: [5] opened from [::1]:44720
+Sep 06 18:20 : client: [5] closed
+Sep 06 18:21 : player: played "1. 夜に駆ける.flac"
+Sep 06 18:21 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 18:21 : client: [0] opened from 127.0.0.1:57938
+Sep 06 18:21 : client: [1] opened from [::1]:44734
+Sep 06 18:21 : client: [2] opened from [::1]:44736
+Sep 06 18:21 : exception: Stored playlists are disabled
+Sep 06 18:21 : client: [2] closed
+Sep 06 18:21 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 18:21 : client: [0] opened from [::1]:44770
+Sep 06 18:21 : client: [1] opened from 127.0.0.1:57978
+Sep 06 18:22 : client: [2] opened from [::1]:44774
+Sep 06 18:22 : client: [3] opened from [::1]:44782
+Sep 06 18:22 : client: [3] closed
+Sep 06 18:23 : client: [4] opened from [::1]:44784
+Sep 06 18:23 : client: [4] closed
+Sep 06 18:24 : client: [5] opened from [::1]:44786
+Sep 06 18:34 : client: [6] opened from [::1]:44804
+Sep 06 18:34 : client: [6] closed
+Sep 06 18:34 : client: [2] closed
+Sep 06 18:34 : client: [0] closed
+Sep 06 18:34 : client: [5] closed
+Sep 06 18:34 : client: [7] opened from [::1]:44806
+Sep 06 18:35 : client: [7] closed
+Sep 06 18:36 : client: [1] closed
+Sep 06 18:36 : client: [8] opened from 127.0.0.1:58028
+Sep 06 18:36 : client: [8] closed
+Sep 06 18:37 : client: [9] opened from 127.0.0.1:58034
+Sep 06 18:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 18:47 : client: [0] opened from 127.0.0.1:50328
+Sep 06 18:47 : client: [1] opened from [::1]:40240
+Sep 06 18:50 : exception: Stored playlists are disabled
+Sep 06 18:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 18:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 18:50 : client: [2] opened from [::1]:40244
+Sep 06 18:50 : client: [2] closed
+Sep 06 18:50 : client: [3] opened from [::1]:40246
+Sep 06 18:50 : client: [3] closed
+Sep 06 18:50 : client: [4] opened from [::1]:40248
+Sep 06 18:50 : client: [4] closed
+Sep 06 18:50 : client: [5] opened from [::1]:40250
+Sep 06 18:50 : client: [5] closed
+Sep 06 18:50 : client: [6] opened from [::1]:40252
+Sep 06 18:50 : client: [6] closed
+Sep 06 18:50 : client: [7] opened from [::1]:40254
+Sep 06 18:50 : client: [7] closed
+Sep 06 18:50 : client: [8] opened from [::1]:40256
+Sep 06 18:50 : client: [8] closed
+Sep 06 18:50 : client: [9] opened from [::1]:40258
+Sep 06 18:50 : client: [9] closed
+Sep 06 18:50 : client: [10] opened from [::1]:40260
+Sep 06 18:50 : client: [10] closed
+Sep 06 18:50 : client: [11] opened from [::1]:40262
+Sep 06 18:50 : client: [11] closed
+Sep 06 18:50 : client: [12] opened from [::1]:40264
+Sep 06 18:50 : client: [12] closed
+Sep 06 18:50 : client: [13] opened from [::1]:40266
+Sep 06 18:50 : client: [13] closed
+Sep 06 18:50 : client: [14] opened from [::1]:40268
+Sep 06 18:50 : client: [14] closed
+Sep 06 18:50 : client: [15] opened from [::1]:40270
+Sep 06 18:50 : client: [15] closed
+Sep 06 18:50 : client: [16] opened from [::1]:40272
+Sep 06 18:50 : client: [16] closed
+Sep 06 18:50 : client: [17] opened from [::1]:40274
+Sep 06 18:50 : client: [17] closed
+Sep 06 18:50 : client: [18] opened from [::1]:40276
+Sep 06 18:50 : client: [18] closed
+Sep 06 18:50 : client: [19] opened from [::1]:40278
+Sep 06 18:50 : client: [19] closed
+Sep 06 18:50 : client: [20] opened from [::1]:40280
+Sep 06 18:50 : client: [20] closed
+Sep 06 18:50 : client: [21] opened from [::1]:40282
+Sep 06 18:50 : client: [21] closed
+Sep 06 18:50 : client: [22] opened from [::1]:40284
+Sep 06 18:50 : client: [22] closed
+Sep 06 18:50 : client: [23] opened from [::1]:40286
+Sep 06 18:50 : client: [23] closed
+Sep 06 18:50 : client: [24] opened from [::1]:40288
+Sep 06 18:50 : client: [24] closed
+Sep 06 18:50 : client: [25] opened from [::1]:40290
+Sep 06 18:50 : client: [25] closed
+Sep 06 18:50 : client: [26] opened from [::1]:40292
+Sep 06 18:50 : client: [26] closed
+Sep 06 18:50 : client: [27] opened from [::1]:40294
+Sep 06 18:50 : client: [27] closed
+Sep 06 18:50 : client: [28] opened from [::1]:40296
+Sep 06 18:50 : client: [28] closed
+Sep 06 18:50 : client: [29] opened from [::1]:40298
+Sep 06 18:50 : client: [29] closed
+Sep 06 18:50 : client: [30] opened from [::1]:40300
+Sep 06 18:50 : client: [30] closed
+Sep 06 18:50 : client: [31] opened from [::1]:40302
+Sep 06 18:50 : client: [31] closed
+Sep 06 18:50 : client: [32] opened from [::1]:40304
+Sep 06 18:50 : client: [32] closed
+Sep 06 18:50 : client: [33] opened from [::1]:40306
+Sep 06 18:50 : client: [33] closed
+Sep 06 18:50 : client: [34] opened from [::1]:40308
+Sep 06 18:50 : client: [34] closed
+Sep 06 18:50 : client: [35] opened from [::1]:40310
+Sep 06 18:50 : client: [35] closed
+Sep 06 18:50 : client: [36] opened from [::1]:40312
+Sep 06 18:50 : client: [36] closed
+Sep 06 18:50 : client: [37] opened from [::1]:40314
+Sep 06 18:50 : client: [37] closed
+Sep 06 18:50 : client: [38] opened from [::1]:40316
+Sep 06 18:50 : client: [38] closed
+Sep 06 18:51 : client: [39] opened from [::1]:40318
+Sep 06 18:51 : client: [39] closed
+Sep 06 18:51 : client: [40] opened from [::1]:40320
+Sep 06 18:51 : client: [40] closed
+Sep 06 18:51 : client: [41] opened from [::1]:40322
+Sep 06 18:51 : client: [41] closed
+Sep 06 18:51 : client: [42] opened from [::1]:40324
+Sep 06 18:51 : client: [42] closed
+Sep 06 18:51 : client: [43] opened from [::1]:40326
+Sep 06 18:51 : client: [43] closed
+Sep 06 18:51 : client: [44] opened from [::1]:40328
+Sep 06 18:51 : client: [44] closed
+Sep 06 18:51 : client: [1] closed
+Sep 06 18:52 : client: [45] opened from [::1]:40330
+Sep 06 18:52 : player: played "女性が歌う PretenderOfficial髭男dism (Covered by コバソロ & 春茶).mp3"
+Sep 06 18:52 : client: [45] closed
+Sep 06 18:52 : client: [46] opened from [::1]:40332
+Sep 06 18:52 : client: [46] closed
+Sep 06 18:52 : client: [47] opened from [::1]:40334
+Sep 06 18:52 : exception: Not playing
+Sep 06 18:52 : client: [47] closed
+Sep 06 18:52 : client: [48] opened from [::1]:40336
+Sep 06 18:52 : client: [48] closed
+Sep 06 18:56 : player: played "1. 夜に駆ける.flac"
+Sep 06 18:59 : player: played "Alone - Alan Walker_ Noonie Bao.flac"
+Sep 06 19:02 : client: [49] opened from [::1]:40342
+Sep 06 19:02 : client: [49] closed
+Sep 06 19:02 : client: [50] opened from [::1]:40344
+Sep 06 19:02 : client: [50] closed
+Sep 06 19:02 : client: [51] opened from [::1]:40346
+Sep 06 19:02 : client: [51] closed
+Sep 06 19:02 : client: [52] opened from [::1]:40348
+Sep 06 19:02 : client: [52] closed
+Sep 06 19:02 : client: [53] opened from [::1]:40350
+Sep 06 19:02 : client: [53] closed
+Sep 06 19:24 : client: [54] opened from [::1]:40368
+Sep 06 19:24 : client: [55] opened from [::1]:40370
+Sep 06 19:24 : client: [55] closed
+Sep 06 19:24 : client: [56] opened from [::1]:40372
+Sep 06 19:24 : client: [56] closed
+Sep 06 19:24 : client: [57] opened from [::1]:40374
+Sep 06 19:24 : client: [57] closed
+Sep 06 19:24 : client: [54] closed
+Sep 06 19:25 : client: [58] opened from [::1]:40378
+Sep 06 19:25 : client: [59] opened from [::1]:40380
+Sep 06 19:25 : client: [59] closed
+Sep 06 19:25 : client: [58] closed
+Sep 06 19:25 : client: [60] opened from [::1]:40382
+Sep 06 19:25 : client: [61] opened from [::1]:40384
+Sep 06 19:25 : client: [61] closed
+Sep 06 19:26 : client: [60] closed
+Sep 06 19:28 : player: played "Ano Yume wo Nazotte.flac"
+Sep 06 19:31 : player: played "Blue Bird - Ikimono Gakari.flac"
+Sep 06 19:36 : player: played "Closer - The Chainsmokers_ Halsey.flac"
+Sep 06 19:38 : client: [0] closed
+Sep 06 19:38 : client: [62] opened from 127.0.0.1:50484
+Sep 06 19:38 : client: [63] opened from [::1]:40400
+Sep 06 19:38 : client: [64] opened from [::1]:40402
+Sep 06 19:38 : client: [64] closed
+Sep 06 19:39 : client: [63] closed
+Sep 06 19:39 : client: [62] closed
+Sep 06 19:39 : client: [65] opened from 127.0.0.1:50494
+Sep 06 19:40 : client: [66] opened from [::1]:40412
+Sep 06 19:40 : client: [67] opened from [::1]:40414
+Sep 06 19:40 : client: [67] closed
+Sep 06 19:40 : player: played "Eine Kleine - Kenshi Yonezu.mp3"
+Sep 06 19:40 : client: [68] opened from [::1]:40416
+Sep 06 19:40 : client: [68] closed
+Sep 06 19:45 : player: played "Eine Kleine - Yonezu Kenshi_Hachi.flac"
+Sep 06 19:45 : client: [69] opened from [::1]:40420
+Sep 06 19:45 : client: [69] closed
+Sep 06 19:48 : client: [66] closed
+Sep 06 19:49 : player: played "Faded - Alan Walker.flac"
+Sep 06 19:53 : player: played "Feby Putri - Halu.flac"
+Sep 06 19:58 : player: played "Fix You - Coldplay.flac"
+Sep 06 19:59 : client: [65] closed
+Sep 06 19:59 : client: [70] opened from 127.0.0.1:50516
+Sep 06 20:00 : client: [71] opened from [::1]:40438
+Sep 06 20:00 : client: [72] opened from [::1]:40440
+Sep 06 20:00 : client: [72] closed
+Sep 06 20:04 : player: played "Haiiro to Ao - kobasolo.mp3"
+Sep 06 20:04 : client: [73] opened from [::1]:40442
+Sep 06 20:04 : client: [73] closed
+Sep 06 20:06 : client: [71] closed
+Sep 06 20:07 : player: played "Haiirotoao - Kenshi Yonezu_ Masaki Suda.flac"
+Sep 06 20:08 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 20:08 : client: [0] opened from 127.0.0.1:45210
+Sep 06 20:51 : client: [1] opened from [::1]:54474
+Sep 06 20:52 : exception: Stored playlists are disabled
+Sep 06 20:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 20:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 20:52 : client: [2] opened from [::1]:54476
+Sep 06 20:52 : client: [2] closed
+Sep 06 20:52 : client: [1] closed
+Sep 06 20:53 : player: played "1. 夜に駆ける.flac"
+Sep 06 20:53 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 20:53 : client: [0] opened from [::1]:45662
+Sep 06 20:53 : exception: Stored playlists are disabled
+Sep 06 20:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 20:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 20:53 : client: [1] opened from [::1]:45666
+Sep 06 20:53 : client: [1] closed
+Sep 06 20:53 : client: [2] opened from [::1]:45670
+Sep 06 20:53 : client: [2] closed
+Sep 06 20:54 : client: [3] opened from [::1]:45676
+Sep 06 20:54 : client: [3] closed
+Sep 06 20:54 : client: [4] opened from [::1]:45678
+Sep 06 20:54 : client: [4] closed
+Sep 06 20:54 : client: [5] opened from [::1]:45682
+Sep 06 20:54 : client: [5] closed
+Sep 06 20:54 : client: [6] opened from [::1]:45684
+Sep 06 20:54 : client: [6] closed
+Sep 06 20:54 : exception: Stored playlists are disabled
+Sep 06 20:54 : exception: Stored playlists are disabled
+Sep 06 20:54 : exception: Stored playlists are disabled
+Sep 06 20:54 : exception: Stored playlists are disabled
+Sep 06 20:54 : exception: Stored playlists are disabled
+Sep 06 20:54 : exception: Stored playlists are disabled
+Sep 06 20:54 : exception: Stored playlists are disabled
+Sep 06 20:54 : player: played "Eine Kleine - Kenshi Yonezu.mp3"
+Sep 06 20:54 : client: [7] opened from [::1]:45698
+Sep 06 20:54 : client: [7] closed
+Sep 06 20:54 : client: [8] opened from [::1]:45704
+Sep 06 20:54 : client: [8] closed
+Sep 06 20:54 : client: [9] opened from [::1]:45706
+Sep 06 20:54 : client: [9] closed
+Sep 06 20:54 : client: [10] opened from [::1]:45708
+Sep 06 20:54 : client: [10] closed
+Sep 06 20:54 : client: [11] opened from [::1]:45710
+Sep 06 20:54 : client: [11] closed
+Sep 06 20:54 : client: [12] opened from [::1]:45714
+Sep 06 20:54 : client: [12] closed
+Sep 06 20:54 : client: [13] opened from [::1]:45716
+Sep 06 20:54 : client: [13] closed
+Sep 06 20:54 : client: [14] opened from [::1]:45718
+Sep 06 20:54 : client: [14] closed
+Sep 06 20:54 : client: [15] opened from [::1]:45720
+Sep 06 20:54 : client: [15] closed
+Sep 06 20:54 : client: [16] opened from [::1]:45724
+Sep 06 20:54 : client: [16] closed
+Sep 06 20:54 : client: [17] opened from [::1]:45726
+Sep 06 20:54 : client: [17] closed
+Sep 06 20:54 : client: [18] opened from [::1]:45728
+Sep 06 20:54 : client: [18] closed
+Sep 06 20:54 : client: [19] opened from [::1]:45730
+Sep 06 20:54 : client: [19] closed
+Sep 06 20:54 : client: [0] closed
+Sep 06 20:54 : client: [20] opened from [::1]:45736
+Sep 06 20:54 : client: [21] opened from [::1]:45738
+Sep 06 20:54 : client: [21] closed
+Sep 06 20:54 : client: [20] closed
+Sep 06 20:54 : client: [22] opened from [::1]:45748
+Sep 06 20:54 : client: [23] opened from [::1]:45750
+Sep 06 20:54 : client: [23] closed
+Sep 06 20:54 : client: [22] closed
+Sep 06 20:55 : client: [24] opened from [::1]:45814
+Sep 06 20:55 : player: played "Manaka Iwami - Love Song.mp3"
+Sep 06 20:55 : client: [24] closed
+Sep 06 20:55 : client: [25] opened from [::1]:45816
+Sep 06 20:55 : client: [25] closed
+Sep 06 20:55 : client: [26] opened from [::1]:45818
+Sep 06 20:55 : exception: Not playing
+Sep 06 20:55 : client: [26] closed
+Sep 06 20:55 : client: [27] opened from [::1]:45822
+Sep 06 20:55 : exception: Not playing
+Sep 06 20:55 : client: [27] closed
+Sep 06 20:55 : client: [28] opened from [::1]:45824
+Sep 06 20:55 : client: [28] closed
+Sep 06 20:55 : client: [29] opened from [::1]:45826
+Sep 06 20:55 : client: [29] closed
+Sep 06 20:55 : client: [30] opened from [::1]:45828
+Sep 06 20:55 : client: [30] closed
+Sep 06 20:55 : client: [31] opened from [::1]:45830
+Sep 06 20:55 : client: [31] closed
+Sep 06 20:55 : client: [32] opened from [::1]:45834
+Sep 06 20:55 : client: [33] opened from [::1]:45836
+Sep 06 20:55 : client: [32] closed
+Sep 06 20:55 : client: [33] closed
+Sep 06 20:56 : client: [34] opened from 127.0.0.1:37818
+Sep 06 20:56 : client: [35] opened from [::1]:45874
+Sep 06 20:56 : client: [36] opened from [::1]:45876
+Sep 06 20:56 : client: [36] closed
+Sep 06 20:56 : exception: Stored playlists are disabled
+Sep 06 20:57 : client: [35] closed
+Sep 06 20:57 : client: [37] opened from [::1]:45878
+Sep 06 20:57 : client: [38] opened from [::1]:45880
+Sep 06 20:57 : client: [38] closed
+Sep 06 20:57 : client: [37] closed
+Sep 06 20:57 : client: [39] opened from [::1]:45882
+Sep 06 20:57 : client: [40] opened from [::1]:45884
+Sep 06 20:57 : client: [40] closed
+Sep 06 20:59 : client: [39] closed
+Sep 06 20:59 : client: [41] opened from [::1]:45886
+Sep 06 20:59 : client: [42] opened from [::1]:45888
+Sep 06 20:59 : client: [42] closed
+Sep 06 20:59 : client: [41] closed
+Sep 06 20:59 : client: [43] opened from [::1]:45890
+Sep 06 20:59 : client: [44] opened from [::1]:45892
+Sep 06 20:59 : client: [44] closed
+Sep 06 20:59 : player: played "Ano Yume wo Nazotte.flac"
+Sep 06 20:59 : client: [45] opened from [::1]:45894
+Sep 06 20:59 : client: [45] closed
+Sep 06 21:00 : client: [43] closed
+Sep 06 21:00 : client: [46] opened from [::1]:45896
+Sep 06 21:00 : client: [47] opened from [::1]:45898
+Sep 06 21:00 : client: [47] closed
+Sep 06 21:00 : client: [46] closed
+Sep 06 21:00 : client: [48] opened from [::1]:45900
+Sep 06 21:00 : client: [49] opened from [::1]:45902
+Sep 06 21:00 : client: [49] closed
+Sep 06 21:01 : client: [48] closed
+Sep 06 21:01 : client: [50] opened from [::1]:45904
+Sep 06 21:01 : client: [51] opened from [::1]:45906
+Sep 06 21:01 : client: [51] closed
+Sep 06 21:02 : client: [50] closed
+Sep 06 21:02 : client: [52] opened from [::1]:45908
+Sep 06 21:02 : client: [53] opened from [::1]:45910
+Sep 06 21:02 : client: [53] closed
+Sep 06 21:02 : client: [52] closed
+Sep 06 21:02 : client: [54] opened from [::1]:45912
+Sep 06 21:02 : client: [55] opened from [::1]:45914
+Sep 06 21:02 : client: [55] closed
+Sep 06 21:03 : client: [54] closed
+Sep 06 21:03 : client: [56] opened from [::1]:45916
+Sep 06 21:03 : client: [57] opened from [::1]:45918
+Sep 06 21:03 : client: [57] closed
+Sep 06 21:03 : client: [56] closed
+Sep 06 21:03 : client: [58] opened from [::1]:45920
+Sep 06 21:03 : client: [59] opened from [::1]:45922
+Sep 06 21:03 : client: [59] closed
+Sep 06 21:03 : player: played "Blue Bird - Ikimono Gakari.flac"
+Sep 06 21:03 : client: [60] opened from [::1]:45924
+Sep 06 21:03 : client: [60] closed
+Sep 06 21:03 : client: [58] closed
+Sep 06 21:03 : client: [61] opened from [::1]:45926
+Sep 06 21:03 : client: [61] closed
+Sep 06 21:04 : client: [62] opened from [::1]:45928
+Sep 06 21:04 : client: [62] closed
+Sep 06 21:04 : client: [63] opened from [::1]:45930
+Sep 06 21:04 : client: [63] closed
+Sep 06 21:04 : client: [64] opened from [::1]:45932
+Sep 06 21:04 : client: [64] closed
+Sep 06 21:07 : player: played "Closer - The Chainsmokers_ Halsey.flac"
+Sep 06 21:08 : client: [65] opened from [::1]:45934
+Sep 06 21:08 : client: [66] opened from [::1]:45936
+Sep 06 21:08 : client: [66] closed
+Sep 06 21:08 : exception: Stored playlists are disabled
+Sep 06 21:08 : client: [67] opened from [::1]:45938
+Sep 06 21:08 : client: [67] closed
+Sep 06 21:08 : client: [68] opened from [::1]:45940
+Sep 06 21:08 : client: [68] closed
+Sep 06 21:08 : client: [69] opened from [::1]:45942
+Sep 06 21:08 : client: [69] closed
+Sep 06 21:08 : client: [70] opened from [::1]:45944
+Sep 06 21:08 : client: [70] closed
+Sep 06 21:08 : client: [71] opened from [::1]:45946
+Sep 06 21:08 : client: [71] closed
+Sep 06 21:08 : client: [72] opened from [::1]:45948
+Sep 06 21:08 : client: [72] closed
+Sep 06 21:08 : client: [73] opened from [::1]:45950
+Sep 06 21:08 : client: [73] closed
+Sep 06 21:08 : client: [74] opened from [::1]:45952
+Sep 06 21:08 : client: [74] closed
+Sep 06 21:08 : client: [75] opened from [::1]:45954
+Sep 06 21:08 : client: [75] closed
+Sep 06 21:08 : client: [76] opened from [::1]:45956
+Sep 06 21:08 : client: [76] closed
+Sep 06 21:08 : client: [77] opened from [::1]:45958
+Sep 06 21:08 : client: [77] closed
+Sep 06 21:08 : client: [78] opened from [::1]:45960
+Sep 06 21:08 : client: [78] closed
+Sep 06 21:08 : client: [79] opened from [::1]:45962
+Sep 06 21:08 : client: [79] closed
+Sep 06 21:08 : client: [80] opened from [::1]:45964
+Sep 06 21:08 : client: [80] closed
+Sep 06 21:08 : client: [81] opened from [::1]:45966
+Sep 06 21:08 : client: [81] closed
+Sep 06 21:08 : client: [82] opened from [::1]:45968
+Sep 06 21:08 : client: [82] closed
+Sep 06 21:08 : client: [83] opened from [::1]:45970
+Sep 06 21:08 : client: [83] closed
+Sep 06 21:08 : client: [84] opened from [::1]:45972
+Sep 06 21:08 : client: [84] closed
+Sep 06 21:08 : client: [85] opened from [::1]:45974
+Sep 06 21:08 : client: [85] closed
+Sep 06 21:08 : client: [86] opened from [::1]:45976
+Sep 06 21:08 : client: [86] closed
+Sep 06 21:08 : client: [87] opened from [::1]:45978
+Sep 06 21:08 : client: [87] closed
+Sep 06 21:08 : client: [88] opened from [::1]:45980
+Sep 06 21:08 : client: [88] closed
+Sep 06 21:08 : client: [89] opened from [::1]:45982
+Sep 06 21:08 : client: [89] closed
+Sep 06 21:08 : client: [90] opened from [::1]:45984
+Sep 06 21:08 : client: [90] closed
+Sep 06 21:08 : client: [91] opened from [::1]:45986
+Sep 06 21:08 : client: [91] closed
+Sep 06 21:10 : client: [92] opened from [::1]:45988
+Sep 06 21:10 : client: [92] closed
+Sep 06 21:12 : client: [93] opened from [::1]:45990
+Sep 06 21:12 : client: [93] closed
+Sep 06 21:16 : client: [94] opened from [::1]:45992
+Sep 06 21:16 : client: [94] closed
+Sep 06 21:17 : player: played "1. 夜に駆ける.flac"
+Sep 06 21:17 : client: [95] opened from [::1]:45994
+Sep 06 21:17 : client: [95] closed
+Sep 06 21:17 : client: [96] opened from [::1]:45996
+Sep 06 21:17 : client: [96] closed
+Sep 06 21:17 : client: [97] opened from [::1]:45998
+Sep 06 21:17 : client: [97] closed
+Sep 06 21:17 : client: [98] opened from [::1]:46000
+Sep 06 21:17 : client: [98] closed
+Sep 06 21:18 : client: [99] opened from [::1]:46002
+Sep 06 21:18 : client: [99] closed
+Sep 06 21:19 : client: [100] opened from [::1]:46004
+Sep 06 21:19 : client: [100] closed
+Sep 06 21:19 : client: [101] opened from [::1]:46006
+Sep 06 21:19 : client: [101] closed
+Sep 06 21:19 : client: [102] opened from [::1]:46008
+Sep 06 21:19 : client: [102] closed
+Sep 06 21:19 : client: [65] closed
+Sep 06 21:19 : player: played "Alone - Alan Walker_ Noonie Bao.flac"
+Sep 06 21:23 : player: played "Ano Yume wo Nazotte.flac"
+Sep 06 21:27 : player: played "Blue Bird - Ikimono Gakari.flac"
+Sep 06 21:31 : player: played "Closer - The Chainsmokers_ Halsey.flac"
+Sep 06 21:36 : player: played "Eine Kleine - Kenshi Yonezu.mp3"
+Sep 06 21:41 : player: played "Eine Kleine - Yonezu Kenshi_Hachi.flac"
+Sep 06 21:44 : player: played "Faded - Alan Walker.flac"
+Sep 06 21:49 : player: played "Feby Putri - Halu.flac"
+Sep 06 21:53 : player: played "Fix You - Coldplay.flac"
+Sep 06 21:57 : client: [103] opened from [::1]:46072
+Sep 06 21:57 : client: [103] closed
+Sep 06 21:57 : client: [104] opened from [::1]:46074
+Sep 06 21:57 : client: [105] opened from [::1]:46076
+Sep 06 21:57 : client: [105] closed
+Sep 06 21:59 : player: played "Haiiro to Ao - kobasolo.mp3"
+Sep 06 21:59 : client: [106] opened from [::1]:46082
+Sep 06 21:59 : client: [106] closed
+Sep 06 22:00 : client: [107] opened from [::1]:46084
+Sep 06 22:00 : client: [107] closed
+Sep 06 22:00 : client: [108] opened from [::1]:46086
+Sep 06 22:00 : client: [108] closed
+Sep 06 22:00 : client: [109] opened from [::1]:46088
+Sep 06 22:00 : client: [109] closed
+Sep 06 22:00 : client: [110] opened from [::1]:46090
+Sep 06 22:00 : client: [111] opened from [::1]:46092
+Sep 06 22:00 : client: [111] closed
+Sep 06 22:00 : client: [110] closed
+Sep 06 22:00 : client: [112] opened from [::1]:46094
+Sep 06 22:00 : client: [113] opened from [::1]:46096
+Sep 06 22:00 : client: [112] closed
+Sep 06 22:00 : client: [113] closed
+Sep 06 22:00 : client: [114] opened from [::1]:46098
+Sep 06 22:00 : client: [114] closed
+Sep 06 22:03 : client: [115] opened from [::1]:46102
+Sep 06 22:03 : client: [115] closed
+Sep 06 22:03 : client: [116] opened from [::1]:46104
+Sep 06 22:03 : client: [117] opened from [::1]:46106
+Sep 06 22:03 : client: [116] closed
+Sep 06 22:03 : client: [117] closed
+Sep 06 22:07 : client: [118] opened from [::1]:46110
+Sep 06 22:07 : client: [118] closed
+Sep 06 22:08 : client: [104] closed
+Sep 06 22:08 : client: [119] opened from [::1]:46112
+Sep 06 22:08 : client: [119] closed
+Sep 06 22:08 : client: [120] opened from [::1]:46114
+Sep 06 22:08 : client: [120] closed
+Sep 06 22:12 : player: played "Lemon - Harutya.mp3"
+Sep 06 22:16 : player: played "Lemon - Kenshi Yonezu.flac"
+Sep 06 22:21 : player: played "Manaka Iwami - Love Song.mp3"
+Sep 06 22:25 : player: played "Maroon 5 - Girls Like You.flac"
+Sep 06 22:28 : player: played "Memories - Maroon 5.flac"
+Sep 06 22:33 : player: played "Official髭男dism - コバソロ & 春茶).mp3"
+Sep 06 22:36 : player: played "On My Way - Alan Walker_Sabrina Carpente.flac"
+Sep 06 22:42 : player: played "Orange - 7__.flac"
+Sep 06 22:47 : player: played "Orion - Kenshi Yonezu.flac"
+Sep 06 22:51 : player: played "Peace Sign - Kenshi Yonezu.flac"
+Sep 06 22:56 : player: played "Pretender - コバソロ & 春茶.mp3"
+Sep 06 23:02 : player: played "RADWIMPS - Grand Escape (feat. Toko Miura).flac"
+Sep 06 23:06 : player: played "Renai Circulation - Hanazawa Kana.flac"
+Sep 06 23:10 : player: played "See You Again - Wiz Khalifa_ Charlie Put.flac"
+Sep 06 23:13 : player: played "Sing Me To Sleep - Alan Walker.flac"
+Sep 06 23:22 : player: played "Sparkle Movie Version_ - RADWIMPS.flac"
+Sep 06 23:22 : client: [121] opened from [::1]:46136
+Sep 06 23:22 : client: [121] closed
+Sep 06 23:23 : client: [122] opened from [::1]:46138
+Sep 06 23:23 : client: [123] opened from [::1]:46140
+Sep 06 23:23 : client: [123] closed
+Sep 06 23:25 : client: [122] closed
+Sep 06 23:26 : player: played "Summertime - Cinnamons_ evening cinema.flac"
+Sep 06 23:31 : player: played "Tada kun wa koi wo shinai ED FULL [lyrics] Manaka Iwami - Love Song.mp3"
+Sep 06 23:35 : player: played "Tsuki no Okisa Naruto Shippuden OP 14_ -.flac"
+Sep 06 23:36 : client: [124] opened from [::1]:46146
+Sep 06 23:36 : client: [125] opened from [::1]:46148
+Sep 06 23:36 : client: [125] closed
+Sep 06 23:36 : client: [126] opened from [::1]:46150
+Sep 06 23:36 : client: [126] closed
+Sep 06 23:36 : client: [124] closed
+Sep 06 23:37 : client: [127] opened from [::1]:46152
+Sep 06 23:37 : client: [127] closed
+Sep 06 23:37 : client: [128] opened from [::1]:46156
+Sep 06 23:37 : client: [128] closed
+Sep 06 23:37 : client: [129] opened from [::1]:46158
+Sep 06 23:37 : client: [129] closed
+Sep 06 23:37 : client: [130] opened from [::1]:46160
+Sep 06 23:37 : client: [130] closed
+Sep 06 23:37 : client: [131] opened from [::1]:46162
+Sep 06 23:37 : client: [131] closed
+Sep 06 23:42 : player: played "Lemon - Kenshi Yonezu.flac"
+Sep 06 23:47 : player: played "Manaka Iwami - Love Song.mp3"
+Sep 06 23:50 : player: played "Maroon 5 - Girls Like You.flac"
+Sep 06 23:52 : player: played "Memories - Maroon 5.flac"
+Sep 10 03:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 10 03:38 : client: [0] opened from 127.0.0.1:42268
+Sep 10 03:41 : client: [1] opened from [::1]:41176
+Sep 10 03:41 : client: [1] closed
+Sep 10 03:43 : client: [2] opened from [::1]:41178
+Sep 10 03:43 : client: [2] closed
+Sep 10 03:43 : client: [3] opened from [::1]:41182
+Sep 10 03:43 : client: [3] closed
+Sep 10 03:43 : client: [4] opened from [::1]:41184
+Sep 10 03:43 : client: [4] closed
+Sep 10 03:45 : client: [5] opened from [::1]:41186
+Sep 10 03:45 : exception: Stored playlists are disabled
+Sep 10 03:45 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 10 03:45 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 10 03:45 : client: [6] opened from [::1]:41188
+Sep 10 03:45 : client: [6] closed
+Sep 10 03:45 : client: [7] opened from [::1]:41190
+Sep 10 03:45 : client: [7] closed
+Sep 10 03:45 : client: [8] opened from [::1]:41192
+Sep 10 03:45 : client: [8] closed
+Sep 10 03:45 : client: [9] opened from [::1]:41194
+Sep 10 03:45 : client: [9] closed
+Sep 10 03:45 : client: [10] opened from [::1]:41196
+Sep 10 03:45 : client: [10] closed
+Sep 10 03:45 : client: [5] closed
+Sep 10 03:45 : client: [11] opened from [::1]:41198
+Sep 10 03:45 : client: [12] opened from [::1]:41200
+Sep 10 03:45 : client: [12] closed
+Sep 10 03:45 : client: [11] closed
+Sep 10 03:47 : client: [13] opened from [::1]:41202
+Sep 10 03:47 : client: [13] closed
+Sep 10 03:47 : client: [14] opened from [::1]:41204
+Sep 10 03:47 : client: [14] closed
+Sep 10 03:47 : client: [15] opened from [::1]:41206
+Sep 10 03:47 : client: [15] closed
+Sep 10 03:47 : client: [16] opened from [::1]:41208
+Sep 10 03:47 : client: [16] closed
+Sep 10 03:48 : client: [17] opened from [::1]:41210
+Sep 10 03:48 : client: [17] closed
+Sep 10 03:51 : player: played "Ano Yume wo Nazotte.flac"
+Sep 10 03:54 : client: [18] opened from [::1]:41216
+Sep 10 03:54 : client: [18] closed
+Sep 10 03:55 : client: [19] opened from [::1]:41218
+Sep 10 03:55 : client: [19] closed
+Sep 10 03:55 : player: played "Blue Bird - Ikimono Gakari.flac"
+Sep 10 03:58 : client: [20] opened from [::1]:41220
+Sep 10 03:58 : client: [21] opened from [::1]:41222
+Sep 10 03:58 : client: [21] closed
+Sep 10 03:58 : exception: Stored playlists are disabled
+Sep 10 03:58 : client: [22] opened from [::1]:41226
+Sep 10 03:58 : client: [22] closed
+Sep 10 03:58 : client: [23] opened from [::1]:41228
+Sep 10 03:58 : client: [23] closed
+Sep 10 03:58 : client: [24] opened from [::1]:41230
+Sep 10 03:58 : client: [24] closed
+Sep 10 03:58 : client: [25] opened from [::1]:41232
+Sep 10 03:58 : client: [25] closed
+Sep 10 03:58 : client: [26] opened from [::1]:41234
+Sep 10 03:58 : client: [26] closed
+Sep 10 03:58 : client: [27] opened from [::1]:41236
+Sep 10 03:58 : client: [27] closed
+Sep 10 03:58 : client: [28] opened from [::1]:41238
+Sep 10 03:58 : client: [28] closed
+Sep 10 03:58 : client: [29] opened from [::1]:41240
+Sep 10 03:58 : client: [29] closed
+Sep 10 03:58 : client: [30] opened from [::1]:41242
+Sep 10 03:58 : client: [30] closed
+Sep 10 03:58 : client: [31] opened from [::1]:41244
+Sep 10 03:58 : client: [31] closed
+Sep 10 03:58 : client: [32] opened from [::1]:41246
+Sep 10 03:58 : client: [32] closed
+Sep 10 03:58 : client: [33] opened from [::1]:41248
+Sep 10 03:58 : client: [33] closed
+Sep 10 03:58 : client: [34] opened from [::1]:41250
+Sep 10 03:58 : client: [34] closed
+Sep 10 03:58 : client: [35] opened from [::1]:41252
+Sep 10 03:58 : client: [35] closed
+Sep 10 03:58 : client: [36] opened from [::1]:41254
+Sep 10 03:58 : client: [36] closed
+Sep 10 03:58 : client: [37] opened from [::1]:41256
+Sep 10 03:58 : client: [37] closed
+Sep 10 03:58 : client: [38] opened from [::1]:41258
+Sep 10 03:58 : client: [38] closed
+Sep 10 03:58 : client: [39] opened from [::1]:41260
+Sep 10 03:58 : client: [39] closed
+Sep 10 03:58 : client: [40] opened from [::1]:41262
+Sep 10 03:58 : client: [40] closed
+Sep 10 03:58 : client: [41] opened from [::1]:41264
+Sep 10 03:58 : client: [41] closed
+Sep 10 03:58 : client: [42] opened from [::1]:41266
+Sep 10 03:58 : client: [42] closed
+Sep 10 03:58 : client: [43] opened from [::1]:41268
+Sep 10 03:58 : client: [43] closed
+Sep 10 03:58 : client: [44] opened from [::1]:41270
+Sep 10 03:58 : client: [44] closed
+Sep 10 03:58 : client: [45] opened from [::1]:41272
+Sep 10 03:58 : client: [45] closed
+Sep 10 03:58 : client: [46] opened from [::1]:41274
+Sep 10 03:58 : client: [46] closed
+Sep 10 03:58 : client: [47] opened from [::1]:41276
+Sep 10 03:58 : client: [47] closed
+Sep 10 03:58 : client: [48] opened from [::1]:41278
+Sep 10 03:58 : client: [48] closed
+Sep 10 03:58 : client: [49] opened from [::1]:41280
+Sep 10 03:58 : client: [49] closed
+Sep 10 03:58 : client: [50] opened from [::1]:41282
+Sep 10 03:58 : client: [50] closed
+Sep 10 03:59 : client: [51] opened from [::1]:41284
+Sep 10 03:59 : client: [51] closed
+Sep 10 03:59 : client: [52] opened from [::1]:41286
+Sep 10 03:59 : client: [52] closed
+Sep 10 04:00 : client: [53] opened from [::1]:41288
+Sep 10 04:00 : client: [53] closed
+Sep 10 04:00 : client: [54] opened from [::1]:41290
+Sep 10 04:00 : client: [55] opened from [::1]:41292
+Sep 10 04:00 : client: [54] closed
+Sep 10 04:00 : client: [55] closed
+Sep 10 04:00 : client: [56] opened from [::1]:41294
+Sep 10 04:00 : client: [57] opened from [::1]:41296
+Sep 10 04:00 : client: [56] closed
+Sep 10 04:00 : client: [58] opened from [::1]:41298
+Sep 10 04:00 : client: [57] closed
+Sep 10 04:00 : client: [58] closed
+Sep 10 04:00 : client: [59] opened from [::1]:41300
+Sep 10 04:00 : client: [59] closed
+Sep 10 04:00 : client: [60] opened from [::1]:41302
+Sep 10 04:00 : client: [60] closed
+Sep 10 04:00 : client: [61] opened from [::1]:41304
+Sep 10 04:00 : client: [61] closed
+Sep 10 04:00 : client: [62] opened from [::1]:41306
+Sep 10 04:00 : client: [62] closed
+Sep 10 04:00 : client: [63] opened from [::1]:41308
+Sep 10 04:00 : client: [63] closed
+Sep 10 04:00 : client: [64] opened from [::1]:41310
+Sep 10 04:00 : client: [64] closed
+Sep 10 04:00 : client: [65] opened from [::1]:41312
+Sep 10 04:00 : client: [65] closed
+Sep 10 04:00 : client: [66] opened from [::1]:41314
+Sep 10 04:00 : client: [67] opened from [::1]:41316
+Sep 10 04:00 : client: [66] closed
+Sep 10 04:00 : client: [68] opened from [::1]:41318
+Sep 10 04:00 : client: [67] closed
+Sep 10 04:00 : client: [68] closed
+Sep 10 04:00 : client: [69] opened from [::1]:41320
+Sep 10 04:00 : client: [70] opened from [::1]:41322
+Sep 10 04:00 : client: [69] closed
+Sep 10 04:00 : client: [71] opened from [::1]:41324
+Sep 10 04:00 : client: [70] closed
+Sep 10 04:00 : client: [71] closed
+Sep 10 04:03 : player: played "Lemon - Harutya.mp3"
+Sep 10 04:03 : client: [72] opened from [::1]:41326
+Sep 10 04:03 : client: [72] closed
+Sep 10 04:07 : player: played "Lemon - Kenshi Yonezu.flac"
+Sep 10 04:07 : client: [73] opened from [::1]:41330
+Sep 10 04:07 : client: [73] closed
+Sep 10 04:10 : client: [20] closed
+Sep 10 04:12 : client: [0] closed
+Sep 10 04:12 : client: [74] opened from 127.0.0.1:42430
+Sep 10 04:12 : player: played "Manaka Iwami - Love Song.mp3"
+Sep 10 04:15 : client: [74] closed
+Sep 10 04:15 : client: [75] opened from 127.0.0.1:42434
+Sep 10 04:16 : player: played "Maroon 5 - Girls Like You.flac"
+Sep 10 04:16 : client: [75] closed
+Sep 10 04:16 : client: [76] opened from 127.0.0.1:42436
+Sep 10 04:17 : client: [76] closed
+Sep 10 04:17 : client: [77] opened from 127.0.0.1:42438
+Sep 10 04:18 : client: [77] closed
+Sep 10 04:18 : client: [78] opened from 127.0.0.1:42440
+Sep 10 04:18 : client: [78] closed
+Sep 10 04:18 : client: [79] opened from 127.0.0.1:42442
+Sep 10 04:18 : client: [80] opened from [::1]:41348
+Sep 10 04:18 : client: [80] closed
+Sep 10 04:19 : player: played "Memories - Maroon 5.flac"
+Sep 10 04:20 : client: [81] opened from [::1]:41352
+Sep 10 04:20 : client: [81] closed
+Sep 10 04:20 : client: [82] opened from [::1]:41354
+Sep 10 04:20 : client: [82] closed
+Sep 10 04:20 : client: [83] opened from [::1]:41356
+Sep 10 04:20 : client: [83] closed
+Sep 10 04:21 : client: [84] opened from [::1]:41358
+Sep 10 04:21 : client: [84] closed
+Sep 10 04:22 : client: [85] opened from [::1]:41360
+Sep 10 04:22 : client: [85] closed
+Sep 10 04:22 : client: [86] opened from [::1]:41362
+Sep 10 04:22 : client: [87] opened from [::1]:41364
+Sep 10 04:22 : client: [87] closed
+Sep 10 04:22 : client: [88] opened from [::1]:41366
+Sep 10 04:22 : client: [88] closed
+Sep 10 04:23 : client: [89] opened from [::1]:41370
+Sep 10 04:23 : client: [90] opened from [::1]:41372
+Sep 10 04:23 : client: [89] closed
+Sep 10 04:23 : client: [90] closed
+Sep 10 04:23 : client: [91] opened from [::1]:41374
+Sep 10 04:23 : client: [91] closed
+Sep 10 04:23 : client: [92] opened from [::1]:41376
+Sep 10 04:23 : client: [93] opened from [::1]:41378
+Sep 10 04:23 : client: [92] closed
+Sep 10 04:23 : client: [93] closed
+Sep 10 04:23 : client: [94] opened from [::1]:41380
+Sep 10 04:23 : client: [94] closed
+Sep 10 04:25 : player: played "Lemon - Harutya.mp3"
+Sep 10 04:25 : client: [95] opened from [::1]:41382
+Sep 10 04:25 : client: [95] closed
+Sep 10 04:25 : client: [86] closed
+Sep 10 04:29 : player: played "Lemon - Kenshi Yonezu.flac"
+Sep 10 04:34 : player: played "Manaka Iwami - Love Song.mp3"
+Sep 10 04:36 : client: [79] closed
+Sep 10 04:36 : exception: Failed to play on "pulse audio" (pulse): suspended
+Sep 10 04:36 : client: [96] opened from 127.0.0.1:42488
+Sep 10 04:38 : player: played "Maroon 5 - Girls Like You.flac"
+Sep 10 04:41 : player: played "Memories - Maroon 5.flac"
+Sep 10 04:46 : player: played "Official髭男dism - コバソロ & 春茶).mp3"
+Sep 10 04:49 : player: played "On My Way - Alan Walker_Sabrina Carpente.flac"
+Sep 10 04:55 : player: played "Orange - 7__.flac"
+Sep 10 05:00 : player: played "Orion - Kenshi Yonezu.flac"
+Sep 10 05:04 : player: played "Peace Sign - Kenshi Yonezu.flac"
+Sep 10 05:09 : player: played "Pretender - コバソロ & 春茶.mp3"
+Sep 10 05:15 : player: played "RADWIMPS - Grand Escape (feat. Toko Miura).flac"
+Sep 10 05:19 : player: played "Renai Circulation - Hanazawa Kana.flac"
+Sep 10 05:23 : client: [97] opened from [::1]:41414
+Sep 10 05:23 : client: [97] closed
+Sep 10 06:44 : player: played "See You Again - Wiz Khalifa_ Charlie Put.flac"
+Sep 11 20:37 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 11 20:37 : client: [0] opened from 127.0.0.1:57986
+Sep 11 20:42 : client: [1] opened from [::1]:49042
+Sep 11 20:42 : exception: Stored playlists are disabled
+Sep 11 20:42 : client: [1] closed
+Sep 11 20:43 : client: [2] opened from [::1]:49044
+Sep 11 20:43 : exception: Stored playlists are disabled
+Sep 11 20:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 11 20:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 11 20:43 : client: [3] opened from [::1]:49046
+Sep 11 20:43 : client: [3] closed
+Sep 11 20:43 : client: [4] opened from [::1]:49048
+Sep 11 20:43 : client: [4] closed
+Sep 11 20:43 : client: [5] opened from [::1]:49050
+Sep 11 20:43 : client: [5] closed
+Sep 11 20:43 : client: [6] opened from [::1]:49052
+Sep 11 20:43 : client: [6] closed
+Sep 11 20:43 : client: [7] opened from [::1]:49054
+Sep 11 20:43 : client: [7] closed
+Sep 11 20:43 : client: [8] opened from [::1]:49056
+Sep 11 20:43 : client: [8] closed
+Sep 11 20:43 : client: [9] opened from [::1]:49058
+Sep 11 20:43 : client: [9] closed
+Sep 11 20:43 : client: [10] opened from [::1]:49060
+Sep 11 20:43 : client: [10] closed
+Sep 11 20:43 : client: [11] opened from [::1]:49062
+Sep 11 20:43 : client: [11] closed
+Sep 11 20:44 : client: [12] opened from [::1]:49064
+Sep 11 20:44 : client: [12] closed
+Sep 11 20:46 : client: [2] closed
+Sep 11 20:46 : client: [13] opened from [::1]:49068
+Sep 11 20:46 : client: [14] opened from [::1]:49070
+Sep 11 20:46 : client: [14] closed
+Sep 11 20:46 : client: [15] opened from [::1]:49072
+Sep 11 20:46 : client: [15] closed
+Sep 11 20:47 : client: [16] opened from [::1]:49074
+Sep 11 20:47 : client: [16] closed
+Sep 11 20:47 : client: [17] opened from [::1]:49076
+Sep 11 20:47 : client: [18] opened from [::1]:49078
+Sep 11 20:47 : client: [17] closed
+Sep 11 20:47 : client: [18] closed
+Sep 11 20:47 : client: [19] opened from [::1]:49080
+Sep 11 20:47 : client: [20] opened from [::1]:49082
+Sep 11 20:47 : client: [19] closed
+Sep 11 20:47 : client: [20] closed
+Sep 11 20:47 : client: [21] opened from [::1]:49084
+Sep 11 20:47 : client: [21] closed
+Sep 11 20:47 : client: [22] opened from [::1]:49086
+Sep 11 20:47 : client: [22] closed
+Sep 11 20:47 : client: [23] opened from [::1]:49088
+Sep 11 20:47 : client: [24] opened from [::1]:49090
+Sep 11 20:47 : client: [24] closed
+Sep 11 20:47 : client: [23] closed
+Sep 11 20:47 : client: [25] opened from [::1]:49092
+Sep 11 20:47 : client: [26] opened from [::1]:49094
+Sep 11 20:47 : client: [26] closed
+Sep 11 20:47 : client: [25] closed
+Sep 11 20:47 : client: [27] opened from [::1]:49096
+Sep 11 20:47 : client: [27] closed
+Sep 11 20:48 : client: [28] opened from [::1]:49098
+Sep 11 20:48 : client: [28] closed
+Sep 11 20:48 : client: [29] opened from [::1]:49100
+Sep 11 20:48 : client: [30] opened from [::1]:49102
+Sep 11 20:48 : client: [29] closed
+Sep 11 20:48 : client: [30] closed
+Sep 11 20:48 : client: [31] opened from [::1]:49104
+Sep 11 20:48 : client: [31] closed
+Sep 11 20:48 : client: [32] opened from [::1]:49106
+Sep 11 20:48 : client: [32] closed
+Sep 11 20:48 : client: [33] opened from [::1]:49108
+Sep 11 20:48 : client: [33] closed
+Sep 11 20:49 : client: [34] opened from [::1]:49110
+Sep 11 20:49 : client: [34] closed
+Sep 11 20:49 : client: [35] opened from [::1]:49112
+Sep 11 20:49 : client: [36] opened from [::1]:49114
+Sep 11 20:49 : client: [35] closed
+Sep 11 20:49 : client: [36] closed
+Sep 11 20:50 : client: [37] opened from [::1]:49118
+Sep 11 20:50 : player: played "Fix You - Coldplay.flac"
+Sep 11 20:50 : client: [37] closed
+Sep 11 20:50 : client: [38] opened from [::1]:49120
+Sep 11 20:50 : exception: Not playing
+Sep 11 20:50 : client: [38] closed
+Sep 11 20:50 : client: [39] opened from [::1]:49122
+Sep 11 20:50 : exception: Not playing
+Sep 11 20:50 : client: [39] closed
+Sep 11 20:50 : client: [40] opened from [::1]:49124
+Sep 11 20:50 : client: [41] opened from [::1]:49126
+Sep 11 20:50 : client: [40] closed
+Sep 11 20:50 : client: [41] closed
+Sep 11 20:50 : client: [42] opened from [::1]:49128
+Sep 11 20:50 : client: [42] closed
+Sep 11 20:50 : client: [43] opened from [::1]:49130
+Sep 11 20:50 : client: [43] closed
+Sep 11 20:50 : client: [13] closed
+Sep 11 20:50 : client: [44] opened from [::1]:49132
+Sep 11 20:50 : client: [44] closed
+Sep 11 20:50 : client: [45] opened from [::1]:49134
+Sep 11 20:50 : client: [45] closed
+Sep 11 20:50 : client: [46] opened from [::1]:49136
+Sep 11 20:50 : client: [46] closed
+Sep 11 20:50 : client: [47] opened from [::1]:49138
+Sep 11 20:50 : client: [47] closed
+Sep 11 20:50 : client: [48] opened from [::1]:49140
+Sep 11 20:50 : client: [48] closed
+Sep 11 20:50 : client: [49] opened from [::1]:49142
+Sep 11 20:50 : client: [49] closed
+Sep 11 20:50 : client: [50] opened from [::1]:49144
+Sep 11 20:50 : client: [51] opened from [::1]:49146
+Sep 11 20:50 : client: [51] closed
+Sep 11 20:50 : client: [52] opened from [::1]:49148
+Sep 11 20:50 : client: [52] closed
+Sep 11 20:50 : client: [53] opened from [::1]:49150
+Sep 11 20:50 : client: [53] closed
+Sep 11 20:50 : client: [54] opened from [::1]:49152
+Sep 11 20:50 : client: [54] closed
+Sep 11 20:50 : client: [55] opened from [::1]:49154
+Sep 11 20:50 : client: [55] closed
+Sep 11 20:51 : client: [56] opened from [::1]:49156
+Sep 11 20:51 : client: [56] closed
+Sep 11 20:51 : client: [57] opened from [::1]:49158
+Sep 11 20:51 : client: [57] closed
+Sep 11 20:51 : exception: Stored playlists are disabled
+Sep 11 20:51 : client: [50] closed
+Sep 11 20:53 : client: [58] opened from [::1]:49160
+Sep 11 20:53 : client: [58] closed
+Sep 11 20:53 : client: [59] opened from [::1]:49162
+Sep 11 20:53 : client: [59] closed
+Sep 11 20:53 : client: [60] opened from [::1]:49164
+Sep 11 20:53 : client: [60] closed
+Sep 11 20:53 : client: [61] opened from [::1]:49166
+Sep 11 20:53 : client: [61] closed
+Sep 11 20:53 : client: [62] opened from [::1]:49168
+Sep 11 20:53 : client: [62] closed
+Sep 11 20:53 : client: [63] opened from [::1]:49170
+Sep 11 20:53 : client: [63] closed
+Sep 11 20:53 : client: [64] opened from [::1]:49172
+Sep 11 20:53 : client: [64] closed
+Sep 11 20:53 : client: [65] opened from [::1]:49174
+Sep 11 20:53 : client: [65] closed
+Sep 11 20:53 : client: [66] opened from [::1]:49176
+Sep 11 20:53 : client: [66] closed
+Sep 11 20:53 : client: [67] opened from [::1]:49178
+Sep 11 20:53 : client: [67] closed
+Sep 11 20:53 : client: [68] opened from [::1]:49180
+Sep 11 20:53 : client: [68] closed
+Sep 11 20:53 : client: [69] opened from [::1]:49182
+Sep 11 20:53 : client: [69] closed
+Sep 11 20:53 : client: [70] opened from [::1]:49184
+Sep 11 20:53 : client: [71] opened from [::1]:49186
+Sep 11 20:53 : client: [71] closed
+Sep 11 20:54 : client: [72] opened from [::1]:49188
+Sep 11 20:54 : player: played "Fix You - Coldplay.flac"
+Sep 11 20:54 : client: [72] closed
+Sep 11 20:54 : client: [73] opened from [::1]:49190
+Sep 11 20:54 : exception: Not playing
+Sep 11 20:54 : client: [73] closed
+Sep 11 20:54 : client: [74] opened from [::1]:49192
+Sep 11 20:54 : exception: Not playing
+Sep 11 20:54 : client: [74] closed
+Sep 11 20:54 : client: [75] opened from [::1]:49194
+Sep 11 20:54 : client: [76] opened from [::1]:49196
+Sep 11 20:54 : client: [75] closed
+Sep 11 20:54 : client: [76] closed
+Sep 11 20:54 : client: [77] opened from [::1]:49198
+Sep 11 20:54 : client: [78] opened from [::1]:49200
+Sep 11 20:54 : client: [77] closed
+Sep 11 20:54 : client: [78] closed
+Sep 11 20:54 : client: [79] opened from [::1]:49202
+Sep 11 20:54 : client: [79] closed
+Sep 11 20:54 : client: [80] opened from [::1]:49204
+Sep 11 20:54 : client: [80] closed
+Sep 11 20:54 : client: [81] opened from [::1]:49208
+Sep 11 20:54 : client: [81] closed
+Sep 11 20:54 : client: [82] opened from [::1]:49210
+Sep 11 20:54 : client: [82] closed
+Sep 11 20:54 : client: [83] opened from [::1]:49212
+Sep 11 20:54 : client: [83] closed
+Sep 11 20:54 : client: [84] opened from [::1]:49214
+Sep 11 20:54 : client: [84] closed
+Sep 11 20:54 : client: [85] opened from [::1]:49216
+Sep 11 20:54 : client: [86] opened from [::1]:49218
+Sep 11 20:54 : client: [85] closed
+Sep 11 20:54 : client: [86] closed
+Sep 11 20:55 : client: [87] opened from [::1]:49220
+Sep 11 20:55 : client: [87] closed
+Sep 11 20:55 : client: [88] opened from [::1]:49222
+Sep 11 20:55 : client: [88] closed
+Sep 11 20:55 : client: [89] opened from [::1]:49224
+Sep 11 20:55 : client: [89] closed
+Sep 11 20:55 : client: [90] opened from [::1]:49226
+Sep 11 20:55 : client: [90] closed
+Sep 11 20:55 : client: [91] opened from [::1]:49228
+Sep 11 20:55 : client: [91] closed
+Sep 11 20:55 : client: [92] opened from [::1]:49230
+Sep 11 20:55 : client: [92] closed
+Sep 11 20:55 : client: [93] opened from [::1]:49232
+Sep 11 20:55 : client: [94] opened from [::1]:49234
+Sep 11 20:55 : client: [93] closed
+Sep 11 20:55 : client: [94] closed
+Sep 11 20:56 : client: [95] opened from [::1]:49236
+Sep 11 20:56 : client: [95] closed
+Sep 11 20:56 : client: [96] opened from [::1]:49238
+Sep 11 20:56 : client: [96] closed
+Sep 11 20:56 : client: [70] closed
+Sep 11 20:56 : client: [97] opened from [::1]:49240
+Sep 11 20:56 : client: [98] opened from [::1]:49242
+Sep 11 20:56 : client: [98] closed
+Sep 11 20:56 : exception: Stored playlists are disabled
+Sep 11 20:56 : client: [99] opened from [::1]:49244
+Sep 11 20:56 : client: [99] closed
+Sep 11 20:56 : client: [100] opened from [::1]:49246
+Sep 11 20:56 : client: [100] closed
+Sep 11 20:56 : client: [101] opened from [::1]:49248
+Sep 11 20:56 : client: [101] closed
+Sep 11 20:56 : client: [102] opened from [::1]:49250
+Sep 11 20:56 : client: [102] closed
+Sep 11 20:56 : client: [103] opened from [::1]:49252
+Sep 11 20:56 : client: [103] closed
+Sep 11 20:56 : client: [104] opened from [::1]:49254
+Sep 11 20:56 : client: [104] closed
+Sep 11 20:56 : client: [105] opened from [::1]:49256
+Sep 11 20:56 : client: [105] closed
+Sep 11 20:56 : client: [106] opened from [::1]:49258
+Sep 11 20:56 : client: [106] closed
+Sep 11 20:56 : client: [107] opened from [::1]:49260
+Sep 11 20:56 : client: [107] closed
+Sep 11 20:56 : client: [108] opened from [::1]:49262
+Sep 11 20:56 : client: [108] closed
+Sep 11 20:56 : client: [109] opened from [::1]:49264
+Sep 11 20:56 : client: [109] closed
+Sep 11 20:56 : client: [110] opened from [::1]:49266
+Sep 11 20:56 : client: [110] closed
+Sep 11 20:56 : client: [111] opened from [::1]:49268
+Sep 11 20:56 : client: [111] closed
+Sep 11 20:56 : client: [112] opened from [::1]:49270
+Sep 11 20:56 : client: [112] closed
+Sep 11 20:56 : client: [113] opened from [::1]:49272
+Sep 11 20:56 : client: [113] closed
+Sep 11 20:56 : client: [114] opened from [::1]:49274
+Sep 11 20:56 : client: [114] closed
+Sep 11 20:56 : client: [115] opened from [::1]:49276
+Sep 11 20:56 : client: [115] closed
+Sep 11 20:56 : client: [116] opened from [::1]:49278
+Sep 11 20:56 : client: [116] closed
+Sep 11 20:56 : client: [117] opened from [::1]:49280
+Sep 11 20:56 : client: [117] closed
+Sep 11 20:56 : client: [118] opened from [::1]:49282
+Sep 11 20:56 : client: [118] closed
+Sep 11 20:56 : client: [119] opened from [::1]:49284
+Sep 11 20:56 : client: [119] closed
+Sep 11 20:56 : client: [120] opened from [::1]:49286
+Sep 11 20:56 : client: [120] closed
+Sep 11 20:56 : client: [121] opened from [::1]:49288
+Sep 11 20:56 : client: [121] closed
+Sep 11 20:56 : client: [122] opened from [::1]:49290
+Sep 11 20:56 : client: [122] closed
+Sep 11 20:56 : client: [123] opened from [::1]:49292
+Sep 11 20:56 : client: [123] closed
+Sep 11 20:56 : client: [124] opened from [::1]:49294
+Sep 11 20:56 : client: [124] closed
+Sep 11 20:57 : client: [125] opened from [::1]:49296
+Sep 11 20:57 : client: [125] closed
+Sep 11 20:57 : client: [126] opened from [::1]:49298
+Sep 11 20:57 : client: [126] closed
+Sep 11 20:57 : client: [127] opened from [::1]:49300
+Sep 11 20:57 : client: [127] closed
+Sep 11 20:57 : client: [128] opened from [::1]:49302
+Sep 11 20:57 : client: [128] closed
+Sep 11 20:57 : client: [129] opened from [::1]:49304
+Sep 11 20:57 : client: [129] closed
+Sep 11 20:57 : client: [130] opened from [::1]:49306
+Sep 11 20:57 : client: [130] closed
+Sep 11 20:57 : client: [131] opened from [::1]:49308
+Sep 11 20:57 : client: [131] closed
+Sep 11 20:57 : client: [132] opened from [::1]:49310
+Sep 11 20:57 : client: [132] closed
+Sep 11 20:57 : client: [133] opened from [::1]:49312
+Sep 11 20:57 : client: [133] closed
+Sep 11 20:57 : client: [134] opened from [::1]:49314
+Sep 11 20:57 : client: [134] closed
+Sep 11 20:57 : client: [97] closed
+Sep 11 20:57 : client: [135] opened from [::1]:49316
+Sep 11 20:57 : client: [136] opened from [::1]:49318
+Sep 11 20:57 : client: [136] closed
+Sep 11 20:59 : client: [135] closed
+Sep 11 20:59 : client: [137] opened from [::1]:49320
+Sep 11 20:59 : client: [138] opened from [::1]:49322
+Sep 11 20:59 : client: [138] closed
+Sep 11 20:59 : client: [137] closed
+Sep 11 20:59 : client: [139] opened from [::1]:49324
+Sep 11 20:59 : client: [140] opened from [::1]:49326
+Sep 11 20:59 : client: [140] closed
+Sep 11 20:59 : client: [139] closed
+Sep 11 20:59 : client: [141] opened from [::1]:49330
+Sep 11 20:59 : client: [142] opened from [::1]:49332
+Sep 11 20:59 : client: [142] closed
+Sep 11 21:01 : player: played "1. 夜に駆ける.flac"
+Sep 11 21:01 : client: [143] opened from [::1]:49334
+Sep 11 21:01 : client: [143] closed
+Sep 11 21:03 : client: [144] opened from [::1]:49336
+Sep 11 21:03 : client: [144] closed
+Sep 11 21:03 : client: [141] closed
+Sep 11 21:07 : player: played "Ano Yume wo Nazotte.flac"
+Sep 11 21:11 : player: played "Blue Bird - Ikimono Gakari.flac"
+Sep 11 21:11 : client: [145] opened from [::1]:49342
+Sep 11 21:11 : client: [145] closed
+Sep 11 21:11 : client: [0] closed
+Sep 11 21:11 : client: [146] opened from 127.0.0.1:58292
+Sep 11 21:15 : player: played "Closer - The Chainsmokers_ Halsey.flac"
+Sep 11 21:20 : player: played "Eine Kleine - Kenshi Yonezu.mp3"
+Sep 11 21:20 : client: [147] opened from [::1]:49350
+Sep 11 21:20 : client: [147] closed
+Sep 11 21:23 : player: played "Faded - Alan Walker.flac"
+Sep 11 21:28 : player: played "Feby Putri - Halu.flac"
+Sep 11 21:32 : player: played "Fix You - Coldplay.flac"
+Sep 11 21:35 : client: [148] opened from [::1]:49358
+Sep 11 21:35 : client: [148] closed
+Sep 11 21:36 : client: [149] opened from [::1]:49360
+Sep 11 21:36 : client: [149] closed
+Sep 11 21:36 : client: [150] opened from [::1]:49362
+Sep 11 21:36 : client: [150] closed
+Sep 11 21:37 : client: [151] opened from [::1]:49364
+Sep 11 21:37 : client: [151] closed
+Sep 11 21:37 : client: [152] opened from [::1]:49366
+Sep 11 21:37 : client: [152] closed
+Sep 11 21:37 : client: [153] opened from [::1]:49368
+Sep 11 21:37 : client: [153] closed
+Sep 11 21:38 : client: [154] opened from [::1]:49370
+Sep 11 21:38 : client: [154] closed
+Sep 11 21:38 : client: [155] opened from [::1]:49372
+Sep 11 21:38 : client: [156] opened from [::1]:49374
+Sep 11 21:38 : client: [156] closed
+Sep 11 21:38 : client: [157] opened from [::1]:49376
+Sep 11 21:38 : client: [158] opened from [::1]:49378
+Sep 11 21:38 : client: [158] closed
+Sep 11 21:38 : player: played "Haiiro to Ao - kobasolo.mp3"
+Sep 11 21:38 : client: [159] opened from [::1]:49380
+Sep 11 21:38 : client: [159] closed
+Sep 11 21:38 : client: [160] opened from [::1]:49382
+Sep 11 21:38 : client: [160] closed
+Sep 11 21:39 : client: [157] closed
+Sep 11 21:39 : client: [161] opened from [::1]:49384
+Sep 11 21:39 : client: [162] opened from [::1]:49386
+Sep 11 21:39 : client: [162] closed
+Sep 11 21:39 : client: [161] closed
+Sep 11 21:39 : client: [163] opened from [::1]:49388
+Sep 11 21:39 : client: [164] opened from [::1]:49390
+Sep 11 21:39 : client: [164] closed
+Sep 11 21:39 : client: [163] closed
+Sep 11 21:39 : client: [165] opened from [::1]:49394
+Sep 11 21:39 : client: [166] opened from [::1]:49396
+Sep 11 21:39 : client: [166] closed
+Sep 11 21:40 : client: [165] closed
+Sep 11 21:40 : client: [167] opened from [::1]:49398
+Sep 11 21:40 : client: [168] opened from [::1]:49400
+Sep 11 21:40 : client: [168] closed
+Sep 11 21:40 : client: [167] closed
+Sep 11 21:40 : client: [169] opened from [::1]:49402
+Sep 11 21:40 : client: [170] opened from [::1]:49404
+Sep 11 21:40 : client: [170] closed
+Sep 11 21:40 : client: [169] closed
+Sep 11 21:40 : client: [171] opened from [::1]:49406
+Sep 11 21:40 : client: [172] opened from [::1]:49408
+Sep 11 21:40 : client: [172] closed
+Sep 11 21:40 : client: [171] closed
+Sep 11 21:40 : client: [173] opened from [::1]:49410
+Sep 11 21:40 : client: [173] closed
+Sep 11 21:40 : client: [174] opened from [::1]:49412
+Sep 11 21:40 : client: [175] opened from [::1]:49414
+Sep 11 21:40 : client: [174] closed
+Sep 11 21:40 : client: [175] closed
+Sep 11 21:40 : client: [176] opened from [::1]:49416
+Sep 11 21:40 : client: [176] closed
+Sep 11 21:40 : client: [177] opened from [::1]:49418
+Sep 11 21:40 : client: [177] closed
+Sep 11 21:41 : client: [178] opened from [::1]:49420
+Sep 11 21:41 : client: [179] opened from [::1]:49422
+Sep 11 21:41 : client: [178] closed
+Sep 11 21:41 : client: [179] closed
+Sep 11 21:41 : client: [155] closed
+Sep 11 21:42 : client: [180] opened from [::1]:49424
+Sep 11 21:42 : client: [180] closed
+Sep 11 21:42 : client: [181] opened from [::1]:49426
+Sep 11 21:42 : client: [181] closed
+Sep 11 21:42 : client: [182] opened from [::1]:49428
+Sep 11 21:42 : client: [183] opened from [::1]:49430
+Sep 11 21:42 : client: [183] closed
+Sep 11 21:42 : client: [182] closed
+Sep 11 21:42 : client: [184] opened from [::1]:49432
+Sep 11 21:42 : client: [185] opened from [::1]:49434
+Sep 11 21:42 : client: [185] closed
+Sep 11 21:42 : client: [184] closed
+Sep 11 21:42 : client: [186] opened from [::1]:49436
+Sep 11 21:42 : client: [187] opened from [::1]:49438
+Sep 11 21:42 : client: [187] closed
+Sep 11 21:42 : client: [186] closed
+Sep 11 21:43 : client: [188] opened from [::1]:49440
+Sep 11 21:43 : client: [188] closed
+Sep 11 21:45 : player: played "Lemon - Harutya.mp3"
+Sep 11 21:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 11 21:49 : exception: Failed to open '/home/yune/.mpd/mpdstate': No such file or directory
+Sep 11 21:49 : config: option 'quality' on line 29 was not recognized
+Sep 11 21:49 : config: option 'device' on line 31 was not recognized
+Sep 11 21:49 : client: [0] opened from 127.0.0.1:42264
+Sep 11 21:49 : client: [1] opened from 127.0.0.1:42268
+Sep 11 21:49 : exception: Failed to open /home/yune/Music/.playlists: No such file or directory
+Sep 11 21:49 : client: [1] closed
+Sep 11 21:50 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 11 21:50 : config: option 'quality' on line 29 was not recognized
+Sep 11 21:50 : config: option 'device' on line 31 was not recognized
+Sep 11 21:50 : client: [0] opened from 127.0.0.1:42280
+Sep 11 21:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 11 21:51 : config: option 'quality' on line 29 was not recognized
+Sep 11 21:51 : config: option 'device' on line 31 was not recognized
+Sep 11 21:51 : client: [0] opened from 127.0.0.1:42290
+Sep 11 21:51 : client: [1] opened from [::1]:39518
+Sep 11 21:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 11 21:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 11 21:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 11 21:51 : client: [2] opened from [::1]:39520
+Sep 11 21:51 : client: [2] closed
+Sep 11 21:51 : client: [3] opened from [::1]:39522
+Sep 11 21:51 : client: [3] closed
+Sep 11 21:51 : client: [4] opened from [::1]:39524
+Sep 11 21:51 : client: [4] closed
+Sep 11 21:51 : client: [5] opened from [::1]:39526
+Sep 11 21:51 : client: [5] closed
+Sep 11 21:51 : client: [6] opened from [::1]:39528
+Sep 11 21:51 : client: [6] closed
+Sep 11 21:51 : client: [7] opened from [::1]:39530
+Sep 11 21:51 : client: [7] closed
+Sep 11 21:52 : client: [8] opened from [::1]:39532
+Sep 11 21:52 : client: [8] closed
+Sep 11 21:52 : client: [9] opened from [::1]:39534
+Sep 11 21:52 : client: [9] closed
+Sep 11 21:52 : client: [10] opened from [::1]:39536
+Sep 11 21:52 : client: [10] closed
+Sep 11 21:52 : client: [11] opened from [::1]:39538
+Sep 11 21:52 : client: [11] closed
+Sep 11 21:52 : client: [12] opened from [::1]:39540
+Sep 11 21:52 : client: [12] closed
+Sep 11 21:52 : client: [13] opened from [::1]:39542
+Sep 11 21:52 : client: [13] closed
+Sep 11 21:52 : client: [14] opened from [::1]:39544
+Sep 11 21:52 : client: [14] closed
+Sep 11 21:52 : client: [15] opened from [::1]:39546
+Sep 11 21:52 : client: [15] closed
+Sep 11 21:52 : client: [16] opened from [::1]:39548
+Sep 11 21:52 : client: [16] closed
+Sep 11 21:52 : client: [17] opened from [::1]:39550
+Sep 11 21:52 : client: [17] closed
+Sep 11 21:52 : client: [18] opened from [::1]:39552
+Sep 11 21:52 : client: [18] closed
+Sep 11 21:52 : client: [19] opened from [::1]:39554
+Sep 11 21:52 : client: [19] closed
+Sep 11 21:52 : client: [20] opened from [::1]:39556
+Sep 11 21:52 : client: [20] closed
+Sep 11 21:52 : client: [21] opened from [::1]:39558
+Sep 11 21:52 : client: [21] closed
+Sep 11 21:52 : client: [22] opened from [::1]:39560
+Sep 11 21:52 : client: [22] closed
+Sep 11 21:52 : client: [23] opened from [::1]:39562
+Sep 11 21:52 : client: [23] closed
+Sep 11 21:52 : client: [24] opened from [::1]:39564
+Sep 11 21:52 : client: [24] closed
+Sep 11 21:52 : client: [25] opened from [::1]:39566
+Sep 11 21:52 : client: [25] closed
+Sep 11 21:52 : client: [26] opened from [::1]:39568
+Sep 11 21:52 : client: [26] closed
+Sep 11 21:52 : client: [27] opened from [::1]:39570
+Sep 11 21:52 : client: [27] closed
+Sep 11 21:52 : client: [28] opened from [::1]:39572
+Sep 11 21:52 : client: [28] closed
+Sep 11 21:52 : client: [29] opened from [::1]:39574
+Sep 11 21:52 : client: [29] closed
+Sep 11 21:52 : client: [30] opened from [::1]:39576
+Sep 11 21:52 : client: [30] closed
+Sep 11 21:52 : client: [31] opened from [::1]:39578
+Sep 11 21:52 : client: [31] closed
+Sep 11 21:52 : client: [32] opened from [::1]:39580
+Sep 11 21:52 : client: [32] closed
+Sep 11 21:52 : client: [33] opened from [::1]:39582
+Sep 11 21:52 : client: [33] closed
+Sep 11 21:52 : client: [34] opened from [::1]:39584
+Sep 11 21:52 : client: [34] closed
+Sep 11 21:52 : client: [35] opened from [::1]:39586
+Sep 11 21:52 : client: [35] closed
+Sep 11 21:52 : client: [36] opened from [::1]:39588
+Sep 11 21:52 : client: [36] closed
+Sep 11 21:52 : client: [37] opened from [::1]:39590
+Sep 11 21:52 : client: [37] closed
+Sep 11 21:52 : client: [38] opened from [::1]:39592
+Sep 11 21:52 : client: [38] closed
+Sep 11 21:52 : client: [39] opened from [::1]:39594
+Sep 11 21:52 : client: [39] closed
+Sep 11 21:52 : client: [40] opened from [::1]:39596
+Sep 11 21:52 : client: [40] closed
+Sep 11 21:52 : client: [41] opened from [::1]:39598
+Sep 11 21:52 : client: [41] closed
+Sep 11 21:52 : client: [42] opened from [::1]:39600
+Sep 11 21:52 : client: [42] closed
+Sep 11 21:52 : client: [43] opened from [::1]:39602
+Sep 11 21:52 : client: [43] closed
+Sep 11 21:52 : client: [1] closed
+Sep 11 21:52 : client: [44] opened from [::1]:39604
+Sep 11 21:52 : client: [45] opened from [::1]:39606
+Sep 11 21:52 : client: [45] closed
+Sep 11 21:52 : client: [46] opened from [::1]:39608
+Sep 11 21:52 : client: [46] closed
+Sep 11 21:53 : client: [44] closed
+Sep 11 21:53 : client: [47] opened from [::1]:39610
+Sep 11 21:53 : client: [48] opened from [::1]:39612
+Sep 11 21:53 : client: [48] closed
+Sep 11 21:54 : client: [47] closed
+Sep 11 21:55 : client: [0] closed
+Sep 11 21:55 : client: [49] opened from 127.0.0.1:42388
+Sep 11 21:55 : client: [50] opened from [::1]:39616
+Sep 11 21:55 : client: [50] closed
+Sep 11 21:55 : client: [51] opened from [::1]:39618
+Sep 11 21:55 : client: [51] closed
+Sep 11 21:55 : client: [52] opened from [::1]:39620
+Sep 11 21:55 : client: [52] closed
+Sep 11 21:55 : client: [53] opened from [::1]:39622
+Sep 11 21:55 : client: [53] closed
+Sep 11 21:56 : client: [54] opened from [::1]:39626
+Sep 11 21:56 : client: [54] closed
+Sep 11 21:56 : client: [55] opened from [::1]:39628
+Sep 11 21:56 : client: [55] closed
+Sep 11 21:56 : client: [56] opened from [::1]:39630
+Sep 11 21:56 : client: [56] closed
+Sep 11 21:56 : client: [57] opened from [::1]:39632
+Sep 11 21:56 : client: [57] closed
+Sep 11 21:57 : client: [58] opened from [::1]:39634
+Sep 11 21:57 : client: [58] closed
+Sep 11 21:57 : player: played "Lemon - Harutya.mp3"
+Sep 11 21:57 : client: [59] opened from [::1]:39636
+Sep 11 21:57 : client: [59] closed
+Sep 11 21:59 : client: [60] opened from [::1]:39638
+Sep 11 21:59 : client: [61] opened from [::1]:39640
+Sep 11 21:59 : client: [61] closed
+Sep 11 22:01 : player: played "Lemon - Kenshi Yonezu.flac"
+Sep 11 22:01 : client: [62] opened from [::1]:39644
+Sep 11 22:01 : client: [62] closed
+Sep 11 22:01 : client: [63] opened from [::1]:39646
+Sep 11 22:01 : client: [63] closed
+Sep 11 22:07 : player: played "RADWIMPS - Grand Escape (feat. Toko Miura).flac"
+Sep 11 22:07 : client: [64] opened from [::1]:39650
+Sep 11 22:07 : client: [64] closed
+Sep 11 22:11 : player: played "Renai Circulation - Hanazawa Kana.flac"
+Sep 11 22:11 : client: [65] opened from [::1]:39654
+Sep 11 22:11 : client: [65] closed
+Sep 11 22:15 : player: played "See You Again - Wiz Khalifa_ Charlie Put.flac"
+Sep 11 22:15 : client: [66] opened from [::1]:39656
+Sep 11 22:15 : client: [66] closed
+Sep 11 22:17 : client: [67] opened from [::1]:39660
+Sep 11 22:17 : client: [67] closed
+Sep 11 22:18 : client: [68] opened from [::1]:39662
+Sep 11 22:18 : client: [68] closed
+Sep 11 22:18 : player: played "Sing Me To Sleep - Alan Walker.flac"
+Sep 11 22:18 : client: [69] opened from [::1]:39664
+Sep 11 22:18 : client: [69] closed
+Sep 11 22:23 : client: [70] opened from [::1]:39668
+Sep 11 22:23 : client: [70] closed
+Sep 11 22:24 : client: [49] closed
+Sep 11 22:24 : client: [71] opened from 127.0.0.1:42444
+Sep 11 22:24 : update: removing RADWIMPS - Grand Escape (feat. Toko Miura).flac
+Sep 11 22:24 : update: added /RADWIMPS - Grand Escape.flac
+Sep 11 22:24 : client: [60] closed
+Sep 11 22:24 : client: [72] opened from [::1]:39672
+Sep 11 22:24 : client: [73] opened from [::1]:39674
+Sep 11 22:24 : client: [73] closed
+Sep 11 22:28 : player: played "RADWIMPS - Grand Escape (feat. Toko Miura).flac"
+Sep 11 22:28 : client: [74] opened from [::1]:39682
+Sep 11 22:28 : client: [74] closed
+Sep 11 22:32 : player: played "Renai Circulation - Hanazawa Kana.flac"
+Sep 11 22:32 : client: [75] opened from [::1]:39690
+Sep 11 22:32 : client: [75] closed
+Sep 11 22:33 : client: [76] opened from [::1]:39692
+Sep 11 22:33 : client: [76] closed
+Sep 11 22:33 : client: [77] opened from [::1]:39694
+Sep 11 22:33 : client: [77] closed
+Sep 11 22:33 : client: [78] opened from [::1]:39696
+Sep 11 22:33 : client: [78] closed
+Sep 11 22:33 : client: [79] opened from [::1]:39698
+Sep 11 22:33 : client: [79] closed
+Sep 11 22:33 : client: [80] opened from [::1]:39700
+Sep 11 22:33 : client: [81] opened from [::1]:39702
+Sep 11 22:33 : client: [80] closed
+Sep 11 22:33 : client: [81] closed
+Sep 11 22:33 : client: [82] opened from [::1]:39704
+Sep 11 22:33 : client: [83] opened from [::1]:39706
+Sep 11 22:33 : client: [82] closed
+Sep 11 22:33 : client: [83] closed
+Sep 11 22:33 : client: [84] opened from [::1]:39708
+Sep 11 22:33 : client: [85] opened from [::1]:39710
+Sep 11 22:33 : client: [84] closed
+Sep 11 22:33 : client: [85] closed
+Sep 11 22:33 : client: [86] opened from [::1]:39712
+Sep 11 22:33 : exception: Failed to decode /home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac
+Sep 11 22:33 : exception: nested: Failed to open '/home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac': No such file or directory
+Sep 11 22:33 : player: played "RADWIMPS - Grand Escape (feat. Toko Miura).flac"
+Sep 11 22:33 : exception: Failed to decode /home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac
+Sep 11 22:33 : exception: nested: Failed to open '/home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac': No such file or directory
+Sep 11 22:33 : client: [86] closed
+Sep 11 22:33 : client: [87] opened from [::1]:39714
+Sep 11 22:33 : exception: Failed to decode /home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac
+Sep 11 22:33 : exception: nested: Failed to open '/home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac': No such file or directory
+Sep 11 22:33 : player: played "RADWIMPS - Grand Escape (feat. Toko Miura).flac"
+Sep 11 22:33 : exception: Failed to decode /home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac
+Sep 11 22:33 : exception: nested: Failed to open '/home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac': No such file or directory
+Sep 11 22:33 : client: [87] closed
+Sep 11 22:33 : client: [88] opened from [::1]:39716
+Sep 11 22:33 : exception: Failed to decode /home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac
+Sep 11 22:33 : exception: nested: Failed to open '/home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac': No such file or directory
+Sep 11 22:33 : player: played "RADWIMPS - Grand Escape (feat. Toko Miura).flac"
+Sep 11 22:33 : exception: Failed to decode /home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac
+Sep 11 22:33 : exception: nested: Failed to open '/home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac': No such file or directory
+Sep 11 22:33 : client: [88] closed
+Sep 11 22:33 : client: [89] opened from [::1]:39718
+Sep 11 22:33 : exception: Failed to decode /home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac
+Sep 11 22:33 : exception: nested: Failed to open '/home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac': No such file or directory
+Sep 11 22:33 : player: played "RADWIMPS - Grand Escape (feat. Toko Miura).flac"
+Sep 11 22:33 : exception: Failed to decode /home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac
+Sep 11 22:33 : exception: nested: Failed to open '/home/yune/Music/RADWIMPS - Grand Escape (feat. Toko Miura).flac': No such file or directory
+Sep 11 22:33 : client: [89] closed
+Sep 11 22:33 : client: [90] opened from [::1]:39720
+Sep 11 22:33 : client: [90] closed
+Sep 11 22:34 : client: [91] opened from [::1]:39722
+Sep 11 22:34 : client: [91] closed
+Sep 11 22:38 : player: played "1. 夜に駆ける.flac"
+Sep 11 22:38 : client: [92] opened from [::1]:39726
+Sep 11 22:38 : client: [92] closed
+Sep 11 22:41 : player: played "Alone - Alan Walker_ Noonie Bao.flac"
+Sep 11 22:41 : client: [93] opened from [::1]:39730
+Sep 11 22:41 : client: [93] closed
+Sep 11 22:45 : player: played "Ano Yume wo Nazotte.flac"
+Sep 11 22:45 : client: [94] opened from [::1]:39732
+Sep 11 22:45 : client: [94] closed
+Sep 11 22:48 : player: played "Blue Bird - Ikimono Gakari.flac"
+Sep 11 22:48 : client: [95] opened from [::1]:39736
+Sep 11 22:48 : client: [95] closed
+Sep 11 22:52 : player: played "Closer - The Chainsmokers_ Halsey.flac"
+Sep 11 22:52 : client: [96] opened from [::1]:39740
+Sep 11 22:52 : client: [96] closed
+Sep 11 22:53 : client: [72] closed
+Sep 11 22:57 : player: played "Eine Kleine - Kenshi Yonezu.mp3"
+Sep 11 23:02 : player: played "Eine Kleine - Yonezu Kenshi_Hachi.flac"
+Sep 11 23:06 : player: played "Faded - Alan Walker.flac"
+Sep 11 23:10 : player: played "Feby Putri - Halu.flac"
+Sep 11 23:15 : player: played "Fix You - Coldplay.flac"
+Sep 11 23:20 : player: played "Haiiro to Ao - kobasolo.mp3"
+Sep 11 23:26 : player: played "Haiirotoao - Kenshi Yonezu_ Masaki Suda.flac"
+Sep 11 23:31 : player: played "Heikousen - Sayuri.flac"
+Sep 11 23:35 : player: played "Hikaru Nara - Goose House.flac"
+Sep 11 23:41 : player: played "Kimi no Shiranai Monogatari - Supercell.flac"
+Sep 11 23:45 : player: played "kobasolo - 夏恋慕 (feat. 春茶).flac"
+Sep 11 23:50 : player: played "Lemon - Harutya.mp3"
+Sep 11 23:54 : player: played "Lemon - Kenshi Yonezu.flac"
+Sep 11 23:59 : player: played "Manaka Iwami - Love Song.mp3"
+Sep 12 00:03 : player: played "Maroon 5 - Girls Like You.flac"
+Sep 12 00:06 : player: played "Memories - Maroon 5.flac"

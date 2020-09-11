@@ -1,10 +1,11 @@
-export TERM="xterm-256color"
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-# Npm user level
-	NPM_PREFIX="${HOME}/.local/node"
-	 if [[ -z $(printf $PATH | grep $NPM_PREFIX/bin) ]]; then
-    	   export PATH="$NPM_PREFIX/bin:$PATH"
-   	 fi
+export TERM="xterm-256color"
 
 # Zgen
 # load zgen
@@ -17,7 +18,7 @@ export TERM="xterm-256color"
     zgen oh-my-zsh plugins/django
     zgen oh-my-zsh plugins/docker
     zgen oh-my-zsh plugins/kubectl
-    zgen oh-my-zsh plugins/go
+    zgen oh-my-zsh plugins/golang
     zgen oh-my-zsh plugins/golang
     zgen oh-my-zsh plugins/gem
     zgen oh-my-zsh plugins/github
@@ -38,8 +39,9 @@ export TERM="xterm-256color"
 # zsh theme
 	#zgen load romkatv/powerlevel10k
 	#zgen oh-my-zsh themes/agnoster
-	zgen load subnixr/minimal
-
+	#zgen load subnixr/minimal
+    zgen load romkatv/powerlevel10k
+    source ~/.zgen/romkatv/powerlevel10k-master/powerlevel10k.zsh-theme
 # Zsh auto suggestiona
 	zgen load zsh-users/zsh-autosuggestions
 
@@ -58,44 +60,58 @@ export TERM="xterm-256color"
 	#source "$HOME/.zsh-theme-gruvbox-mix-dark"
 
 # zsh autosuggestion config
-	ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=green,"
+	ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,"
 	ZSH_AUTOSUGGEST_STRATEGY=history
 
 # aliases
 	alias merge='xrdb merge ~/.Xresources'
 	alias neofetch='neofetch --source ~/.config/neofetch/chess.txt'
 	alias updategrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-    alias vimedit='nvim ~/.vimconf'
+    	alias vimedit='nvim ~/.vimconf'
 
 # Golang
 	export GOROOT=/usr/lib/go
-	export GOPATH=/home/yuune/Doc/go
+	export GOPATH=/home/yune/Documents/go
 	export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
-# lokasi folder untuk node packages
-	NPM_PREFIX="${HOME}/.local/node"
 
 # Rust
 	export PATH="$HOME/.cargo/bin:$PATH"
 
-# mencegah duplikat lokasi node packages
-	if [[ -z $(printf $PATH | grep $NPM_PREFIX/bin) ]]; then
-  	  export PATH="$NPM_PREFIX/bin:$PATH"
-	fi
-
 # composer
-	#export PATH=$PATH:$HOME/.config/composer/vendor/bin
+	export PATH=$PATH:$HOME/.config/composer/vendor/bin
 
 # Android
-	#export ANDROID_HOME=$HOME/.Android/Sdk
-	#export PATH=$PATH:$ANDROID_HOME/tools
-	#export PATH=$PATH:$ANDROID_HOME/tools/bin
-	#export PATH=$PATH:$ANDROID_HOME/platform-tools
+	export ANDROID_HOME=$HOME/.Android/Sdk
+	export PATH=$PATH:$ANDROID_HOME/tools
+	export PATH=$PATH:$ANDROID_HOME/tools/bin
+	export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# flutter
+	export PATH=$PATH:$HOME/.Flutter/bin
 
 # script ( colorpane, colorblock etc. )
 	export PATH=$PATH:$HOME/.local/bin
 
+# lokasi folder untuk node packages kamu
+NPM_PREFIX="${HOME}/.local/share/node"
+
+# mencegah duplikat lokasi node packages
+if [[ -z $(printf $PATH | grep $NPM_PREFIX/bin) ]]; then
+  export PATH="$NPM_PREFIX/bin:$PATH"
+fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+case $TERM in
+    st*)
+        precmd () {
+            print -Pn "\e]0;st:%~\a"
+        }
+    preexec () {
+        print -Pn "\e]0;st:$1\a"
+    }
+;;
+esac

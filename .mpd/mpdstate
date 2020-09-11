@@ -1,0 +1,60 @@
+sw_volume: 100
+audio_device_state:1:pulse audio
+audio_device_state:1:fifo
+audio_device_state:1:glava_fifo
+state: play
+current: 21
+time: 4.075000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:1. 夜に駆ける.flac
+1:Alone - Alan Walker_ Noonie Bao.flac
+2:Ano Yume wo Nazotte.flac
+3:Blue Bird - Ikimono Gakari.flac
+4:Closer - The Chainsmokers_ Halsey.flac
+5:Eine Kleine - Kenshi Yonezu.mp3
+6:Eine Kleine - Yonezu Kenshi_Hachi.flac
+7:Faded - Alan Walker.flac
+8:Feby Putri - Halu.flac
+9:Fix You - Coldplay.flac
+10:Haiiro to Ao - kobasolo.mp3
+11:Haiirotoao - Kenshi Yonezu_ Masaki Suda.flac
+12:Heikousen - Sayuri.flac
+13:Hikaru Nara - Goose House.flac
+14:Kimi no Shiranai Monogatari - Supercell.flac
+15:kobasolo - 夏恋慕 (feat. 春茶).flac
+16:Lemon - Harutya.mp3
+17:Lemon - Kenshi Yonezu.flac
+18:Manaka Iwami - Love Song.mp3
+19:Maroon 5 - Girls Like You.flac
+20:Memories - Maroon 5.flac
+21:Official髭男dism - コバソロ & 春茶).mp3
+22:On My Way - Alan Walker_Sabrina Carpente.flac
+23:Orange - 7__.flac
+24:Orion - Kenshi Yonezu.flac
+25:Peace Sign - Kenshi Yonezu.flac
+26:Pretender - コバソロ & 春茶.mp3
+27:RADWIMPS - Grand Escape (feat. Toko Miura).flac
+28:Renai Circulation - Hanazawa Kana.flac
+29:See You Again - Wiz Khalifa_ Charlie Put.flac
+30:Sing Me To Sleep - Alan Walker.flac
+31:Sparkle Movie Version_ - RADWIMPS.flac
+32:Summertime - Cinnamons_ evening cinema.flac
+33:Tada kun wa koi wo shinai ED FULL [lyrics] Manaka Iwami - Love Song.mp3
+34:Tsuki no Okisa Naruto Shippuden OP 14_ -.flac
+35:Uchiage Hanabi - DAOKO_ Yonezu Kenshi.flac
+36:Uchiage Hanabi - Harutya.mp3
+37:Uchiagehanabi - Kenshi Yonezu.flac
+38:Yesterday - Kobasolo & Harutya.mp3
+39:You Are The Reason - Calum Scott.flac
+40:Young_ Wild And Free - Snoop Dogg_ Wiz K.flac
+41:Zen Zen Zense Movie Version_ - RADWIMPS.flac
+42:女性が歌う PretenderOfficial髭男dism (Covered by コバソロ & 春茶).mp3
+43:RADWIMPS - Grand Escape.flac
+playlist_end

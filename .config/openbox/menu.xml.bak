@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://openbox.org/">
+  <menu id="root-menu" label="Applications">
+  <separator label="   Openbox   "/>
+    <item label=" File Manager"><action name="Execute"><command><![CDATA[pcmanfm]]></command></action></item>
+    <item label=" Terminal"><action name="Execute"><command><![CDATA[xst]]></command></action></item>
+    <item label=" Web Browser"><action name="Execute"><command><![CDATA[firefox]]></command></action></item>
+    <item label=" Run command"><action name="Execute"><command><![CDATA[rofi -show drun]]></command></action></item>
+  <separator/>
+  <menu id="0.752424082559632" label=" Accessories">
+    <item label="About Xfce"><action name="Execute"><command><![CDATA[xfce4-about]]></command></action></item>
+    <item label="Atom"><action name="Execute"><command><![CDATA[env ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT=false /usr/bin/atom]]></command></action></item>
+    <item label="Bulk Rename"><action name="Execute"><command><![CDATA[/usr/lib/Thunar/ThunarBulkRename]]></command></action></item>
+    <item label="Catfish File Search"><action name="Execute"><command><![CDATA[/usr/bin/catfish]]></command></action></item>
+    <item label="Character Map"><action name="Execute"><command><![CDATA[gucharmap]]></command></action></item>
+    <item label="compton"><action name="Execute"><command><![CDATA[compton]]></command></action></item>
+    <item label="Disks"><action name="Execute"><command><![CDATA[gnome-disks]]></command></action></item>
+    <item label="Engrampa Archive Manager"><action name="Execute"><command><![CDATA[engrampa]]></command></action></item>
+    <item label="File Manager"><action name="Execute"><command><![CDATA[exo-open --launch FileManager]]></command></action></item>
+    <item label="Galculator"><action name="Execute"><command><![CDATA[galculator]]></command></action></item>
+    <item label="HP Device Manager"><action name="Execute"><command><![CDATA[hp-toolbox]]></command></action></item>
+    <item label="Kvantum Manager"><action name="Execute"><command><![CDATA[kvantummanager]]></command></action></item>
+    <item label="Manjaro Application Utility"><action name="Execute"><command><![CDATA[/usr/bin/manjaro-application-utility]]></command></action></item>
+    <item label="Manjaro User Guide"><action name="Execute"><command><![CDATA[/usr/bin/manjaro-documentation]]></command></action></item>
+    <item label="Neovim"><action name="Execute"><command><![CDATA[xterm -e 'nvim']]></command></action></item>
+    <item label="nitrogen"><action name="Execute"><command><![CDATA[nitrogen]]></command></action></item>
+    <item label="Plank"><action name="Execute"><command><![CDATA[plank]]></command></action></item>
+    <item label="Redshift"><action name="Execute"><command><![CDATA[redshift-gtk]]></command></action></item>
+    <item label="Screenshot"><action name="Execute"><command><![CDATA[xfce4-screenshooter]]></command></action></item>
+    <item label="Synapse"><action name="Execute"><command><![CDATA[synapse]]></command></action></item>
+    <item label="Terminal Emulator"><action name="Execute"><command><![CDATA[exo-open --launch TerminalEmulator]]></command></action></item>
+    <item label="Text Editor"><action name="Execute"><command><![CDATA[xed]]></command></action></item>
+    <item label="Thunar File Manager"><action name="Execute"><command><![CDATA[thunar]]></command></action></item>
+    <item label="USB Image Writer"><action name="Execute"><command><![CDATA[mintstick -m iso]]></command></action></item>
+    <item label="USB Stick Formatter"><action name="Execute"><command><![CDATA[mintstick -m format]]></command></action></item>
+    <item label="Vim"><action name="Execute"><command><![CDATA[xterm -e 'vim']]></command></action></item>
+    <item label="Visual Studio Code"><action name="Execute"><command><![CDATA[/opt/visual-studio-code/code]]></command></action></item>
+    <item label="xCHM"><action name="Execute"><command><![CDATA[xchm]]></command></action></item>
+    <item label="Xfburn"><action name="Execute"><command><![CDATA[xfburn]]></command></action></item>
+  </menu>
+  <menu id="0.577985142448114" label=" Development">
+    <item label="Android Studio"><action name="Execute"><command><![CDATA["/home/asuna/Documents/android-studio/bin/studio.sh"]]></command></action></item>
+    <item label="Atom"><action name="Execute"><command><![CDATA[env ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT=false /usr/bin/atom]]></command></action></item>
+    <item label="CMake"><action name="Execute"><command><![CDATA[cmake-gui]]></command></action></item>
+    <item label="Electron 4"><action name="Execute"><command><![CDATA[electron4]]></command></action></item>
+    <item label="Electron"><action name="Execute"><command><![CDATA[electron]]></command></action></item>
+    <item label="Emacs"><action name="Execute"><command><![CDATA[emacs]]></command></action></item>
+    <item label="Genymotion Player"><action name="Execute"><command><![CDATA[/usr/bin/genymotion-player]]></command></action></item>
+    <item label="Genymotion"><action name="Execute"><command><![CDATA[/usr/bin/genymotion]]></command></action></item>
+    <item label="Sublime Text 3 Dev"><action name="Execute"><command><![CDATA[subl3]]></command></action></item>
+    <item label="Visual Studio Code"><action name="Execute"><command><![CDATA[/opt/visual-studio-code/code]]></command></action></item>
+  </menu>
+  <menu id="0.282745610029576" label=" Education">
+    <item label="LibreOffice Math"><action name="Execute"><command><![CDATA[libreoffice --math]]></command></action></item>
+  </menu>
+  <menu id="0.849298890071573" label=" Graphics">
+    <item label="Gcolor2"><action name="Execute"><command><![CDATA[gcolor2]]></command></action></item>
+    <item label="GNU Image Manipulation Program"><action name="Execute"><command><![CDATA[gimp-2.10]]></command></action></item>
+    <item label="gThumb"><action name="Execute"><command><![CDATA[gthumb]]></command></action></item>
+    <item label="Image Viewer"><action name="Execute"><command><![CDATA[gpicview]]></command></action></item>
+    <item label="Inkscape"><action name="Execute"><command><![CDATA[inkscape]]></command></action></item>
+    <item label="LibreOffice Draw"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command></action></item>
+    <item label="Viewnior"><action name="Execute"><command><![CDATA[viewnior]]></command></action></item>
+  </menu>
+  <menu id="0.969458405056759" label=" Multimedia">
+    <item label="DeaDBeeF"><action name="Execute"><command><![CDATA[deadbeef]]></command></action></item>
+    <item label="mpv Media Player"><action name="Execute"><command><![CDATA[mpv --player-operation-mode=pseudo-gui --]]></command></action></item>
+    <item label="PulseAudio Volume Control"><action name="Execute"><command><![CDATA[pavucontrol]]></command></action></item>
+    <item label="Qt V4L2 test Utility"><action name="Execute"><command><![CDATA[qv4l2]]></command></action></item>
+    <item label="Qt V4L2 video capture utility"><action name="Execute"><command><![CDATA[qvidcap]]></command></action></item>
+    <item label="SMPlayer"><action name="Execute"><command><![CDATA[smplayer]]></command></action></item>
+    <item label="SMTube"><action name="Execute"><command><![CDATA[smtube]]></command></action></item>
+    <item label="Spotify"><action name="Execute"><command><![CDATA[spotify]]></command></action></item>
+    <item label="vokoscreen"><action name="Execute"><command><![CDATA[vokoscreen]]></command></action></item>
+    <item label="Volume Icon"><action name="Execute"><command><![CDATA[volumeicon]]></command></action></item>
+    <item label="Xfburn"><action name="Execute"><command><![CDATA[xfburn]]></command></action></item>
+  </menu>
+  <menu id="0.034249553675167" label=" Network">
+    <item label="Avahi SSH Server Browser"><action name="Execute"><command><![CDATA[/usr/bin/bssh]]></command></action></item>
+    <item label="Avahi VNC Server Browser"><action name="Execute"><command><![CDATA[/usr/bin/bvnc]]></command></action></item>
+    <item label="Chromium"><action name="Execute"><command><![CDATA[/usr/bin/chromium]]></command></action></item>
+    <item label="FileZilla"><action name="Execute"><command><![CDATA[filezilla]]></command></action></item>
+    <item label="Firefox"><action name="Execute"><command><![CDATA[/usr/lib/firefox/firefox]]></command></action></item>
+    <item label="Mail Reader"><action name="Execute"><command><![CDATA[exo-open --launch MailReader]]></command></action></item>
+    <item label="networkmanager__dmenu"><action name="Execute"><command><![CDATA[networkmanager_dmenu]]></command></action></item>
+    <item label="Telegram Desktop"><action name="Execute"><command><![CDATA[telegram-desktop --]]></command></action></item>
+    <item label="Web Browser"><action name="Execute"><command><![CDATA[exo-open --launch WebBrowser]]></command></action></item>
+    <item label="Xtreme Download Manager"><action name="Execute"><command><![CDATA["/opt/xdman/xdman"]]></command></action></item>
+  </menu>
+  <menu id="0.119470677009613" label=" Office">
+    <item label="LibreOffice Base"><action name="Execute"><command><![CDATA[libreoffice --base]]></command></action></item>
+    <item label="LibreOffice Calc"><action name="Execute"><command><![CDATA[libreoffice --calc]]></command></action></item>
+    <item label="LibreOffice Draw"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command></action></item>
+    <item label="LibreOffice Impress"><action name="Execute"><command><![CDATA[libreoffice --impress]]></command></action></item>
+    <item label="LibreOffice Math"><action name="Execute"><command><![CDATA[libreoffice --math]]></command></action></item>
+    <item label="LibreOffice Writer"><action name="Execute"><command><![CDATA[libreoffice --writer]]></command></action></item>
+    <item label="LibreOffice"><action name="Execute"><command><![CDATA[libreoffice]]></command></action></item>
+    <item label="qpdfview"><action name="Execute"><command><![CDATA[qpdfview --unique]]></command></action></item>
+  </menu>
+  <menu id="0.696321537759182" label=" Other">
+    <item label="hp-uiscan"><action name="Execute"><command><![CDATA[/usr/bin/hp-uiscan]]></command></action></item>
+  </menu>
+  <menu id="0.935468246453102" label=" Settings">
+    <item label="About Me"><action name="Execute"><command><![CDATA[/usr/bin/mugshot]]></command></action></item>
+    <item label="Add/Remove Software"><action name="Execute"><command><![CDATA[pamac-manager]]></command></action></item>
+    <item label="Advanced Network Configuration"><action name="Execute"><command><![CDATA[nm-connection-editor]]></command></action></item>
+    <item label="ARandR"><action name="Execute"><command><![CDATA[arandr]]></command></action></item>
+    <item label="Bluetooth Adapters"><action name="Execute"><command><![CDATA[blueman-adapters]]></command></action></item>
+    <item label="Bluetooth Manager"><action name="Execute"><command><![CDATA[blueman-manager]]></command></action></item>
+    <item label="Customize Look and Feel"><action name="Execute"><command><![CDATA[lxappearance]]></command></action></item>
+    <item label="File Manager"><action name="Execute"><command><![CDATA[thunar-settings]]></command></action></item>
+    <item label="Kickshaw"><action name="Execute"><command><![CDATA[/usr/bin/kickshaw]]></command></action></item>
+    <item label="Kvantum Manager"><action name="Execute"><command><![CDATA[kvantummanager]]></command></action></item>
+    <item label="Login Window"><action name="Execute"><command><![CDATA[pkexec lightdm-settings]]></command></action></item>
+    <item label="Manjaro Settings Manager"><action name="Execute"><command><![CDATA[manjaro-settings-manager]]></command></action></item>
+    <item label="networkmanager__dmenu"><action name="Execute"><command><![CDATA[networkmanager_dmenu]]></command></action></item>
+    <item label="Oomox: customize icons and GTK themes"><action name="Execute"><command><![CDATA[oomox-gui]]></command></action></item>
+    <item label="Openbox Configuration Manager"><action name="Execute"><command><![CDATA[obconf]]></command></action></item>
+    <item label="Openbox Key bindings"><action name="Execute"><command><![CDATA[obkey]]></command></action></item>
+    <item label="Panel"><action name="Execute"><command><![CDATA[xfce4-panel --preferences]]></command></action></item>
+    <item label="Preferred Applications"><action name="Execute"><command><![CDATA[exo-preferred-applications]]></command></action></item>
+    <item label="Print Settings"><action name="Execute"><command><![CDATA[system-config-printer]]></command></action></item>
+    <item label="Qt5 Settings"><action name="Execute"><command><![CDATA[qt5ct]]></command></action></item>
+    <item label="Removable Drives and Media"><action name="Execute"><command><![CDATA[thunar-volman-settings]]></command></action></item>
+    <item label="Software Update"><action name="Execute"><command><![CDATA[pamac-manager --updates]]></command></action></item>
+    <item label="Tint2 Settings"><action name="Execute"><command><![CDATA[tint2conf]]></command></action></item>
+  </menu>
+  <menu id="0.719434669998691" label=" System">
+    <item label="Add/Remove Software"><action name="Execute"><command><![CDATA[pamac-manager]]></command></action></item>
+    <item label="Avahi Zeroconf Browser"><action name="Execute"><command><![CDATA[/usr/bin/avahi-discover]]></command></action></item>
+    <item label="Bulk Rename"><action name="Execute"><command><![CDATA[/usr/lib/Thunar/ThunarBulkRename]]></command></action></item>
+    <item label="conky"><action name="Execute"><command><![CDATA[conky --daemonize --pause=1]]></command></action></item>
+    <item label="Dolphin"><action name="Execute"><command><![CDATA[dolphin]]></command></action></item>
+    <item label="GParted"><action name="Execute"><command><![CDATA[/usr/bin/gparted]]></command></action></item>
+    <item label="Htop"><action name="Execute"><command><![CDATA[xterm -e 'htop']]></command></action></item>
+    <item label="Hyper"><action name="Execute"><command><![CDATA[hyper]]></command></action></item>
+    <item label="jgmenu"><action name="Execute"><command><![CDATA[jgmenu_run]]></command></action></item>
+    <item label="Konsole"><action name="Execute"><command><![CDATA[konsole]]></command></action></item>
+    <item label="Login Window"><action name="Execute"><command><![CDATA[pkexec lightdm-settings]]></command></action></item>
+    <item label="Manage Printing"><action name="Execute"><command><![CDATA[/usr/bin/xdg-open http://localhost:631/]]></command></action></item>
+    <item label="Manjaro Hello"><action name="Execute"><command><![CDATA[/usr/bin/manjaro-hello]]></command></action></item>
+    <item label="Oracle VM VirtualBox"><action name="Execute"><command><![CDATA[VirtualBox]]></command></action></item>
+    <item label="Print Settings"><action name="Execute"><command><![CDATA[system-config-printer]]></command></action></item>
+    <item label="ranger"><action name="Execute"><command><![CDATA[xterm -e 'ranger']]></command></action></item>
+    <item label="Software Update"><action name="Execute"><command><![CDATA[pamac-manager --updates]]></command></action></item>
+    <item label="Termite"><action name="Execute"><command><![CDATA[termite]]></command></action></item>
+    <item label="Thunar File Manager"><action name="Execute"><command><![CDATA[thunar]]></command></action></item>
+    <item label="Timeshift"><action name="Execute"><command><![CDATA[timeshift-launcher]]></command></action></item>
+    <item label="Tint2"><action name="Execute"><command><![CDATA[tint2]]></command></action></item>
+    <item label="urxvt (client)"><action name="Execute"><command><![CDATA[urxvtc]]></command></action></item>
+    <item label="urxvt (tabbed)"><action name="Execute"><command><![CDATA[urxvt-tabbed]]></command></action></item>
+    <item label="urxvt"><action name="Execute"><command><![CDATA[urxvt]]></command></action></item>
+    <item label="USB Image Writer"><action name="Execute"><command><![CDATA[mintstick -m iso]]></command></action></item>
+    <item label="USB Stick Formatter"><action name="Execute"><command><![CDATA[mintstick -m format]]></command></action></item>
+    <item label="UXTerm"><action name="Execute"><command><![CDATA[uxterm]]></command></action></item>
+    <item label="XTerm"><action name="Execute"><command><![CDATA[xterm]]></command></action></item>
+  </menu>
+  <separator/>
+  <menu id="0.575593026138261" label="Advanced Settings">
+    <item label="Conky RC"><action name="Execute"><command><![CDATA[geany ~/.conkyrc]]></command></action></item>
+    <item label="Tint2 Panel"><action name="Execute"><command><![CDATA[geany ~/.config/tint2/tint2rc]]></command></action></item>
+  <menu id="0.371518411431204" label="Obmenu-Generator">
+    <item label="Menu Schema"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/schema.pl]]></command></action></item>
+    <item label="Menu Config"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/config.pl]]></command></action></item>
+  <separator/>
+    <item label="Generate a static menu"><action name="Execute"><command><![CDATA[obmenu-generator -s -c]]></command></action></item>
+    <item label="Generate a static menu with icons"><action name="Execute"><command><![CDATA[obmenu-generator -s -i -c]]></command></action></item>
+  <separator/>
+    <item label="Generate a dynamic menu"><action name="Execute"><command><![CDATA[obmenu-generator -p]]></command></action></item>
+    <item label="Generate a dynamic menu with icons"><action name="Execute"><command><![CDATA[obmenu-generator -p -i]]></command></action></item>
+  <separator/>
+    <item label="Refresh cache"><action name="Execute"><command><![CDATA[obmenu-generator -d]]></command></action></item>
+  </menu>
+  <menu id="0.634277963575176" label="Openbox">
+    <item label="Openbox Autostart"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/autostart]]></command></action></item>
+    <item label="Openbox RC"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/rc.xml]]></command></action></item>
+    <item label="Openbox Menu"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/menu.xml]]></command></action></item>
+    <item label="Reconfigure Openbox"><action name="Execute"><command><![CDATA[openbox --reconfigure]]></command></action></item>
+  </menu>
+  </menu>
+  <separator/>
+    <item label=" Lock"><action name="Execute"><command><![CDATA[xscreensaver-command -lock]]></command></action></item>
+    <item label=" Exit"><action name="Exit"/></item>
+  <separator/>
+</menu>
+</openbox_menu>

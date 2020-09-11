@@ -2,7 +2,7 @@
 !! Import other Configuration from ~/.Xresources.d
 !! ------------------------------------------------------------------------------
 !#include "/home/yuunel/.Xresources.d/xautolock"
-#include "/home/yuune/.Xresources.d/color/dracula"
+#include "/home/yuune/.Xresources.d/color/harucha"
 #include "/home/yuune/.Xresources.d/cursor"
 #include "/home/yuune/.Xresources.d/urxvt"
 #include "/home/yuune/.Xresources.d/xterm"

@@ -10,10 +10,10 @@
     <focusLast>yes</focusLast>
     <underMouse>no</underMouse>
     <focusDelay>200</focusDelay>
-    <raiseOnFocus>no</raiseOnFocus>
+    <raiseOnFocus>yes</raiseOnFocus>
   </focus>
   <placement>
-    <policy>Smart</policy>
+    <policy>UnderMouse</policy>
     <center>yes</center>
     <monitor>Mouse</monitor>
     <primaryMonitor>Mouse</primaryMonitor>
@@ -21,43 +21,43 @@
   <theme>
     <cornerRadius>3</cornerRadius>
     <cornerRadius menu="yes">3</cornerRadius>
-    <name>Blocks</name>
+    <name>Blocks-dark</name>
     <titleLayout>IMC</titleLayout>
-    <keepBorder>yes</keepBorder>
+    <keepBorder>no</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>GoMono Nerd Font</name>
-      <size>10</size>
+      <name>GoMono NF</name>
+      <size>11</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
       <name>GoMono Nerd Font</name>
-      <size>10</size>
+      <size>11</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>GoMono Nerd Font</name>
-      <size>10</size>
-      <weight>Normal</weight>
+      <name>FantasqueSansMono Nerd Font</name>
+      <size>11</size>
+      <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>GoMono Nerd Font</name>
-      <size>10</size>
+      <name>FantasqueSansMono Nerd Font</name>
+      <size>11</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>GoMono Nerd Font</name>
-      <size>10</size>
+      <name>Iosevka Term</name>
+      <size>11</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>GoMono Nerd Font</name>
-      <size>10</size>
+      <name>Iosevka Term</name>
+      <size>11</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
@@ -400,22 +400,22 @@
     </keybind>
     <keybind key="XF86AudioStop">
       <action name="Execute">
-        <command>mpc stop</command>
+        <command>mpc -h localhost -p 6601 stop</command>
       </action>
     </keybind>
     <keybind key="XF86AudioPlay">
       <action name="Execute">
-        <command>mpc toggle</command>
+        <command>mpc -h localhost -p 6601 toggle</command>
       </action>
     </keybind>
     <keybind key="XF86AudioPrev">
       <action name="Execute">
-        <command>mpc prev</command>
+        <command>mpc -h localhost -p 6601 prev && notify-send "Now Playing" "$(mpc -h localhost -p 6601 current)"</command>
       </action>
     </keybind>
     <keybind key="XF86AudioNext">
       <action name="Execute">
-        <command>mpc next</command>
+        <command>mpc -h localhost -p 6601 next && notify-send "Now Playing" "$(mpc -h localhost -p 6601 current)"</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
@@ -428,9 +428,9 @@
         <command>light -U 5</command>
       </action>
     </keybind>
-    <keybind key="Print">
+    <keybind key="W-A-l">
       <action name="Execute">
-        <command>xfce4-screenshooter</command>
+        <command>skrinsut</command>
       </action>
     </keybind>
     <keybind key="A-Print">
@@ -480,7 +480,7 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>xst</command>
+        <command>st</command>
       </action>
     </keybind>
     <!-- bound to synapse
@@ -734,7 +734,7 @@
         </action>
       </mousebind>
       <mousebind action="DoubleClick" button="Left">
-        <action name="ToggleShade"/>
+        <action name="ToggleMaximizeFull"/>
       </mousebind>
       <mousebind action="Click" button="Up">
         <action name="if">

@@ -1,11 +1,6 @@
-## Dots
-![](/.img/X!.png)
-![](/.img/X!!.png)
-![](/.img/X!-dark.png)
-![](/.img/kopi.png)
-
 ## Environment information
-* OS : Manjaro
+
+* OS : Arch Linux
 * Windows Manager : openbox & i3wm
 * File Manager : PCmanfm  Thunar
 * Terminal : Xst
@@ -14,13 +9,12 @@
 * Font : Nerd font complete,font awesome,noto sans
 * bar/panel : tint2 & polybar
 
-
-## Vim guide
-Buka vim lalu ketikn perintah `:PluginInstall`
+## themes and icon
+theme and icon is generate by oomox
 
 ## Shoortzz
 * [Adhi Pambudi](https://github.com/addy-dclxvi)
 * [Fikri Omar](https://github.com/fikriomar16)
-* [Yunee Okitavera](https://github.com/okitavera)
+* [Nanda Okitavera](https://github.com/okitavera)
 * [BanditHijo](https://bandithijo.com)
 * [elenapan](https://github.com/elenapan/dotfiles)
