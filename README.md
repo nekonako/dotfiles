@@ -1,5 +1,5 @@
 ## Dots
-![](/.img/awesomewm.png)
+### ![](/.img/awesomewm.png)
 
 ## Shoortzz
 * [Adhi Pambudi](https://github.com/addy-dclxvi)
