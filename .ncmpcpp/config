@@ -3,25 +3,25 @@ lyrics_directory                 = ~/.ncmpcpp/.lyrics
 mpd_connection_timeout           = 5
 mpd_crossfade_time               = 2
 mpd_host                         = localhost
-mpd_music_dir                    = /home/yune/Music
+mpd_music_dir                    = /home/nako/Music
 mpd_port                         = 6600
 
 [visualizer]
-visualizer_color                 = blue,cyan, green, yellow, magenta, red
+visualizer_color                 = blue, magenta, magenta, magenta
+visualizer_look                  = "◆┃"
 visualizer_fifo_path             = /tmp/mpd.fifo
 visualizer_in_stereo             = no
 visualizer_output_name           = mpd_visualizer
 visualizer_sync_interval         = 30
-visualizer_look			 = "+│"
 visualizer_type                  = spectrum
 
 [library]
-song_library_format              = "{{%a - %t}|{%f}}{$R%l}"
+song_library_format              = "{{%a - %t}}"
 empty_tag_color                  = black
-current_item_prefix              = "$(yellow)$r"
+current_item_prefix              = "$(blue)$r"
 current_item_suffix              = "$/r$(end)"
 # song_list_format                 = "{$8%a ⠂ }{%t}|{%f}$R{%l}"
-song_list_format                 = "{{%a - %t}|{%f}}{$R%l}"
+song_list_format                 = "{{%a - %t}}"
 
 [playlist]
 now_playing_prefix               = "$b"
@@ -31,7 +31,7 @@ playlist_display_mode            = columns
 # song_columns_list_format         = "(15)[white]{lr} (1)[black]{} (40)[red]{a} (40)[green]{t}"
 # song_columns_list_format         = "(25)[white]{a} (25)[blue]{brE} (47)[white]{t|f} (6f)[blue]{l}"
 # song_columns_list_format         = "(40)[magenta]{ar} (40)[green]{t}"
-song_columns_list_format         = "(50)[magenta]{ar} (50)[blue]{t}"
+song_columns_list_format = "(50)[blue]{a} (50)[magenta]{tr} "
 
 [header]
 header_visibility                = no
@@ -42,7 +42,7 @@ volume_color                     = default
 
 [statusbar]
 progressbar_color                = "black"
-progressbar_elapsed_color        = "yellow"
+progressbar_elapsed_color        = "blue"
 # progressbar_look                 = "---"
 # progressbar_look                 = "•••"
 # progressbar_look                 = "─╼ "
@@ -75,5 +75,5 @@ song_window_title_format         = "{%a - }{%t}|{%f}"
 titles_visibility                = no
 
 [notification]
-execute_on_song_change           = notify-send "Now Playing" "$(mpc current)"
+execute_on_song_change           = notify-send --icon=~/.ncmpcpp/music.png "$(mpc current)"
 

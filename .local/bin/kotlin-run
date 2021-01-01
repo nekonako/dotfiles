@@ -1,0 +1,4 @@
+#!/bin/bash
+
+kotlinc $1 -include-runtime $1.jar
+java -jar $1.jar

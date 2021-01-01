@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rustc $1
+./$(echo "$1" | sed -e "s/\.rs//")
