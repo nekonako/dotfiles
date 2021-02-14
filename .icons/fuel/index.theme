@@ -1,0 +1,31 @@
+[Icon Theme]
+Name=fuel
+Comment=Nako Personal Simple Icon
+Inherits=oomox-baloon,Papirus-Dark
+Directories=24/devices,scalable/devices,24/places,scalable/places
+
+# 24x24
+[24/places]
+Context=Places
+Size=24
+Type=Fixed
+
+[24/devices]
+Context=Devices
+Size=24
+Type=Fixed
+
+# Scalable
+[scalable/devices]
+Context=Devices
+Size=64
+MinSize=25
+MaxSize=256
+Type=Scalable
+
+[scalable/places]
+Context=Places
+Size=64
+MinSize=25
+MaxSize=256
+Type=Scalable

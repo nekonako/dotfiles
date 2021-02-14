@@ -2,10 +2,9 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export TERM="xterm-256color"
 export BAT_PAGER="less -RF"
 # Zge
 # load zgen
@@ -41,8 +40,7 @@ zgen oh-my-zsh plugins/command-not-found
 #zgen load romkatv/powerlevel10k
 #zgen oh-my-zsh themes/agnoster
 #zgen load subnixr/minimal
-zgen load romkatv/powerlevel10k
-source ~/.zgen/romkatv/powerlevel10k-master/powerlevel10k.zsh-theme
+ zgen load romkatv/powerlevel10k powerlevel10k
 
 # Zsh auto suggestiona
 zgen load zsh-users/zsh-autosuggestions
@@ -54,12 +52,10 @@ zgen load zsh-users/zsh-syntax-highlighting
 zgen load zsh-users/zsh-completions src
 
 # Minimal zsh theme
-MNML_USER_CHAR=''
+#MNML_USER_CHAR=''
 #source "$HOME/.zgen/subnixr/minimal-master/minimal.zsh"
-MNML_PROMPT=(mnml_status mnml_git mnml_cwd mnml_keymap)
-MNML_RPROMPT=()
-#source "$HOME/.zgen/romkatv/powerlevel10k-master/powerlevel10k.zsh-theme"
-#source "$HOME/.zsh-theme-gruvbox-mix-dark"
+#MNML_PROMPT=(mnml_status mnml_git mnml_cwd mnml_keymap)
+#MNML_RPROMPT=()
 
 # zsh autosuggestion config
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=red"
@@ -69,43 +65,23 @@ ZSH_AUTOSUGGEST_STRATEGY=history
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
+# ALIASES
 
-# aliases
 alias merge='xrdb merge ~/.Xresources'
-alias neofetch='neofetch --source ~/.config/neofetch/block.txt'
+alias neofetch='neofetch --source ~/.config/neofetch/chess.txt'
 alias updategrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias vimedit='nvim ~/.vimconf'
-alias ytmp3='youtube-dl -x --audio-format mp3'
 alias ls='exa'
 
-# Golang
-export GOROOT=/usr/lib/go
-export GOPATH=/home/nako/Documents/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+# Docker
+alias docker-enable='systemctl enable docker'
+alias docker-disable='systemctl disable docker'
+alias docker-start='systemctl start docker'
+alias docker-restart='systemctl restart docker'
+alias docker-stop='systemctl stop docker'
 
-# Rust
-export PATH="$HOME/.cargo/bin:$PATH"
-
-# composer
-export PATH=$PATH:$HOME/.config/composer/vendor/bin
-
-# Android
-export ANDROID_HOME=$HOME/.Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# flutter
-export PATH=$PATH:$HOME/.Flutter/bin
-
-# JAVA
-export JDK_HOME=/usr/lib/jvm/java-11-openjdk/
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
-export PATH="$JAVA_HOME/bin:$PATH"
-export PATH=$PATH:$HOME/.local/lsp/server/bin/
-
-# script ( colorpane, colorblock etc. )
-export PATH=$PATH:$HOME/.local/bin
+# youtubeDL
+alias ytmp3='youtube-dl -x --audio-format mp3'
 
 # lokasi folder untuk node packages kamu
 NPM_PREFIX="${HOME}/.local/share/node"
@@ -118,15 +94,4 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-case $TERM in
-    st*)
-        precmd () {
-            print -Pn "\e]0;st:%~\a"
-        }
-    preexec () {
-        print -Pn "\e]0;st:$1\a"
-    }
-;;
-esac
+ [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

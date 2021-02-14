@@ -1,0 +1,35 @@
+configuration {
+  font: "Roboto 16";
+}
+
+* {
+  bg: #2b2b2b;
+  sel-bg: #4d4b4f;
+  fg: #cac5c1;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+#window {
+  location: north;
+  y-offset: 8%;
+  padding: 0.3em;
+  children: [mainbox];
+}
+
+#mainbox {
+  children: [listview];
+}
+
+#listview {
+  layout: horizontal;
+}
+
+#element {
+  padding: 0.5em;
+}
+
+#element.selected {
+  background-color: @sel-bg; 
+}

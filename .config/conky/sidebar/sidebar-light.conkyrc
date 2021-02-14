@@ -14,6 +14,8 @@ maximum_width = 400,
 gap_x = 40,--## left | right
 gap_y = -22,--## up | down
 
+mpd_host 127.0.0.1
+mpd_port 6601
 
 use_xft = true,
 font = 'gomono nerd font:size=10',
@@ -87,7 +89,7 @@ ${voffset 0}${offset 80}${font gomono nerd font:size=10}${wireless_essid wlo1}
 
 ${image ~/.icons/custom/drop/volume.png -p 10,610 -s 120x120}
 
-${voffset 60}${offset 130}${color1}${font gomono nerd font:Bold:size=20} ${if_running mpd}${mpd_artist}${else}Is not playing${endif}
+${voffset 60}${offset 130}${color1}${font gomono nerd font:Bold:size=20} ${if_mpd_playing}${mpd_artist}${else}Is not playing${endif}
 
 ${voffset -40}${offset 135}${font gomono nerd font:size=12} ${if_running mpd}${font Noto Sans CJK JP:size=10}${mpd_title}${else}Music${endif}
 ]];

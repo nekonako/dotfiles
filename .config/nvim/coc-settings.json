@@ -8,46 +8,70 @@
   "coc.preferences.previewAutoClose": true,
   "coc.preferences.rootPatterns": [".git", ".hg", ".projections.json", ".vim"],
   "coc.source.buffer.ignoreGitignore": false,
-  "codeLens.enable": true,
+  "codeLens.enable": false,
   "codeLens.separator": "❱",
-  "diagnostic.enable": true,
-  "diagnostic.enableSign": true,
+  "diagnostic.enable": false,
+  "diagnostic.enableSign": false,
   "diagnostic.errorSign": "EE",
   "diagnostic.hintSign": "HH",
   "diagnostic.infoSign": "II",
   "diagnostic.messageTarget": "float",
-  "diagnostic.refreshOnInsertMode": true,
+  "diagnostic.refreshOnInsertMode": false,
   "diagnostic.virtualText": false,
+  "diagnostic.checkCurrentLine": true,
   "diagnostic.warningSign": "WW",
   "emmet.includeLanguages": { "vue-html": "html", "javascript": "javascriptreact", "jinja2.html": "html" },
   "emmet.showExpandedAbbreviation": "always",
   "go.goplsOptions": { "usePlaceholders": true, "completeUnimported": true },
   "highlight.colors.enable": false,
   "highlight.document.enable": true,
-  "html.filetypes": ["html", "handlebars", "jinja2.html", "php"],
+  "html.filetypes": ["html", "handlebars", "jinja2.html", "blade.php","php"],
   "html.suggest.html5": true,
   "html.validate.styles": true,
-  "languageserver": { 
-	"ccls": { 
-		"command": "ccls", 
-		"filetypes": ["c", "cpp", "objc", "objcpp"], 
-		"rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"], 
-		"initializationOptions": { 
-			"cache": { 
-				"directory": "/tmp/ccls" 
-			},
-			"client": {
-				"snippetSupport": true
-			}
-		} 
-	},
-	"golang": {
-      		"command": "gopls",
-      		"rootPatterns": ["go.mod"],
-      		"disableWorkspaceFolders": true,
-      		"filetypes": ["go"]
-    }
- },
+  "languageserver": {
+    "clangd": {
+      "command": "clangd",
+      "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+    },
+
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "disableWorkspaceFolders": true,
+      "filetypes": ["go"]
+    },
+    "intelephense": {
+      "command": "intelephense",
+      "args": ["--stdio"],
+      "filetypes": ["php"],
+      "initializationOptions": {
+        "storagePath": "/tmp/intelephense"
+      }
+    },
+    "kotlin": {
+      "command": "kotlin-language-server",
+      "filetypes": ["kotlin"]
+    },
+   "rust": {
+    "command": "rust-analyzer",
+    "filetypes": ["rust"],
+    "rootPatterns": ["Cargo.toml", ".zshrc", "main.rs"]
+  }
+  },
+  "phpls.path": "~/.config/coc/extensions/node_modules/coc-phpls/node_modules/intelephense/",
+  "phpls.enable": false,
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-11",
+      "path": "/usr/lib/jvm/java-11-openjdk",
+      "default": true
+    },
+    {
+      "name": "JavaSE-14",
+      "path": "/usr/lib/jvm/java-14-openjdk"
+      }
+  ],
   "latex.build.args": [ "-xelatex", "-file-line-error", "-synctex=1", "-interaction=nonstopmode" ],
   "latex.build.executable": "latexmk",
   "prettier.htmlWhitespaceSensitivity": "css",

@@ -1,0 +1,57 @@
+conky.config = {
+own_window = true,
+own_window_type = 'desktop',
+own_window_transparent = true,
+own_window_hints = 'undecorated',
+own_window_colour = '#000000',
+own_window_class = 'Conky',
+own_window_title = 'Conky',
+
+minimum_width = 600, 
+minimum_height = 768,
+maximum_width = 600,
+
+gap_x = 0,--## left | right
+gap_y = 0,--## up | down
+
+
+use_xft = true,
+font = 'Iosevka Term:size=11',
+
+
+override_utf8_locale = true,
+
+uppercase = false,
+draw_shades = false,--yes
+default_shade_color = 'black',
+
+draw_outline = false,-- amplifies text if yes
+default_outline_color = 'black',
+
+default_color = '#F7F7F1',-- light
+color1 = '#B1AFE7',
+
+draw_borders = false,
+stippled_borders = 0,
+border_inner_margin = 0,
+border_outer_margin = 0,
+border_width = 0,
+draw_graph_borders = false,--no
+background = true,
+use_spacer = 'none',
+no_buffers = true,
+short_units = true,
+pad_percents = 2,
+imlib_cache_size = 0,
+double_buffer = true,
+update_interval = 1,
+mpd_host = "localhost",
+mpd_port = 6600,
+};
+
+conky.text = [[
+
+${voffset 10}${offset 110}${font M+ 2m:Bold:size=65}${color1}${time %H:%M}
+${voffset -80}${offset 150}${font M+ 2m:Bold:size=15}${time %a %-d %B}
+
+]];

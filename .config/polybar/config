@@ -1,8 +1,8 @@
 #### variable ####
 
 [colors]
-foreground = ${xrdb:foreground}
-background = ${xrdb:background}
+foreground = ${xrdb:background}
+background = ${xrdb:foreground}
 foreground-alt = ${xrdb:color2}
 background-alt = ${xrdb:color1}
 merah = ${xrdb:color1}
@@ -14,8 +14,8 @@ cyan = ${xrdb:color6}
 alert = ${xrdb:color3}
 
 [fonts]
-font-0 = "fantasquesansmono nerd font:size=10:antialias=true;3"
-font-1 = "Gomono nerd font:size=12:antialias=true;5"
+font-0 = "M+ 2m:style=regular:size=11:antialias=true;3"
+font-1 = "Gomono nerd font:size=11:antialias=true;3"
 font-2 = "FontAwesome:weight=Bold:pixelsize=4;-3"
 font-3 = "noto sans CJK jp:size=10:antialias=true;3"
 
@@ -110,7 +110,7 @@ modules-right = cpu sp1 memory sp1 temperature sp1 pulseaudio sp1 wlan sp1 date 
 [module/ewmh]
 type = internal/xworkspaces
 
-pin-workspace = false
+pin-workspace = true
 enable-click = true
 enable-scroll = false
 
@@ -119,17 +119,19 @@ icon-1 = www;
 icon-2 = graphics;
 icon-3 = mail;
 icon-4 = office;
+icon-default = 
+
 
 
 format = <label-state>
 label-monitor = %name%
-label-active = %name%
+label-active = %icon% %name%
 label-active-foregroud = ${colors.foreground}
 label-active-backgroud = ${colors.backround}
 
-label-occupied = %name%
+label-occupied = %icon%
 
-label-urgent = %name%
+label-urgent = %icon%
 label-urgent-foregroud = ${colors.foreground}
 label-urgent-backgroud = ${colors.backround-alt}
 
@@ -145,11 +147,11 @@ strip-wsnumbers = true
 pin-workspaces = false
 fuzzy-match = true
 
-ws-icon-0 = 1; 
-ws-icon-1 = 2; 
-ws-icon-2 = 3; 
-ws-icon-3 = 4; 
-ws-icon-4 = 5; 
+ws-icon-0 = 1; 
+ws-icon-1 = 2; 
+ws-icon-2 = 3;  
+ws-icon-3 = 4;  
+ws-icon-4 = 5; 
 ws-icon-5 = 6; 
 ws-icon-6 = 7; 
 ws-icon-7 = 8; 
@@ -170,14 +172,14 @@ label-visible-background = ${colors.background-alt}
 label-urgent-foreground = ${colors.foreground-alt}
 label-urgent-background = ${colors.background-alt}
 
-label-focused = %{T2}%icon% %{T-}
-label-focused-padding = 0.5
+label-focused = %{T2}%icon%%{T-}
+label-focused-padding = 1.0
 
-label-unfocused = %{T2}%icon% %{T-}
-label-unfocused-padding = 0.5
+label-unfocused = %{T2}%icon%%{T-}
+label-unfocused-padding = 1.0
 
-label-visible = %{T2}%icon% %{T-}
-label-urgent = %{T2}%icon% %{T-}
+label-visible = %{T2}%icon%%{T-}
+label-urgent = %{T2}%icon%%{T-}
 
 label-mode = %mode%
 label-mode-padding = 1

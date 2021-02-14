@@ -1,0 +1,24 @@
+!! ------------------------------------------------------------------------------
+!! XTerm configs
+!! ------------------------------------------------------------------------------
+
+XTerm.termName                     : screen-256color
+XTerm.vt100.locale                 : true
+XTerm.vt100.metaSendsEscape        : true
+XTerm.vt100.backarrowKey           : false
+XTerm.ttyModes                     : erase ^?
+
+!! font
+XTerm.vt100.faceName               : PragmataPro:size=11
+XTerm.vt100.renderFont             : true
+XTerm.scaleHeight                  : 1
+
+!! key binding
+XTerm.vt100.translations           : #override \n\
+    Ctrl <Key>M                    : maximize() \n\
+    Ctrl <Key>R                    : restore() \n\
+    Ctrl Alt <Key>C                : copy-selection(CLIPBOARD) \n\
+    Ctrl Alt <Key>V                : insert-selection(CLIPBOARD)
+
+!! window
+XTerm.set-utf8-title               : true

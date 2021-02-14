@@ -1,0 +1,8 @@
+nitrogen --restore &
+sxhkd &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+mpd &
+redshift &
+tint2 &
+# conky --config ~/.config/conky/simple/config.conkyrc &
+xsettingsd &

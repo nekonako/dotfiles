@@ -1,16 +1,17 @@
 /** Configured For Applets **/
 configuration {
-    modi: "combi,windowcd,run";
-    lines: 8;
+    modi: "combi,windowcd,run,drun";
+    lines: 10;
     columns: 1;
-    font: "iosevka medium 11";
-    bw: 0;
-    location: 0;
+    font: "pragmatapro mono liga 11";
+    bw: 2;
+    margin: 20;
+    location: 7;
     padding: 0;
     fixed-num-lines: true;
     show-icons: false;
     sidebar-mode: false;
-    combi-modi: "window,run";
+    combi-modi: "window,run,drun";
     separator-style: "none";
     hide-scrollbar: true;
     fullscreen: false;
@@ -29,7 +30,7 @@ configuration {
     display-run: "";
     display-ssh: "";
     display-drun: "";
-    display-combi: "";
+    display-combi: ""; 
     kb-remove-word-back: "Control+BackSpace,Alt+d,Alt+BackSpace";
     kb-accept-entry: "Control+m,Return,KP_Enter,Alt+m";
     kb-mode-next: "Shift+Right,Control+Tab,Alt+l,Alt+Tab";
@@ -85,11 +86,11 @@ configuration {
 window {
     background-color: @bg;
     border: 3px;
-    border-color: @grey;
+    border-color: @blue;
     border-radius: 0px;
-    width: 40%;
+    width: 20%;
     padding: 10px;
-    height: 30%;
+    height: 60%;
     
 }
 mainbox {
@@ -115,7 +116,7 @@ listview {
 }
 element {
     border: 0;
-    padding-bottom: 0px;
+    padding-bottom: 5px;
 }
 element normal.normal {
     background-color: @bg;
@@ -126,11 +127,11 @@ element normal.urgent {
     text-color:       @red;
 }
 element normal.active {
-    background-color: @blue;
-    text-color:       @blue;
+    background-color: @magenta;
+    text-color:       @magenta;
 }
 element selected.normal {
-    background-color: none;
+    background-color: @bg;
     text-color:       @blue;
 }
 element selected.urgent {
@@ -182,9 +183,11 @@ button selected {
     border-color:     @yellow;
 }
 inputbar {
-    spacing:    -2px ;
+    spacing:    0px ;
     text-color: @fg;
-    padding:    1px ;
+    background-color: @bg;
+    margin:     0px 0.0000em 0.0000em 1.0000em ;
+    padding:    2px ;
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
 }
 case-indicator {
@@ -202,9 +205,9 @@ prompt {
 }
 textbox-prompt-colon {
     expand:     false;
-    str:        "  ";
-    margin:     0px 0.3000em 0.0000em 0.0000em ;
-    text-color: inherit;
+    background-color: @grey;
+    str:        "";
+    text-color: @fg;
 }
 
 @import "colors.rasi"

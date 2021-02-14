@@ -21,9 +21,9 @@
   <theme>
     <cornerRadius>3</cornerRadius>
     <cornerRadius menu="yes">3</cornerRadius>
-    <name>Blocks-dark</name>
+    <name>Blocks-light</name>
     <titleLayout>IMC</titleLayout>
-    <keepBorder>no</keepBorder>
+    <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>GoMono NF</name>
@@ -38,13 +38,13 @@
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>FantasqueSansMono Nerd Font</name>
+      <name>PragmataPro Liga</name>
       <size>11</size>
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>FantasqueSansMono Nerd Font</name>
+      <name>PragmataPro Liga</name>
       <size>11</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
@@ -400,22 +400,22 @@
     </keybind>
     <keybind key="XF86AudioStop">
       <action name="Execute">
-        <command>mpc -h localhost -p 6601 stop</command>
+        <command>mpc stop</command>
       </action>
     </keybind>
     <keybind key="XF86AudioPlay">
       <action name="Execute">
-        <command>mpc -h localhost -p 6601 toggle</command>
+        <command>mpc toggle</command>
       </action>
     </keybind>
     <keybind key="XF86AudioPrev">
       <action name="Execute">
-        <command>mpc -h localhost -p 6601 prev && notify-send "Now Playing" "$(mpc -h localhost -p 6601 current)"</command>
+        <command>mpc prev</command>
       </action>
     </keybind>
     <keybind key="XF86AudioNext">
       <action name="Execute">
-        <command>mpc -h localhost -p 6601 next && notify-send "Now Playing" "$(mpc -h localhost -p 6601 current)"</command>
+        <command>mpc next</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">

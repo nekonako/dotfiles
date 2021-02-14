@@ -28,27 +28,27 @@ require "$ENV{HOME}/.config/obmenu-generator/config.pl";
 my $editor = $CONFIG->{editor};
 
 our $SCHEMA = [
-    {sep => 'Openbox'},
+    {sep => ' OPENBOX '},
     #          COMMAND                 LABEL              ICON
-    {item => ['thunar',       ' File Manager', 'system-file-manager']},
-    {item => ['xst',            ' Terminal',     'utilities-terminal']},
-    {item => ['firefox', ' Web Browser',  'web-browser']},
-    {item => ['rofi -show combi',            ' Run command',  'system-run']},
+    {item => ['thunar',       '  File Manager', 'system-file-manager']},
+    {item => ['st',            '  Terminal',     'utilities-terminal']},
+    {item => ['firefox', '  Web Browser',  'web-browser']},
+    {item => ['rofi -show drun',            '  Run command',  'system-run']},
 
     {sep => undef},
 
     #          NAME            LABEL                ICON
-    {cat => ['utility',     ' Accessories', 'applications-utilities']},
-    {cat => ['development', ' Development', 'applications-development']},
-    {cat => ['education',   ' Education',   'applications-science']},
-    {cat => ['game',        ' Games',       'applications-games']},
-    {cat => ['graphics',    ' Graphics',    'applications-graphics']},
-    {cat => ['audiovideo',  ' Multimedia',  'applications-multimedia']},
-    {cat => ['network',     ' Network',     'applications-internet']},
-    {cat => ['office',      ' Office',      'applications-office']},
-    {cat => ['other',       ' Other',       'applications-other']},
-    {cat => ['settings',    ' Settings',    'applications-accessories']},
-    {cat => ['system',      ' System',      'applications-system']},
+    {cat => ['utility',     '  Accessories', 'applications-utilities']},
+    {cat => ['development', '  Development', 'applications-development']},
+    {cat => ['education',   '  Education',   'applications-science']},
+    {cat => ['game',        '  Games',       'applications-games']},
+    {cat => ['graphics',    '  Graphics',    'applications-graphics']},
+    {cat => ['audiovideo',  '  Multimedia',  'applications-multimedia']},
+    {cat => ['network',     '  Network',     'applications-internet']},
+    {cat => ['office',      '  Office',      'applications-office']},
+    {cat => ['other',       '  Other',       'applications-other']},
+    {cat => ['settings',    '  Settings',    'applications-accessories']},
+    {cat => ['system',      '  System',      'applications-system']},
 
     #                  LABEL          ICON
     #{beg => ['My category',  'cat-icon']},
@@ -99,10 +99,10 @@ our $SCHEMA = [
     {sep => undef},
 
     ## The xscreensaver lock command
-    {item => ['xscreensaver-command -lock', ' Lock', 'system-lock-screen']},
+    {item => ['xscreensaver-command -lock', '  Lock', 'system-lock-screen']},
 
     ## This option uses the default Openbox's "Exit" action
-    {exit => [' Exit', 'application-exit']},
+    {exit => ['  Exit', 'application-exit']},
 
     ## This uses the 'oblogout' menu
     # {item => ['oblogout', 'Exit', 'application-exit']},

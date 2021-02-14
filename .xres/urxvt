@@ -1,0 +1,26 @@
+URxvt.geometry:           74x14
+URxvt.intensityStyles:    false
+URxvt.font:               xft:FantasqueSansMono nerd font:size=12,xft:hintstyle=hintnone
+URxvt.boldFont:           xft:FantasqueSansMono nerd font:bold:size=12, xft:Fira Code:bold:size=11:hintstyle=hintnone
+URxvt.saveLines:          8192
+URxvt*letterSpace: 0
+
+URxvt*scrollTtyOutput:    false
+URxvt*scrollWithBuffer:   true
+URxvt*scrollTtyKeypress:  true
+URxvt.scrollBar:          false
+URxvt.internalBorder:     30
+URxvt*cursorBlink:        false
+URxvt.cursorUnderline:    true
+
+URxvt.perl-ext-common:    ibeamcursor
+URxvt.url-launcher:       firefox
+URxvt.matcher.button:     1
+URxvt.iso14755:           false
+URxvt.iso14755_52:        false
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-equal:     resize-font:bigger
+URxvt.keysym.C-0:         resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+
+URxvt.background-expr: scale keep { load "/home/nako/image/line.png" }

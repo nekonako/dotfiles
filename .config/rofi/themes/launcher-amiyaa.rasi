@@ -1,0 +1,98 @@
+/*
+ * Author: Ghani Rafif (ekickx)
+ * Github: @ekickx 
+ * Reddit: @e_kickx 
+ */
+
+configuration {
+  columns: 3;
+  display-drun: "Applications";
+  display-run:  "Commands";
+  font: "Roboto 14";
+  show-icons: true;
+}
+
+* {
+  /* Size */
+  /* Sidebox */
+  mode-switcher-padding: 0 0 50% 0;
+  button-margin: 0.5em;
+  button-padding: 1.5em 2em;
+  button-selected-border: 0 0 0 0.3em;
+  /* Mainbox */
+  mainbox-padding: @button-margin; /* 0.5em */
+  inputbar-padding: @button-margin; /* 0.5em */
+  element-margin: 0.3em;
+  element-padding: 1em;
+
+  /* Color */
+  bg: #2b2b2b;
+  sel-bg: #4d4b4f;
+  sidebox-bg: #262626;
+  fg: #cac5c1;
+  sel-fg: #e6e0db;
+  border: @sel-bg;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+#window {
+  fullscreen: true;
+  children: [mode-switcher, mainbox];  
+  orientation: horizontal;
+}
+
+#mode-switcher {
+  padding: @mode-switcher-padding; /* bottom: 50% */
+  background-color: @sidebox-bg;
+  orientation: vertical;
+}
+
+#mainbox {
+  padding: @mainbox-padding; /* 0.5em */
+  children: [inputbar, listview];
+}
+
+#inputbar {
+  padding: @inputbar-padding; /* 0.5em */
+  children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+#prompt{
+  enabled: false;
+}
+
+#textbox-prompt-colon{
+  font: "RobotoMono Nerd Font 16";
+  str: " :";
+  expand: false;
+}
+
+#entry {
+  font: "Roboto 18";
+}
+
+#button {
+  margin: @button-margin; /* 0.5em */
+  padding: @button-padding; /* t&b: 1.5em; r&l: 2em */
+  background-color: @sidebox-bg;
+  horizontal-align: 0;
+  font: "Roboto 18";
+}
+
+#button.selected {
+  border: @button-selected-border; /* bottom: 0.3em */
+  border-color: @border;
+  text-color: @sel-fg;
+}
+
+#element {
+  margin: @element-margin; /* 0.3em */
+  padding: @element-padding; /* 1em */
+}
+
+#element.selected {
+  background-color: @sel-bg; 
+  text-color: @sel-fg;
+}

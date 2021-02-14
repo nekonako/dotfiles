@@ -44,7 +44,7 @@ set $mode_gaps_left Left Gaps: +|-|0 (local), Shift + +|-|0 (global)
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:monospace 8
-font pango:Iosevka 12
+font pango:Iosevka mayukai medium 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -57,7 +57,7 @@ font pango:Iosevka 12
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-# 
+#
 # I3 KEYBINDINS #
 #
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -65,7 +65,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -111,7 +111,7 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle 
+bindsym $mod+space focus mode_toggle
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -172,30 +172,30 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Make the currently focused window a scratchpad
-bindsym $mod+Next move scratchpad
+bindsym $mod+Shift+s move scratchpad
 
 # Show the first scratchpad window
-bindsym $mod+Prior scratchpad show floating toggle
+bindsym $mod+Shift+u scratchpad show floating toggle
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
+# These bindings trigger as soon as you enter the resize mode
+# Pressing left will shrink the window’s width.
+# Pressing right will grow the window’s width.
+# Pressing up will shrink the window’s height.
+# Pressing down will grow the window’s height.
+    bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
         bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
+# same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
+# back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
@@ -204,11 +204,11 @@ bindsym $mod+r mode "resize"
 
 # move window in floating mode
 mode "moveit" {
-        bindsym Up move up 20px
+    bindsym Up move up 20px
         bindsym Left move left 20px
         bindsym Down move down 20px
         bindsym Right move right 20px
-        
+
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+m mode "default"
@@ -217,7 +217,7 @@ bindsym $mod+m focus floating; mode "moveit"
 
 # i3-gaps  keybinding
 mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
+    bindsym o      mode "$mode_gaps_outer"
         bindsym i      mode "$mode_gaps_inner"
         bindsym h      mode "$mode_gaps_horiz"
         bindsym v      mode "$mode_gaps_verti"
@@ -229,7 +229,7 @@ mode "$mode_gaps" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
+    bindsym plus  gaps outer current plus 5
         bindsym minus gaps outer current minus 5
         bindsym 0     gaps outer current set 0
 
@@ -241,7 +241,7 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
+    bindsym plus  gaps inner current plus 5
         bindsym minus gaps inner current minus 5
         bindsym 0     gaps inner current set 0
 
@@ -253,7 +253,7 @@ mode "$mode_gaps_inner" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_horiz" {
-        bindsym plus  gaps horizontal current plus 5
+    bindsym plus  gaps horizontal current plus 5
         bindsym minus gaps horizontal current minus 5
         bindsym 0     gaps horizontal current set 0
 
@@ -265,7 +265,7 @@ mode "$mode_gaps_horiz" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_verti" {
-        bindsym plus  gaps vertical current plus 5
+    bindsym plus  gaps vertical current plus 5
         bindsym minus gaps vertical current minus 5
         bindsym 0     gaps vertical current set 0
 
@@ -277,7 +277,7 @@ mode "$mode_gaps_verti" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_top" {
-        bindsym plus  gaps top current plus 5
+    bindsym plus  gaps top current plus 5
         bindsym minus gaps top current minus 5
         bindsym 0     gaps top current set 0
 
@@ -289,7 +289,7 @@ mode "$mode_gaps_top" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_right" {
-        bindsym plus  gaps right current plus 5
+    bindsym plus  gaps right current plus 5
         bindsym minus gaps right current minus 5
         bindsym 0     gaps right current set 0
 
@@ -301,7 +301,7 @@ mode "$mode_gaps_right" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_bottom" {
-        bindsym plus  gaps bottom current plus 5
+    bindsym plus  gaps bottom current plus 5
         bindsym minus gaps bottom current minus 5
         bindsym 0     gaps bottom current set 0
 
@@ -313,7 +313,7 @@ mode "$mode_gaps_bottom" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_left" {
-        bindsym plus  gaps left current plus 5
+    bindsym plus  gaps left current plus 5
         bindsym minus gaps left current minus 5
         bindsym 0     gaps left current set 0
 
@@ -339,11 +339,13 @@ bindsym $mod+Shift+g mode "$mode_gaps"
 # USERS KEYBINDINS #
 #
 
-# Disable Some Keys 
+# Disable Some Keys
 
 # Terminal (mod+Enter)
 bindsym $mod+Mod1+p exec networkmanager_dmenu
-bindsym $mod+Shift+Return exec urxvt
+bindsym $mod+Shift+Return exec st
+bindsym $mod+Mod1+k exec kitty
+bindsym $mod+Mod1+l exec skrinsut
 # GTK Theme sector (mod+alt+a)
 bindsym $mod+Mod1+a exec lxappearance
 # QT5 Theme sector (mod+alt+q)
@@ -358,19 +360,19 @@ bindsym $mod+x exec bash -i -c "rofi -show run"
 # start rofi window list (mod+w)
 bindsym $mod+o exec rofi -show drun
 ## clearine
-bindsym	$mod+c exec clearine
+bindsym $mod+c exec clearine
 
 # Laptop keys
-bindsym XF86AudioRaiseVolume exec "amixer sset Master 5%+"
-bindsym XF86AudioLowerVolume exec "amixer sset Master 5%-"
-bindsym XF86AudioMute exec "amixer -q sset Master toggle"
-bindsym XF86AudioMic exec "amixer -q sset Mic toggle"
+bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
+bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
+bindsym XF86AudioMute exec "amixer -D pulse -q sset Master toggle"
+bindsym XF86AudioMic exec "amixer -D pulse -q sset Mic toggle"
 bindsym XF86MonBrightnessDown exec "light -U 5"
 bindsym XF86MonBrightnessUp exec "light -A 5"
 bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
-bindsym XF86AudioPrev exec mpc prev & notify-send "Now Playing ♫" "$(mpc current)"
-bindsym XF86AudioNext exec mpc next & notify-send "Now Playing ♫" "$(mpc current)"
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioNext exec mpc next
 
 #
 # COLORSCHEME #
@@ -397,16 +399,16 @@ set_from_resource $bcyan        color14       #73c5e2
 set_from_resource $white        color7        #a9a9aa
 set_from_resource $bwhite       color15       #fcfcfc
 set $purple #212534
-set $grey #3E4A67
+set $grey #5B5678
 
 # Changing colors
 # class                 border           backgr.         text            indicator       child_border
-client.focused          $grey   	 $grey 		$foreground     $yellow         $background
-client.focused_inactive $background      $background    $foreground     $background     $background
-client.unfocused        $background      $background    $foreground     $background     $background
+client.focused          $magenta          $magenta          $black     $yellow         $background
+client.focused_inactive $blue        $blue        $black     $foreground     $background
+client.unfocused        $blue        $blue       $black     $foreground     $background
 client.urgent           $grey            $yellow        $foreground     $background     $background
 client.placeholder      $grey            $yellow        $foreground     $background     $background
-client.background       $grey 
+client.background       $grey
 
 #
 # WORKSPACE #
@@ -421,7 +423,7 @@ floating_minimum_size 10 x 10
 floating_maximum_size 1266 x 700
 
 # window configuration
-title_align center
+title_align left
 default_border normal
 default_floating_border normal
 hide_edge_borders smart
@@ -437,7 +439,9 @@ force_focus_wrapping workspace
 #
 # window spesific configuration
 #for_window [class=".*"] title_format "<span foreground='#161925'></span><span foreground='#FFFFFF' background='#161925'>        <b>%class</b>        </span><span foreground='#161925'></span>"
-for_window [class=".*"] title_format  %class
+for_window [class=".*"] title_format  "<span background='#FDF2F0' foreground='#484461'>  %instance </span><span background='#5A5576' foreground='#FDF2F0'> %title </span>
+# "</span><span background='#FDF2F0' foreground='#484461'> %title </span>"
+#for_window [class=".*"] title_format %title
 for_window [class="vokoscreen"] floating enable border normal
 for_window [class="Yad"] floating enable border normal
 for_window [class="qjackctl"] floating enable border normal
@@ -456,15 +460,15 @@ for_window [class="Gpa"] floating enable
 for_window [class="Tint2"] floating enable
 for_window [class="Sxiv"] border pixel 1
 
-# 
+#
 # AUTORUNS #
 #
-exec xautolock -time 15 -locker i3lock-fancy
+exec xautolock -time 30 -locker mantablockscreen
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
+# exec --no-startup-id xsetroot -solid '#5A5576'
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id mpd
-exec --no-startup-id clipmenud
 exec --no-startup-id redshift
 exec --no-startup-id  sh $HOME/.config/polybar/launch.sh
 #exec_always killall picom; picom --corner-radius 6 --dbus -b

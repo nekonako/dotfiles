@@ -1,0 +1,72 @@
+## Restart sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd
+## simple terminal
+super + Return
+    alacritty
+## alacritty
+super + shift + Return 
+    st
+## thunar
+super + f
+    thunar
+## rofi
+super + o
+    rofi -show drun
+## neovim
+super + shift + n
+    st -e 'nvim'
+super + n
+    alacritty -e 'nvim'
+## music
+super + m
+    alacritty -e 'ncmpcpp'
+## tmux
+super + t
+    alacritty -e 'tmux'
+## firefox
+super + w
+    firefox
+# dmenu
+super + j
+    j4-dmenu-desktop --dmenu="dmenu -h 30"
+super + d 
+    dmenu_run -h 30
+super + alt + p
+    networkmanager_dmenu
+
+### MEDIA BUTTON ###
+# + volume
+XF86AudioRaiseVolume 
+    amixer -D pulse sset Master 5%+
+# - volume
+XF86AudioLowerVolume 
+    amixer -D pulse sset Master 5%-
+# mute
+XF86AudioMute
+    amixer -D pulse -q sset Master toggle
+XF86AudioMic
+    amixer -D pulse -q sset Mic toggle
+# - brightness
+XF86MonBrightnessDown
+    light -U 5
+# + brightness
+XF86MonBrightnessUp
+    light -A 5
+# Play
+XF86AudioPlay
+    mpc toggle
+# Stop
+XF86AudioStop
+    mpc stop
+# Prev
+XF86AudioPrev
+    mpc prev && ncmpcpp-notify
+# Next
+XF86AudioNext
+    mpc next && ncmpcpp-notify
+
+## Exit
+super + shift + Escape
+    pkill xfwm4
+

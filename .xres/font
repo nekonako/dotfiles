@@ -1,0 +1,9 @@
+!! ------------------------------------------------------------------------------
+!! Font configs
+!! ------------------------------------------------------------------------------
+Xft.autohint:             false
+Xft.antialias:            true
+Xft.hinting:              true
+Xft.hintstyle:            hintslight
+Xft.lcdfilter:            lcddefault
+Xft.rgba:                 rgb

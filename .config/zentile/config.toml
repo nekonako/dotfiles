@@ -1,0 +1,44 @@
+# Window decorations will be removed if set to true
+remove_decorations = false
+
+# Adds spacing between windows
+gap = 10
+
+# How much to increment the master area size.
+proportion = 0.1
+
+[keybindings]
+# key sequences can have zero or more modifiers and exactly one key.
+# example: Control-Shift-t has two modifiers and one key.
+# You can view which keys activate which modifier using the 'xmodmap' program.
+# Key symbols can be found by pressing keys using the 'xev' program
+
+# Tile the current workspace.
+tile = "mod4-Shift-t"
+
+# Untile the current workspace.
+untile = "mod4-Shift-u"
+
+# Make the active window as master.
+make_active_window_master = "mod4-Shift-m"
+
+# Increase number of masters.
+increase_master = "mod4-Shift-i"
+
+# Decrease the number of masters.
+decrease_master = "mod4-Shift-d"
+
+# Cycles through the available layouts.
+switch_layout = "mod4-Shift-s"
+
+# Moves focus to the next window.
+next_window = "mod4-Shift-k"
+
+# Moves focus to the previous window.
+previous_window = "mod4-Shift-j"
+
+# Increases the size of the master windows.
+increment_master = "mod4-Shift-bracketright"
+
+# Decreases the size of the master windows.
+decrement_master = "mod4-Shift-bracketleft"

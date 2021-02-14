@@ -1,0 +1,577 @@
+#### variable ####
+
+[colors]
+foreground = ${xrdb:foreground}
+background = ${xrdb:background}
+foreground-alt = ${xrdb:color2}
+background-alt = ${xrdb:color1}
+abu = "#E5E7F4"
+merah = ${xrdb:color1}
+hijau = ${xrdb:color2}
+kuning = ${xrdb:color3}
+biru = ${xrdb:color4}
+ungu = ${xrdb:color5}
+cyan = ${xrdb:color6}
+alert = ${xrdb:color3}
+
+[fonts]
+font-0 = "Iosevka mayukai:style=medium:size=11:antialias=true;3"
+font-1 = "Iosevka mayukai:style=medium:size=11:antialias=true;3"
+font-2 = "FontAwesome:size=11:antialias=true;12"
+font-3 = "noto sans CJK jp:size=10:antialias=true;3"
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+[variables]
+bar-height = 23
+bar-border-size = 2
+border-color = ${colors.background}
+
+label-padding = 3
+label-maxlen = 50
+
+eth=eno1
+wlan=wlo1
+
+#### /Varieable #####
+
+[bar/top]
+monitor = ${env:MONITOR:eDP-1}
+height = ${variables.bar-height}
+bottom = false
+fixed-center = true
+
+border-bottom-size = ${variables.bar-border-size}
+border-color = ${variables.border-color}
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = ${fonts.font-0}
+font-1 = ${fonts.font-1}
+font-2 = ${fonts.font-2}
+font-3 = ${fonts.font-3}
+
+
+modules-left = sp1 mpd
+modules-center =
+modules-right = netspdwlan netspdeth wlan sp1 battery sp1 date sp1 time sp1
+
+;tray-position = right
+;tray-detached = false
+;tray-maxsize = 15
+;tray-transparent = false
+;tray-background = ${colors.highlight}
+;tray-offset-x = 0
+;tray-offset-y = 0
+;tray-padding = 1
+;tray-scale = 1.0
+
+
+[bar/bottom]
+monitor = ${env:MONITOR:eDP-1}
+height = ${variables.bar-height}
+bottom = true
+fixed-center = true
+border-size = ${variables.bar-border-size}
+border-color = ${variables.border-color}
+;offset-y = 5
+;offset-x = 2.5%
+;width = 100%
+;radius = 0
+override-redirect = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = ${fonts.font-0}
+font-1 = ${fonts.font-1}
+font-2 = ${fonts.font-2}
+font-3 = ${fonts.font-3}
+
+modules-left = mpd
+modules-center = i3
+modules-right = date
+
+;tray-position = right
+;tray-detached = false
+;tray-maxsize = 15
+;tray-transparent = false
+;tray-background = ${colors.highlight}
+;tray-offset-x = 0
+;tray-offset-y = 0
+;tray-padding = 1
+;tray-scale = 1.0
+
+
+###### _____MODULE_____#####
+
+[module/ewmh]
+type = internal/xworkspaces
+
+pin-workspace = true
+enable-click = false
+enable-scroll = false
+
+icon-0 = 1;siji
+icon-1 = 2;loro
+icon-2 = 3;telu
+icon-3 = 4;papat
+icon-4 = 5;limo
+icon-default = workspace
+
+label-backgroud = ${colors.ungu}
+
+format = <label-state>
+label-monitor = %name%
+
+label-active = %icon%
+label-active-foregroud = ${colors.foregroud}
+label-active-backgroud = ${colors.ungu}
+label-active-padding = 1
+
+label-occupied = %name%
+label-occupied-backgroud = ${colors.foregroud}
+label-occupied-foregroud = ${colors.biru}
+label-occupied-padding = 1
+
+label-urgent = %icon%
+label-urgent-foregroud = ${colors.foreground}
+label-urgent-backgroud = ${colors.biru}
+
+label-empty = %icon%
+label-empty-foregroud = ${colors.foreground}
+lebel-empty-backgroud = ${colors.biru}
+label-empty-padding = 1
+
+
+[module/i3]
+type = internal/i3
+index-sort = false
+wrapping-scroll = true
+strip-wsnumbers = true
+pin-workspaces = false
+fuzzy-match = true
+
+ws-icon-0 = 1;siji
+ws-icon-1 = 2;loro
+ws-icon-2 = 3;telu
+ws-icon-3 = 4;papat
+ws-icon-4 = 5;lim0
+ws-icon-5 = 6;enem
+ws-icon-6 = 7;pitu
+ws-icon-7 = 8;wolu
+ws-icon-8 = 9;songo
+ws-icon-9 = 0;sepuloh
+
+format-background = ${colors.foreground}
+format-foreground = ${colors.background}
+
+label-focused-foreground = ${colors.background}
+label-focused-background =${colors.ungu}
+
+label-unfocused-foreground = ${colors.background}
+label-unfocused-background = ${colors.biru}
+
+label-visible-foreground = ${colors.foreground-alt}
+label-visible-background = ${colors.background-alt}
+label-urgent-foreground = ${colors.foreground-alt}
+label-urgent-background = ${colors.background-alt}
+
+label-focused = %icon%
+label-focused-padding = 1.0
+
+label-unfocused = %icon%
+label-unfocused-padding = 1.0
+
+label-visible = %{T2}%icon%%{T-}
+label-urgent = %{T2}%icon%%{T-}
+
+label-mode = %mode%
+label-mode-padding = 1
+label-mode-background = ${colors.background}
+label-mode-foreground = ${colors.hijau}
+
+;-----Xwindow -----
+
+[module/xwindow]
+type = internal/xwindow
+format = <label>
+;format-padding = 0
+
+label = " %title:0:30:...%"
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
+
+label-empty =
+label-empty-foreground = ${colors.background}
+
+;-----Xkeyboard------
+
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+
+format = <label-indicator>
+format-spacing = 0
+
+format-prefix = " "
+format-prefix-foreground = ${colors.alert}
+format-prefix-background = ${colors.background}
+
+label-layout = "%layout%"
+label-layout-foreground = ${colors.foreground}
+label-layout-background = ${colors.background}
+
+label-indicator-padding = 0
+label-indicator-margin = 0
+label-indicator = %{T4} CAPS %{T-}
+label-indicator-foreground = ${colors.alert}
+label-indicator-background = ${colors.background}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+
+use-ui-max = true
+
+interval = 5
+
+format-volume ="<ramp-volume> <label-volume>"
+
+label-muted = 
+label-muted-foreground = ${colors.alert}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${colors.hijau}
+
+;-----------------------------------------------------------------MODUL:MEMORY
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+interval = 1
+
+format-online = <icon-random><label-song>
+lebel-maxlen = 20
+label-song = " %artist% - %title:0:20:..% "
+label-offline =  mpd is offline
+format-online-overline = ${colors.foreground}
+format-online-underline = ${colors.background}
+label-song-background = ${colors.biru}
+label-song-foreground = ${colors.background}
+
+icon-play = 
+icon-next = 
+icon-pause = 
+icon-prev = 
+icon-random = "%{T2}  "
+
+toggle-on-foreground = ${colors.background}
+toggle-off-foreground = ${colors.background}
+icon-random-foreground =  ${colors.background}
+icon-random-background =  ${colors.ungu}
+
+[module/memory]
+type = internal/memory
+interval = 1
+
+format-prefix = " "
+format-prefix-foreground = ${colors.hijau}
+format-prefix-background = ${colors.background}
+
+label = "%percentage_used%% "
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
+
+;-------------------------------------------------------------------MODULE:CPU
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+format-prefix = " "
+format-prefix-foreground = ${colors.merah}
+format-prefix-background = ${colors.background}
+;format-underline = ${colors.foreground}
+label = "%percentage:2%% "
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
+
+;------------------------------------------------------------MODULE:FILESYSTEM
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+
+label-mounted = " %percentage_used%%"
+label-mounted-foreground = ${colors.foreground}
+label-mounted-background = ${colors.background}
+
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground}
+
+;-----------------------------------------------------------MODULE:TEMPERATURE
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 80
+
+format = "<ramp><label> "
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+label = "%temperature-c%"
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
+
+format-warn = <ramp><label-warn>
+label-warn = "%temperature-c%"
+label-warn-foreground = ${colors.alert}
+
+ramp-0 = " "
+ramp-1 = " "
+ramp-2 = " "
+ramp-3 = " "
+ramp-4 = " "
+ramp-foreground = ${colors.kuning}
+ramp-background = ${colors.background}
+
+;------------------------------------------------------------------MODULE:DATE
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = %A %d %b %y
+date-alt = "%a %Y/%m/%d"
+
+time = %H:%M
+time-alt = "%H:%M"
+
+format-prefix = "%{T2}  %{T-}"
+format-prefix-foreground = ${colors.background}
+format-prefix-background = ${colors.ungu}
+
+label =" %date% "
+label-foreground = ${colors.background}
+label-background = ${colors.biru}
+
+
+;---------------------------------------------------------------MODULE:NETWORK
+
+[module/netspdwlan]
+type = internal/network
+interface = wlo1
+interval = 1.0
+format-connected = "<label-connected>"
+label-connected = " %downspeed:3%  %upspeed:3%"
+label-connected-foreground = ${colors.foreground}
+label-connected-background = ${colors.background}
+
+
+[module/wlan]
+type = internal/network
+interface = wlo1
+interval = 1.0
+
+format-connected = "<ramp-signal> <label-connected>"
+label-connected = " %essid:0:10:% "
+label-connected-foreground = ${colors.foreground}
+label-connected-background = ${colors.background}
+
+format-disconnected = <label-disconnected>
+label-disconnected = " "
+label-disconnected-foreground = ${colors.biru}
+
+ramp-signal-0 = %{T5}%{T-}
+ramp-signal-1 = %{T5}%{T-}
+ramp-signal-2 = %{T5}%{T-}
+ramp-signal-3 = %{T5}%{T-}
+ramp-signal-foreground = ${colors.biru}
+ramp-signal-background = ${colors.background}
+
+;-----------------------------------------------------------------------------
+
+[module/netspdeth]
+type = internal/network
+interface = eno1
+interval = 1.0
+format-connected = "<label-connected>"
+label-connected = " %downspeed:3%  %upspeed:3% |"
+label-connected-foreground = ${colors.foreground}
+label-connected-background = ${colors.background}
+
+
+[module/eth]
+type = internal/network
+interface = eno1
+interval = 1.0
+
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground}
+format-connected-prefix-background = ${colors.background}
+label-connected = " %local_ip% "
+
+;format-disconnected = <label-disconnected>
+;label-disconnected =  %ifname%
+;label-disconnected-foreground = ${colors.foreground}
+
+;---------------------------------------------------------------MODULE:BATTERY
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 95
+
+format-charging = "<animation-charging> <label-charging>"
+;format-charging-underline = ${colors.foreground}
+label-charging-foreground = ${colors.foreground}
+label-charging-background = ${colors.background}
+
+format-discharging = "%{T2}<ramp-capacity>%{T-} <label-discharging>"
+;format-discharging-underline = ${self.format-charging-underline}
+label-discharging-foreground = ${colors.foreground}
+label-discharging-background = ${colors.background}
+
+format-full-prefix = "   "
+format-full-prefix-foreground = ${colors.kuning}
+format-full-prefix-background = ${colors.background}
+;format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = "  "
+ramp-capacity-0-foreground = ${colors.alert}
+ramp-capacity-1 = "  "
+ramp-capacity-2 = "  "
+ramp-capacity-3 = "  "
+ramp-capacity-foreground = ${colors.kuning}
+ramp-capacity-background = ${colors.background}
+
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-foreground = ${colors.kuning}
+animation-charging-background = ${colors.background}
+animation-charging-framerate = 750
+
+;------------------------------------------------------------------MODULE:TEXT
+
+[module/os]
+type = custom/text
+content = " %{T3}%{T-} MANJARO  "
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+
+[module/windows]
+type = custom/text
+content = " %{T3}%{T-} MENU "
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+
+[module/redshift]
+type = custom/script
+exec = /home/asuna/.config/polybar/polybar-scripts/info-redshift-temp/info-redshift-temp.sh
+interval = 5
+label-foreground=${colors.foreground}
+;format-padding
+
+[module/karnel]
+type = custom/script
+exec = ~/.config/polybar/karnel.sh
+interval = 5
+label-foreground=${colors.foreground}
+;format-padding
+
+[module/profile]
+type = custom/text
+content = " %{T3}%{T-} ASUNA"
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+
+[module/sp1]
+type = custom/text
+content = "  "
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+
+[module/sp2]
+type = custom/text
+;content = " | "
+content = " | "
+content-foreground = ${colors.foreground}
+content-background = ${colors.background}
+
+[module/backlight]
+type = custom/script
+interval = 0.2
+exec = sh ~/.config/polybar/backlight.sh
+
+scrolling-up = exec light -A 5
+scrolling-down = exec light -U 5
+
+format-prefix =" "
+label= %output%%
+label-foreground=${colors.foreground}
+
+
+[module/time]
+type = internal/date
+interval = 1
+time = %H:%M
+
+format-prefix = ""
+format-prefix-foreground = ${colors.cyan}
+format-prefix-background = ${colors.background}
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+label = " %time%"
+
+[module/powermenu]
+type = custom/menu
+
+label-open = " POWER"
+label-open-foreground =${colors.foreground}
+label-close = " cancel"
+label-close-foreground = ${colors.foreground}
+label-separator = "  "
+lanel-separator-foreground = ${colors.foreground}
+
+menu-0-0 = " reboot"
+menu-0-0-exec = reboot
+
+menu-0-1 = " power off"
+menu-0-1-exec = poweroff
+
+menu-0-2 = " exit "
+menu-0-2-exec = i3 exit
+
+;---------------------------------------------------------------------SETTINGS
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+screenchange-reload = true
+compositing-background = over
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+pseudo-transparency = false
+
+;--------------------------------------------------------------------GLOBAL/WM
+
+
+
+

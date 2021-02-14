@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+# IBeam cursor in urxvt
+
+use strict;
+use warnings;
+
+sub on_start
+{
+    my ($self) = @_;
+    my $cmd = "\033[5 q\r";
+    $self->cmd_parse ($cmd);
+}

@@ -1,11 +1,3 @@
-!! ------------------------------------------------------------------------------
-!! Import other Configuration from ~/.Xresources.d
-!! ------------------------------------------------------------------------------
-!#include "/home/yuunel/.Xresources.d/xautolock"
-#include "/home/yuune/.Xresources.d/color/harucha"
-#include "/home/yuune/.Xresources.d/cursor"
-#include "/home/yuune/.Xresources.d/urxvt"
-#include "/home/yuune/.Xresources.d/xterm"
-#include "/home/yuune/.Xresources.d/font"
-!! ------------------------------------------------------------------------------
-
+#include "/home/nako/.xres/color/fuel"
+#include "/home/nako/.xres/urxvt"
+#include "/home/nako/.xres/xterm"

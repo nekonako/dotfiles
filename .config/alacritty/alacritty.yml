@@ -1,0 +1,201 @@
+env:
+  TERM: alacritty
+
+window:
+  dimensions:
+    columns: 75
+    lines: 14
+
+  position:
+    x: 0
+    y: 0
+
+  padding:
+    x: 15
+    y: 0
+
+  dynamic_title: false
+  dynamic_padding: true
+  startup_mode: Windowed
+  title: Alacritty
+  decorations: full
+
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+font:
+  normal:
+    family: Iosevka mayukai
+    style: Medium
+
+  bold:
+    family: Iosevka mayukai
+    style: Bold
+
+  italic:
+    family: Iosevka mayukai
+    style: Italic
+
+  bold_italic:
+    family: Iosevka mayukai
+    style: Bold Italic
+
+  size: 9
+  # size: 8
+
+  offset:
+    x: 0
+    y: -1
+
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+draw_bold_text_with_bright_colors: false
+
+schemes:
+  fuel: &fuel
+    primary:
+      # background: '#282828'
+      background: '#484461'
+      foreground: '#FDF2F0'
+
+    cursor:
+      text: '#000000'
+      cursor: '#FDF2F0'
+
+    # Normal colors
+    normal:
+      black:   '#484461'
+      red:     '#FEA2A2'
+      green:   '#BEE6AE'
+      yellow:  '#E4D3AA'
+      blue:    '#B0AEE6'
+      magenta: '#DAAEE6'
+      cyan:    '#AFC9E7'
+      white:   '#FDF2F0'
+
+    # Bright colors
+    bright:
+      black:   '#484461'
+      red:     '#FEA2A2'
+      green:   '#BEE6AE'
+      yellow:  '#E4D3AA'
+      blue:    '#B0AEE6'
+      magenta: '#DAAEE6'
+      cyan:    '#AFC9E7'
+      white:   '#FDF2F0'
+
+
+  fuel: &hue
+    primary:
+      # background: '#282828'
+      background: '#291E4E'
+      foreground: '#ffffff'
+
+    cursor:
+      text: '#000000'
+      cursor: '#ffffff'
+
+    # Normal colors
+    normal:
+      black:   '#291E4E'
+      red:     '#FB749F'
+      green:   '#89e3a3'
+      yellow:  '#fbdd74'
+      blue:    '#8E96FD'
+      magenta: '#BF86FF'
+      cyan:    '#78B4CA'
+      white:   '#ffffff'
+
+    # Bright colors
+    bright:
+      black:   '#291E4E'
+      red:     '#FB749F'
+      green:   '#89e3a3'
+      yellow:  '#fbdd74'
+      blue:    '#8E96FD'
+      magenta: '#BF86FF'
+      cyan:    '#78B4CA'
+      white:   '#ffffff'
+
+  fuel: &ayu
+    primary:
+      # background: '#282828'
+      background: '#100E0E'
+      foreground: '#F8EAB6'
+
+    cursor:
+      text: '#151515'
+      cursor: '#F8EAB6'
+
+    # Normal colors
+    normal:
+      black:    '#100E0E'
+      red:     '#FF5341'
+      green:   '#B6D031'
+      yellow:  '#F0BC2C'
+      blue:    '#FF9B12'
+      magenta: '#E97340'
+      cyan:    '#F65F1C'
+      white:   '#EFDFA8'
+
+    # Bright colors
+    bright:
+      black:    '#100E0E'
+      red:     '#FF5341'
+      green:   '#B6D031'
+      yellow:  '#F0BC2C'
+      blue:    '#FF9B12'
+      magenta: '#E97340'
+      cyan:    '#F65F1C'
+      white:   '#EFDFA8'
+
+colors: *ayu
+
+background_opacity: 1.0
+
+cursor:
+  style: Beam
+  vi_mode_style: None
+  unfocused_hollow: true
+  thickness: 0.15
+
+live_config_reload: true
+
+# shell:
+#   program: /bin/bash
+#   args:
+#     - --login
+
+working_directory: None
+alt_send_esc: true
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+
+  hide_when_typing: false
+
+  url:
+    #    launcher:
+    # program: xdg-open
+    #  args: []
+    modifiers: None
+
+# key_bindings:
+#   - { key: K,          mods: Alt,     mode: ~Alt, action: ScrollLineUp,  }
+#   - { key: J,          mods: Alt,     mode: ~Alt, action: ScrollLineDown }
+#   - { key: U,          mods: Alt,     mode: ~Alt, action: ScrollPageUp   }
+#   - { key: D,          mods: Alt,     mode: ~Alt, action: ScrollPageDown }
+#   - { key: V,          mods: Alt,                 action: Paste          }
+#   - { key: C,          mods: Alt,                 action: Copy           }
+
+#   # (Windows, Linux, and BSD only)
+#   - { key: Home,     mods: Alt,                     action: ResetFontSize    }
+#   - { key: K,        mods: Alt|Shift,               action: IncreaseFontSize }
+#   - { key: J,        mods: Alt|Shift,               action: DecreaseFontSize }
+#   - { key: Subtract, mods: Control,                 action: DecreaseFontSize }
+#   - { key: Minus,    mods: Control,                 action: DecreaseFontSize }

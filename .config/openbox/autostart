@@ -1,6 +1,6 @@
 
 ### compositor
-picom &
+compton &
 
 ### wallpaper
 nitrogen --restore &
@@ -12,10 +12,10 @@ nitrogen --restore &
 mpd &
 
 ### redshift
-#redshift &
+redshift &
 
 ### Tint2
-tint2 -c ~/.config/tint2/dark.tint2rc
+tint2 &
 
 ### xsettingsd
 xsettingsd & 
