@@ -1,3 +1,6 @@
+
+! URXVT
+
 URxvt.geometry:           74x14
 URxvt.intensityStyles:    false
 URxvt.font:               xft:FantasqueSansMono nerd font:size=12,xft:hintstyle=hintnone
@@ -23,4 +26,4 @@ URxvt.keysym.C-equal:     resize-font:bigger
 URxvt.keysym.C-0:         resize-font:reset
 URxvt.keysym.C-question:  resize-font:show
 
-URxvt.background-expr: scale keep { load "/home/nako/image/line.png" }
+!URxvt.background-expr: scale keep { load "/home/nako/image/line.png" }
