@@ -1,13 +1,22 @@
 # Dots
 
-## Furare Girl
+## Openbox - Furare Girl
 !['furare girl'](./image/screen/furare-girl.png)
 
-## GNU Wibu
+## xfwm standalone - Fuel
+!['gnu wibu'](./image/screen/fuel.png)
+
+## xfwm - Ayu
+!['edo'](./image/screen/ayu.png)
+
+## i3 - GNU Wibu
 !['gnu wibu'](./image/screen/gnu-wibu.png)
 
-## Edo
+## i3 - Edo
 !['edo'](./image/screen/edo.png)
+
+## Awesomewm - Djancoeg
+!['edo'](./image/screen/djancoeg.png)
 
 # Shoortzz
 * [Adhi Pambudi](https://github.com/addy-dclxvi)
