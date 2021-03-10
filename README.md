@@ -1,6 +1,6 @@
 # Dots
 
-## Openbox - Furare Girl
+## Openbox - Sweetness
 !['furare girl'](./image/screen/furare-girl.png)
 
 ## xfwm standalone - Fuel
