@@ -1,7 +1,7 @@
 # Dots
 
 ## Openbox - Sweetness
-!['furare girl'](./image/screen/furare-girl.png)
+!['furare girl'](./image/screen/sweetness.png)
 
 ## xfwm standalone - Fuel
 !['gnu wibu'](./image/screen/fuel.png)
