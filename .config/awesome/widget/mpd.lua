@@ -1,28 +1,23 @@
-local vc = require('../vicious')
+local vc = require('vicious')
 local wibox = require('wibox')
-local icons = require('../icon')
-local gears = require('gears')
-local color = require('beautiful.xresources').get_current_theme()
+local icon = require('utils.icon')
 
-Mpd = {}
+local mpd = {}
 local w = wibox.widget.textbox()
-local getmpd = function(w, args)
-   if args["{state}"] == "Stop" then
-      return " Mpd off"
+local getmpd = function(_, args)
+   if args["{state}"] == " Stop" then
+      return " mpd off"
    else
-      return " " .. args["{Artist}"] .. " - " .. args["{Title}"]
+      return ' ' .. args["{Artist}"] .. " - " .. args["{Title}"]
    end
 end
-Mpd.text = vc.register(w, vc.widgets.mpd, getmpd, 10 )
-Mpd.icon =  {
+mpd.text = vc.register(w, vc.widgets.mpd, getmpd, 10 )
+mpd.icon =  {
    {
-      text   = ' ' .. icons.music,
-      widget = wibox.widget.textbox,
+      image   = icon.png.music_player,
+      widget = wibox.widget.imagebox,
    },
-   bg     = color.color4,
-   widget = wibox.container.background,
-   shape = gears.shape.rectangle,
-   shape_clip  = true,
+   layout = wibox.layout.fixed.horizontal
 }
 
-return Mpd
+return mpd

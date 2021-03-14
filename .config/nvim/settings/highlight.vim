@@ -1,20 +1,32 @@
-" BUFFER
-hi BufferInactive guifg=#F8EAB6 guibg=#1B1515
-hi BufferCurrent guifg=#F79F20 guibg=#100E0E
-hi BufferTabPageFill guifg=#F79F20 guibg=#1B1515
-hi BufferCurrentMod guifg=#B6D031 guibg=#100E0E
-hi BufferInactiveMod guifg=#B6D031 guibg=#1B1515
+"" APPEARANCE
+"hi VertSplit guifg=#3E434F guibg=#3E434F
+
+
+"BUFFER
+"hi BufferInactive guifg=#E1E1E1 guibg=#3E434F
+"hi BufferInactiveTarget guifg=#E1E1E1 guibg=#3E434F
+"hi BufferInactiveSign guifg=#E1E1E1 guibg=#3E434F
+"hi BufferCurrent guifg=#9CDBDF guibg=#2f343f
+"hi BufferCurrentSign guifg=#e1e1e1
+
+"hi BufferTabPageFill guifg=#D9D9E5 guibg=#3E434F
+
+"hi BufferCurrentMod guifg=#9CDBDF guibg=#2f343f
+"hi BufferInactiveMod guifg=#9AD4C8 guibg=#3E434F
+
 
 "  LSP DIAGNOSTIC
-hi LspDiagnosticsError guifg=#FF5341
-hi LspDiagnosticsWarning guifg=#FF7733
-hi LspDiagnosticsInformation guifg=#B6D031
-hi LspDiagnosticsHint guifg=#F0BC2C
+"hi LspDiagnosticsError guifg=#FF5370
+"hi LspDiagnosticsWarning guifg=#FFCB6B
+"hi LspDiagnosticsInformation guifg=#C3E88D
+"hi LspDiagnosticsHint guifg=#FFCB6B
 
-hi LspDiagnosticsVirtualTextError guifg=#FF5341
-hi LspDiagnosticsVirtualTextWarning guifg=#FF7733
-hi LspDiagnosticsVirtualTextInformation guifg=#B6D031
-hi LspDiagnosticsVirtualTextHint guifg=#F0BC2C
+"hi LspDiagnosticsVirtualTextError guifg=#FF5370
+"hi LspDiagnosticsVirtualTextWarning guifg=#FFCB6B
+"hi LspDiagnosticsVirtualTextInformation guifg=#C3E88D
+"hi LspDiagnosticsVirtualTextHint guifg=#FFCB6B
+
+
 
 
 

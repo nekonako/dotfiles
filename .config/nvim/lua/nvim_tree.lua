@@ -12,43 +12,43 @@ vim.g.nvim_tree_allow_resize = 1 -- 0 by default, will not resize the tree when 
 vim.g.nvim_tree_disable_keybindings = 0
 --  modify some of the key mappings
 vim.g.nvim_tree_bindings = {
-    edit = {'<CR>', 'o', 'l'},
-    edit_vsplit = {'<C-v>', '|'},
-    edit_split = {'<C-x>', '-'},
-    edit_tab = '<C-t>',
-    close_node = {'<S-CR>', 'h'},
-    toggle_ignored = '!',
-    toggle_dotfiles = '.',
-    refresh = 'R',
-    preview = '<Tab>',
-    cd = '<C-]>',
-    create = 'a',
-    remove = 'd',
-    rename = 'r',
-    cut = 'dd',
-    copy = 'yy',
-    paste = 'p',
-    prev_git_item = '[c',
-    next_git_item = ']c',
-    dir_up = '-',
-    close = 'q'
+   edit = {'<CR>', 'o', 'l'},
+   edit_vsplit = {'<C-v>', '|'},
+   edit_split = {'<C-x>', '-'},
+   edit_tab = '<C-t>',
+   close_node = {'<S-CR>', 'h'},
+   toggle_ignored = '!',
+   toggle_dotfiles = '.',
+   refresh = 'R',
+   preview = '<Tab>',
+   cd = '<C-]>',
+   create = 'a',
+   remove = 'd',
+   rename = 'r',
+   cut = 'dd',
+   copy = 'yy',
+   paste = 'p',
+   prev_git_item = '[c',
+   next_git_item = ']c',
+   dir_up = '-',
+   close = 'q'
 }
 
 vim.g.nvim_tree_icons = {
-    default = ' ',
-    symlink = ' ',
-    git = {
-        unstaged = "",
-        staged = " ",
-        unmerged = "",
-        renamed = " ",
-        untracked = " "
-    },
-    folder = {default = "  ", open = "  "}
+   default = ' ',
+   symlink = ' ',
+   git = {
+      unstaged = "",
+      staged = " ",
+      unmerged = "",
+      renamed = " ",
+      untracked = " "
+   },
+   folder = {default = "  ", open = "  "}
 }
 
-vim.cmd([[
-hi NvimTreeFolderIcon guifg = #B6D031
-hi NvimTreeFolderName guifg = #F0BC2C
-hi NvimTreeIndentMarker guifg = #2F2323
-]])
+-- vim.cmd([[
+-- hi NvimTreeFolderIcon guifg = #9CDBDF
+-- hi NvimTreeFolderName guifg = #CCA8C9
+-- hi NvimTreeIndentMarker guifg = #DEE7AA
+-- ]])

@@ -1,3 +1,7 @@
+<center>
+!['gnu wibu'](./image/gnuwibu.png)
+</center>
+
 # Dots
 
 ## Openbox - Sweetness
@@ -6,14 +10,14 @@
 ## xfwm standalone - Fuel
 !['gnu wibu'](./image/screen/fuel.png)
 
-## xfwm - Ayu
+## xfwm standalone - Ayu
 !['edo'](./image/screen/ayu.png)
-
-## i3 - GNU Wibu
-!['gnu wibu'](./image/screen/gnu-wibu.png)
 
 ## i3 - Edo
 !['edo'](./image/screen/edo.png)
+
+## Awesomewm - Anu
+!['edo'](./image/screen/djancoeg.png)
 
 ## Awesomewm - Djancoeg
 !['edo'](./image/screen/djancoeg.png)
@@ -23,4 +27,4 @@
 * [Fikri Omar](https://github.com/fikriomar16)
 * [Nanda Okitavera](https://github.com/okitavera)
 * [BanditHijo](https://bandithijo.com)
-* [elenapan](https://github.com/elenapan/dotfiles)
+* [Elenapan](https://github.com/elenapan/dotfiles)

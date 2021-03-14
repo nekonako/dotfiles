@@ -21,7 +21,7 @@ ruled.client.connect_signal("request::rules", function()
          titlebars_enabled = beautiful.titlebars_enabled,
          maximized_horizontal = false,
          maximized_vertical = false,
-         placement = floating_client_placement
+         placement = awful.placement.centered,
       }
    }
 
@@ -35,6 +35,7 @@ ruled.client.connect_signal("request::rules", function()
             "floating_terminal",
             "riotclientux.exe",
             "leagueclientux.exe",
+            "Alacritty",
             "Devtools", -- Firefox devtools
          },
          class = {
@@ -44,6 +45,7 @@ ruled.client.connect_signal("request::rules", function()
             "File-roller",
             "fst",
             "Nvidia-settings",
+            "Alacritty",
          },
          name = {
             "Event Tester",  -- xev
@@ -66,6 +68,6 @@ ruled.client.connect_signal("request::rules", function()
    ruled.client.append_rule {
       id         = "titlebars",
       rule_any   = { type = { "normal", "dialog" } },
-      properties = { titlebars_enabled = true     }
+      properties = { titlebars_enabled = true }
    }
 end)

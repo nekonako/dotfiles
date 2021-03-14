@@ -7,7 +7,6 @@ do
       "mpd",
        -- "sh /home/nako/screen.sh"
    }
-
    for _,i in pairs(cmds) do
       awful.spawn.with_shell(i .. "&")
    end

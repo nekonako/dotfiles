@@ -1,21 +1,19 @@
-local vc = require('../vicious')
+local vc = require('vicious')
 local wibox = require('wibox')
-local icon = require('../icon')
+local icon = require('utils.icon')
 local color = require('beautiful.xresources').get_current_theme()
 local gears = require('gears')
-Ram = {}
+
+local ram = {}
 local w = wibox.widget.textbox()
 vc.cache(vc.widgets.mem)
-Ram.text = vc.register(w, vc.widgets.mem, " $2 MB", 1)
-Ram.icon = {
+ram.text = vc.register(w, vc.widgets.mem, "$2 MB", 1)
+ram.icon = {
    {
-      text   = ' ' .. icon.cpu,
-      widget = wibox.widget.textbox,
+      image = icon.png.mem,
+      widget = wibox.widget.imagebox,
    },
-   bg     = color.color5,
-   widget = wibox.container.background,
-   shape = gears.shape.rectangle,
-   shape_clip  = true,
+   layout = wibox.layout.fixed.horizontal,
 }
 
-return Ram
+return ram

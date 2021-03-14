@@ -13,7 +13,8 @@ if (has('termguicolors'))
   set termguicolors
 endif
 
-syntax on
+syntax enable
+set termguicolors
 set backspace=indent,eol,start
 set backup
 set backupdir=~/.local/share/nvim/backup
@@ -75,17 +76,18 @@ set writebackup
 set autoindent
 set expandtab
 set shiftround
+set colorcolumn=100 
 set fileformat=unix
 set pyxversion=3
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=3
+set softtabstop=3
+set tabstop=3
 set ttimeoutlen=0
 set autoread
 set modifiable
 set nobackup
 set nowritebackup
-set cmdheight=2
+set cmdheight=1
 set updatetime=300
 set shortmess+=c
 "set nospell
@@ -94,8 +96,8 @@ let g:python3_host_prog = '/usr/bin/python3'
 let g:python_host_prog = '/usr/bin/python2'
 let g:node_host_prog = '$HOME/.local/share/node/bin/neovim-node-host'
 
-set background=dark
-colorscheme palenight
+" set background=dark
+colorscheme xresources
 
 "highlight LineNr guifg= #626A73
 highlight EndOfBuffer guifg=bg

@@ -2,53 +2,53 @@
 ""      COC VIM
 "" ===================
 if exists('g:plugs["coc.nvim"]')
-  let g:coc_node_path = "/usr/bin/node"
-  let g:coc_filetype_map = {
-        \ 'html.swig': 'html',
-        \ 'jinja2.html': 'html',
-        \ 'wxss': 'css',
-        \ 'sass': 'css',
-        \ 'jsx' :'js',
-        \ 'ts': 'js'
-        \ }
-  let g:coc_global_extensions=[
-        \ 'coc-css',
-        \ 'coc-emmet',
-        \ 'coc-go',
-        \ 'coc-java',
-        \ 'coc-html',
-        \ 'coc-json',
-        \ 'coc-phpls',
-        \ 'coc-python',
-        \ 'coc-sh',
-        \ 'coc-snippets',
-        \ 'coc-phpls',
-        \ 'coc-tsserver',
-        \ 'coc-vetur',
-        \ 'coc-vimlsp',
-        \ 'coc-word',
-        \ 'coc-xml',
-        \ 'coc-texlab',
-        \ 'coc-yaml'
-        \ ]
-  autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-  autocmd User CocLocationsChange CocList --normal -A location
-  autocmd CursorHold * silent call CocActionAsync('highlight')
+   let g:coc_node_path = "/usr/bin/node"
+   let g:coc_filetype_map = {
+            \ 'html.swig': 'html',
+            \ 'jinja2.html': 'html',
+            \ 'wxss': 'css',
+            \ 'sass': 'css',
+            \ 'jsx' :'js',
+            \ 'ts': 'js'
+            \ }
+   let g:coc_global_extensions=[
+            \ 'coc-css',
+            \ 'coc-emmet',
+            \ 'coc-go',
+            \ 'coc-java',
+            \ 'coc-html',
+            \ 'coc-json',
+            \ 'coc-phpls',
+            \ 'coc-python',
+            \ 'coc-sh',
+            \ 'coc-snippets',
+            \ 'coc-phpls',
+            \ 'coc-tsserver',
+            \ 'coc-vetur',
+            \ 'coc-vimlsp',
+            \ 'coc-word',
+            \ 'coc-xml',
+            \ 'coc-texlab',
+            \ 'coc-yaml'
+            \ ]
+   autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+   autocmd User CocLocationsChange CocList --normal -A location
+   autocmd CursorHold * silent call CocActionAsync('highlight')
 endif
 
 ""let g:coc_force_debug = 1
 "" Use tab for trigger completion with characters ahead and navigate.
 "" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+         \ pumvisible() ? "\<C-n>" :
+         \ <SID>check_back_space() ? "\<TAB>" :
+         \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
+   let col = col('.') - 1
+   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 "" Use <c-space> to trigger completion.
@@ -72,11 +72,11 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
-  if &filetype == 'vim'
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
+   if &filetype == 'vim'
+      execute 'h '.expand('<cword>')
+   else
+      call CocAction('doHover')
+   endif
 endfunction
 
 "" Highlight symbol under cursor on CursorHold
@@ -86,11 +86,11 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 augroup mygroup
-  autocmd!
-"  " Setup formatexpr specified filetype(s).
- autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-"  " Update signature help on jump placeholder
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+   autocmd!
+   "  " Setup formatexpr specified filetype(s).
+   autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+   "  " Update signature help on jump placeholder
+   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
 "" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
@@ -134,14 +134,14 @@ let g:coc_sippet_next = '<c-k>'
 imap <C-j> <Plug>(coc-snippets-ecpand-jump)
 
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+         \ pumvisible() ? coc#_select_confirm() :
+         \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+         \ <SID>check_back_space() ? "\<TAB>" :
+         \ coc#refresh()
 
 function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
+   let col = col('.') - 1
+   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 let g:coc_snippet_next = '<tab>'
