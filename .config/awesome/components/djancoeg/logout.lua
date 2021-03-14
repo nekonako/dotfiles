@@ -6,17 +6,6 @@ local beautiful = require('beautiful')
 local gears = require('gears')
 local icon = require('utils.icon')
 
-local shape = function (cr, w, h)
-   gears.shape.rounded_rect(cr, w, h, 10)
-end
-
-local shape2 = function (cr, w, h)
-   gears.shape.partially_rounded_rect(cr, w, h, true, false, true, true, 18)
-end
-
-local box_radius = shape
-local box_gap = dpi(6)
-
 local logout = wibox {
    visible = false,
    ontop = true,

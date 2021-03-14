@@ -7,6 +7,7 @@ local beautiful = require('beautiful')
 local icon = require('utils.icon')
 local apps = require('utils.apps')
 local dashboard = require('components.djancoeg.dashboard')
+local logout = require('components.djancoeg.logout')
 
 local dock = {item = {}}
 local function shapemanager(cr, w, h)
@@ -98,30 +99,41 @@ awful.screen.connect_for_each_screen(function (scr)
    dock.spotify.widget:buttons({
       awful.button({},1, function() awful.spawn(apps.spotify) end)
    })
-   dock.launcher = {
+   dock.dashboard = {
       image = icon.png.launcher,
       widget = wibox.widget.imagebox()
    }
-   dock.launcher.widget:buttons({
+   dock.dashboard.widget:buttons({
       awful.button({}, 1, function()
          if dashboard.visible == false then
             dashboard.visible = true
          else
             dashboard.visible = false
          end
-         -- awful.spawn('alacritty')
       end)
    })
+
+   dock.logout = {
+      image = icon.png.launcher,
+      widget = wibox.widget.imagebox()
+   }
+   dock.logout.widget:buttons({
+      awful.button({}, 1, function()
+         if logout.visible == false then
+            logout.visible = true
+         else
+            logout.visible = false
+         end
+      end)
+   })
+
 
    dock.container : setup {
       layout = wibox.layout.stack,
       {
          layout = wibox.layout.align.horizontal,
          {
-            {
-               image = icon.png.launcher,
-               widget = wibox.widget.imagebox,
-            },
+            dock.dashboard,
             layout = wibox.layout.fixed.horizontal,
          },
          {
@@ -150,14 +162,12 @@ awful.screen.connect_for_each_screen(function (scr)
             layout = wibox.container.place,
          },
          {
-            dock.launcher,
+            dock.logout,
             layout = wibox.layout.fixed.horizontal,
          },
       },
    }
 end)
-
-return dock
 
 -- set auto hide dock when window not on floating mode
 -- client.connect_signal("property::floating", function(c)
@@ -185,3 +195,7 @@ return dock
 --       end
 --    end
 -- end)
+--
+
+return dock
+
