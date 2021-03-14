@@ -1,8 +1,6 @@
-<center>
-
-!['gnu wibu'](./image/gnuwibu.png)
-
-</center>
+<p align="center">
+  <img width="30%" src="./image/gnuwibu.png" />
+</p>
 
 # Dots
 
@@ -29,4 +27,5 @@
 * [Fikri Omar](https://github.com/fikriomar16)
 * [Nanda Okitavera](https://github.com/okitavera)
 * [BanditHijo](https://bandithijo.com)
-* [Elenapan](https://github.com/elenapan/dotfiles)
+* [Elenapan](https://github.com/elenapan)
+* [Owl4ce](https://github.com/owl4ce)
