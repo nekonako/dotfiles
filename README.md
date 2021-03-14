@@ -19,7 +19,7 @@
 !['edo'](./image/screen/edo.png)
 
 ## Awesomewm - Anu
-!['edo'](./image/screen/djancoeg.png)
+!['edo'](./image/screen/anu.png)
 
 ## Awesomewm - Djancoeg
 !['edo'](./image/screen/djancoeg.png)
