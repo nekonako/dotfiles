@@ -333,6 +333,7 @@ awful.keyboard.append_global_keybindings({
    ),
 })
 
+
 -- Utility keybindings --
 awful.keyboard.append_global_keybindings({
    awful.key(
@@ -399,12 +400,14 @@ awful.keyboard.append_global_keybindings({
    end, { description = 'toggle logout', group = 'awesome' }
    ),
 })
+
+
 -- media
 local function volume(method)
-awful.spawn("ponymix "..method.." 5 --max-volume 150")
+   awful.spawn("ponymix "..method.." 5 --max-volume 150")
 end
 local function brightness(method)
-awful.spawn("light -"..method.." 5")
+   awful.spawn("light -"..method.." 5")
 end
 
 awful.keyboard.append_client_keybindings({
@@ -442,6 +445,8 @@ awful.keyboard.append_client_keybindings({
       }
    )
 })
+
+
 
 -- Mouse binding
 client.connect_signal("request::default_mousebindings", function()

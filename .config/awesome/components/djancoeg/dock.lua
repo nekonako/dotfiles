@@ -1,171 +1,91 @@
 -- local color = require('beautiful.xresources').get_current_theme
 local dpi = require('beautiful.xresources').apply_dpi
-local gears = require('gears')
 local wibox  = require('wibox')
 local awful = require('awful')
-local beautiful = require('beautiful')
 local icon = require('utils.icon')
 local apps = require('utils.apps')
 local dashboard = require('components.djancoeg.dashboard')
 local logout = require('components.djancoeg.logout')
 
-local dock = {item = {}}
-local function shapemanager(cr, w, h)
-   gears.shape.rounded_rect(cr, w, h, beautiful.border_radius or 10)
-end
+
 awful.screen.connect_for_each_screen(function (scr)
-   local conf =  awful.util.getdir("config")
-   local SP = wibox.widget {
-      widget = wibox.widget.separator,
-      forced_width = dpi(15),
-      opacity = 0
-   }
-   dock.container = awful.wibar{
+
+   local dock = awful.wibar{
       position = "bottom",
       height = dpi(40),
       screen = scr,
       visible = true,
-      -- shape = shapemanager
-   }
-   dock.terminal = {
-      image =  icon.png.terminal,
-      widget = wibox.widget.imagebox(),
-   }
-   dock.terminal.widget:buttons({
-      awful.button({},1, function() awful.spawn(apps.terminal) end)
-   })
-
-   dock.music = {
-      image = conf .. '/icons/crayon/music.png',
-      widget = wibox.widget.imagebox(),
-   }
-   dock.music.widget:buttons({
-      awful.button({},1, function() awful.spawn(apps.music) end)
-   })
-
-   dock.telegram = {
-      image = conf .. '/icons/crayon/telegram.png',
-      widget = wibox.widget.imagebox(),
-   }
-   dock.telegram.widget:buttons({
-      awful.button({},1, function() awful.spawn(apps.telegram) end)
-   })
-
-   dock.youtube = {
-      image = conf .. '/icons/crayon/youtube.png',
-      widget = wibox.widget.imagebox(),
-   }
-   dock.youtube.widget:buttons({
-      awful.button({},1, function() awful.spawn(apps.youtube) end)
-   })
-
-   dock.file_manager = {
-      image = conf .. '/icons/crayon/file_manager.png',
-      widget = wibox.widget.imagebox(),
-   }
-   dock.file_manager.widget:buttons({
-      awful.button({},1, function() awful.spawn(apps.file_manager) end)
-   })
-
-   dock.reddit = {
-      image = conf .. '/icons/crayon/reddit.png',
-      widget = wibox.widget.imagebox(),
-   }
-   dock.reddit.widget:buttons({
-      awful.button({},1, function() awful.spawn(apps.reddit) end)
-   })
-
-   dock.firefox = {
-      image = conf .. '/icons/crayon/firefox.png',
-      widget = wibox.widget.imagebox(),
    }
 
-   dock.firefox.widget:buttons({
-      awful.button({},1, function() awful.spawn(apps.firefox) end)
-   })
+   local function create_img_widget(image, action)
+      local widget = wibox.widget {
+         image = image,
+         widget = wibox.widget.imagebox()
+      }
+      widget:buttons({
+         awful.button({}, 1, function() awful.spawn(action) end)
+      })
+      return widget
+   end
 
-   dock.brave = {
-      image = conf .. '/icons/crayon/brave.png',
-      widget = wibox.widget.imagebox(),
-   }
-   dock.brave.widget:buttons({
-      awful.button({},1, function() awful.spawn(apps.brave) end)
-   })
+   local terminal = create_img_widget(icon.png.terminal, apps.terminal)
+   local music = create_img_widget(icon.png.music, apps.music)
+   local telegram = create_img_widget(icon.png.telegram, apps.telegram)
+   local youtube = create_img_widget(icon.png.youtube, apps.youtube)
+   local file_manager = create_img_widget(icon.png.file_manager, apps.file_manager)
+   local reddit = create_img_widget(icon.png.reddit, apps.reddit)
+   local firefox = create_img_widget(icon.png.firefox, apps.firefox)
+   local brave = create_img_widget(icon.png.brave, apps.brave)
+   local spotify = create_img_widget(icon.png.spotify, apps.spotify)
 
-   dock.spotify = {
-      image = conf .. '/icons/crayon/spotify.png',
-      widget = wibox.widget.imagebox(),
-   }
-   dock.spotify.widget:buttons({
-      awful.button({},1, function() awful.spawn(apps.spotify) end)
-   })
-   dock.dashboard = {
-      image = icon.png.launcher,
-      widget = wibox.widget.imagebox()
-   }
-   dock.dashboard.widget:buttons({
-      awful.button({}, 1, function()
-         if dashboard.visible == false then
-            dashboard.visible = true
-         else
-            dashboard.visible = false
-         end
-      end)
-   })
+   local function create_widget_spawner(image, spawn)
+      local widget = wibox.widget {
+         image = image,
+         widget = wibox.widget.imagebox()
+      }
+      widget:buttons({
+         awful.button({}, 1, function()
+            if spawn.visible == false then
+               spawn.visible = true
+            else
+               spawn.visible = false
+            end
+         end)
+      })
+      return widget
+   end
 
-   dock.logout = {
-      image = icon.png.launcher,
-      widget = wibox.widget.imagebox()
-   }
-   dock.logout.widget:buttons({
-      awful.button({}, 1, function()
-         if logout.visible == false then
-            logout.visible = true
-         else
-            logout.visible = false
-         end
-      end)
-   })
+   local dashboard_button = create_widget_spawner(icon.png.launcher, dashboard)
+   local logout_button = create_widget_spawner(icon.png.launcher, logout)
 
-
-   dock.container : setup {
-      layout = wibox.layout.stack,
+   dock : setup {
       {
-         layout = wibox.layout.align.horizontal,
-         {
-            dock.dashboard,
-            layout = wibox.layout.fixed.horizontal,
-         },
-         {
-            {
-               dock.music,
-               SP,
-               dock.terminal,
-               SP,
-               dock.reddit,
-               SP,
-               dock.file_manager,
-               SP,
-               dock.youtube,
-               SP,
-               dock.telegram,
-               SP,
-               dock.firefox,
-               SP,
-               dock.spotify,
-               SP,
-               dock.brave,
-               layout = wibox.layout.fixed.horizontal,
-            },
-            valign = 'center',
-            halign = 'center',
-            layout = wibox.container.place,
-         },
-         {
-            dock.logout,
-            layout = wibox.layout.fixed.horizontal,
-         },
+         dashboard_button,
+         layout = wibox.layout.fixed.horizontal,
       },
+      {
+         {
+            music,
+            terminal,
+            reddit,
+            file_manager,
+            youtube,
+            telegram,
+            firefox,
+            spotify,
+            brave,
+            spacing = dpi(15),
+            layout = wibox.layout.fixed.horizontal,
+         },
+         valign = 'center',
+         halign = 'center',
+         layout = wibox.container.place,
+      },
+      {
+         logout_button,
+         layout = wibox.layout.fixed.horizontal,
+      },
+      layout = wibox.layout.align.horizontal
    }
 end)
 
@@ -196,6 +116,4 @@ end)
 --    end
 -- end)
 --
-
-return dock
 

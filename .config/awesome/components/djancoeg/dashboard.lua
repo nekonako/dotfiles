@@ -5,6 +5,9 @@ local awful = require('awful')
 local beautiful = require('beautiful')
 local gears = require('gears')
 local icon = require('utils.icon')
+local hdd = require('widget.hdd')
+
+local home = os.getenv('HOME')
 
 local shape = function (cr, w, h)
    gears.shape.rounded_rect(cr, w, h, 10)
@@ -48,14 +51,15 @@ local function create_box(widget, width, height, bg)
    container.forced_width = width
    container.shape = box_radius
    local box_widget = wibox.widget {
+      -- gap between box
       {
+         -- container
          {
-            -- Center widget_to_be_boxed horizontally
+            -- center horizontal
             nil,
             {
-               -- Center widget_to_be_boxed vertically
+               --  center vertical
                nil,
-               -- The actual widget goes here
                widget,
                layout = wibox.layout.align.vertical,
                expand = "none"
@@ -66,7 +70,6 @@ local function create_box(widget, width, height, bg)
          widget = container,
       },
       margins = box_gap,
-      color = "#FF000000",
       widget = wibox.container.margin
    }
    return box_widget
@@ -75,21 +78,8 @@ end
 local profile = wibox.widget {
    {
       {
-         -- Center widget_to_be_boxed horizontally
-         nil,
-         {
-            -- Center widget_to_be_boxed vertically
-            nil,
-            -- The actual widget goes here
-            {
-               image = '/home/nako/.config/awesome/nako.png',
-               widget = wibox.widget.imagebox,
-            },
-            layout = wibox.layout.align.vertical,
-            expand = "none"
-         },
-         layout = wibox.layout.align.horizontal,
-         expand = "none"
+         image = home .. '/.config/awesome/nako.png',
+         widget = wibox.widget.imagebox,
       },
       shape = shape2,
       bg = color.background,
@@ -98,7 +88,6 @@ local profile = wibox.widget {
       widget = wibox.container.background(),
    },
    margins = box_gap,
-   color = "#FF000000",
    widget = wibox.container.margin
 }
 
@@ -376,8 +365,6 @@ local mpd_song = wibox.widget {
 
 local mpd_box = create_box(mpd_song, 100, 100, beautiful.bg_normal)
 
-
-
 local disk_arc = wibox.widget {
    start_angle = 3 * math.pi / 2,
    min_value = 0,
@@ -431,8 +418,6 @@ local jancok = wibox.widget {
    direction = 'west',
    layout = wibox.container.rotate
 }
-
-
 
 local jancok_widget = create_box(jancok, 200, 500, beautiful.bg_normal)
 

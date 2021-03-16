@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="30%" src="./image/gnuwibu.png" />
+  <img width="50%" src="./image/gnuwibu.png" />
 </p>
 
 # Dots

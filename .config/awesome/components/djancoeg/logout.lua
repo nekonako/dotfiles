@@ -29,6 +29,27 @@ logout:buttons(gears.table.join(
    end)
 ))
 
+local function create_button(button_icon, action)
+   local widget = wibox.widget {
+      {
+         text = button_icon,
+         font = 'pragmatapro 30',
+         widget = wibox.widget.textbox
+      },
+      fg = color.foreground,
+      widget = wibox.container.background
+   }
+
+   widget:buttons(gears.table.join(awful.button({ }, 1,
+      function()
+         awful.spawn(action)
+      end)
+   ))
+
+   return widget
+end
+
+
 local sugeng_ndalu = wibox.widget {
    text = 'Sugeng ndalu' .. ' ' .. os.getenv('USER'),
    font = 'Pacifico bold 50',
@@ -64,71 +85,16 @@ local text_left = wibox.widget {
    layout = wibox.layout.align.vertical
 }
 
-local power_button = wibox.widget {
-   {
-      text = icon.gylph.power,
-      font = 'pragmatapro 30',
-      widget = wibox.widget.textbox
-   },
-   fg = color.foreground,
-   widget = wibox.container.background
-}
-
- power_button:buttons(gears.table.join(awful.button({ }, 1,
-   function()
-      awful.spawn('poweroff')
-   end)
-))
-
-
-local logout_button = wibox.widget {
-   {
-      text = icon.gylph.logout,
-      font = 'pragmatapro 30',
-      widget = wibox.widget.textbox
-   },
-   fg = color.foreground,
-   widget = wibox.container.background
-}
-
- logout_button:buttons(gears.table.join(awful.button({ }, 1,
-   function()
-      awful.spawn('pkill awesome')
-   end)
-))
-
-local reboot_button = wibox.widget {
-   {
-      text = icon.gylph.reboot,
-      font = 'pragmatapro 30',
-      widget = wibox.widget.textbox
-   },
-   fg = color.foreground,
-   widget = wibox.container.background
-}
-
- reboot_button:buttons(gears.table.join(awful.button({ }, 1,
-   function()
-      awful.spawn('reboot')
-   end)
-))
-
-local home_button = wibox.widget {
-   {
-      text = icon.gylph.home,
-      font = 'pragmatapro 30',
-      widget = wibox.widget.textbox
-   },
-   fg = color.foreground,
-   widget = wibox.container.background
-}
+local power_button = create_button(icon.gylph.power, 'poweoff')
+local logout_button = create_button(icon.gylph.logout, 'pkill awesome')
+local reboot_button = create_button(icon.gylph.reboot, 'reboot')
+local home_button = create_button(icon.gylph.home, nil)
 
 home_button:buttons(gears.table.join(
    awful.button({ }, 1, function ()
       logout_visibility()
    end)
 ))
-
 
 local button = wibox.widget {
    nil,

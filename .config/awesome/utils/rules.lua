@@ -44,6 +44,8 @@ ruled.client.connect_signal("request::rules", function()
             "Nm-connection-editor",
             "File-roller",
             "fst",
+            "Gcolor3",
+            "Rofi",
             "Nvidia-settings",
             "Alacritty",
          },

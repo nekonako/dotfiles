@@ -56,6 +56,7 @@ icon.png = {
    ram = crayon .. 'ram.png',
    music_player = crayon .. 'music_player.png',
    heart = crayon .. 'heart.png',
+   reddit = crayon .. 'reddit.png',
    volume = crayon .. 'volume.png',
    brightness = crayon .. 'brightness.png',
    storage = crayon .. 'storage.png',
@@ -68,6 +69,5 @@ icon.png = {
    w4 = crayon .. 'w4.png',
    w5 = crayon .. 'w5.png',
 }
-
 
 return icon
