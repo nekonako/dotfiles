@@ -1,18 +1,15 @@
-env:
-  TERM: alacritty
-
 window:
   dimensions:
-    columns: 75
-    lines: 14
+    columns: 70
+    lines: 15
 
-  position:
-    x: 0
-    y: 0
+  # position:
+  #   x: 50
+  #   y: 50
 
   padding:
-    x: 15
-    y: 0
+    x: 10
+    y: 10
 
   dynamic_title: false
   dynamic_padding: true
@@ -26,22 +23,22 @@ window:
 
 font:
   normal:
-    family: Iosevka mayukai
-    style: Medium
+    family: PragmataPro liga
+    style: Regular
 
   bold:
-    family: Iosevka mayukai
+    family: PragmataPro liga
     style: Bold
 
   italic:
-    family: Iosevka mayukai
+    family: PragmataPro liga
     style: Italic
 
   bold_italic:
-    family: Iosevka mayukai
+    family: PragmataPro liga
     style: Bold Italic
 
-  size: 9
+  size: 12
   # size: 8
 
   offset:
@@ -56,40 +53,72 @@ font:
 draw_bold_text_with_bright_colors: false
 
 schemes:
-  fuel: &fuel
+
+  colors: &fuel
     primary:
       # background: '#282828'
       background: '#484461'
-      foreground: '#FDF2F0'
+      foreground: '#EEEBFF'
 
     cursor:
       text: '#000000'
-      cursor: '#FDF2F0'
+      cursor: '#EEEBFF'
 
     # Normal colors
     normal:
-      black:   '#484461'
+      black:   '#282828'
       red:     '#FEA2A2'
       green:   '#BEE6AE'
       yellow:  '#E4D3AA'
       blue:    '#B0AEE6'
       magenta: '#DAAEE6'
       cyan:    '#AFC9E7'
-      white:   '#FDF2F0'
+      white:   '#EEEBFF'
 
     # Bright colors
     bright:
-      black:   '#484461'
+      black:   '#282828'
       red:     '#FEA2A2'
       green:   '#BEE6AE'
       yellow:  '#E4D3AA'
       blue:    '#B0AEE6'
       magenta: '#DAAEE6'
       cyan:    '#AFC9E7'
-      white:   '#FDF2F0'
+      white:   '#EEEBFF'
 
+  colors: &palenight
+    primary:
+      # background: '#282828'
+      background: '#292D3E'
+      foreground: '#D9D9E5'
 
-  fuel: &hue
+    cursor:
+      text: '#292D3E'
+      cursor: '#D9D9E5'
+
+    # Normal colors
+    normal:
+      black:   '#292D3E'
+      red:     '#FF5370'
+      green:   '#C3E88D'
+      yellow:  '#FFCB6B'
+      blue:    '#82B1FF'
+      magenta: '#C792EA'
+      cyan:    '#89DDFF'
+      white:   '#D9D9E5'
+
+    # Bright colors
+    bright:
+      black:   '#292D3E'
+      red:     '#FF5370'
+      green:   '#C3E88D'
+      yellow:  '#FFCB6B'
+      blue:    '#82B1FF'
+      magenta: '#C792EA'
+      cyan:    '#89DDFF'
+      white:   '#D9D9E5'
+ 
+  colors: &hue
     primary:
       # background: '#282828'
       background: '#291E4E'
@@ -121,7 +150,7 @@ schemes:
       cyan:    '#78B4CA'
       white:   '#ffffff'
 
-  fuel: &ayu
+  colors: &ayu
     primary:
       # background: '#282828'
       background: '#100E0E'
@@ -153,7 +182,71 @@ schemes:
       cyan:    '#F65F1C'
       white:   '#EFDFA8'
 
-colors: *ayu
+  colors: &om-omar
+    primary:
+      # background: '#282828'
+      background: '#2F343F'
+      foreground: '#E1E1E1'
+
+    cursor:
+      text: '#2F343F'
+      cursor: '#E1E1E1'
+
+    # Normal colors
+    normal:
+      black:    '#2F343F'
+      red:     '#DE8990'
+      green:   '#94DAA9'
+      yellow:  '#DEE7AA'
+      blue:    '#9CDBDF'
+      magenta: '#CCA8C9'
+      cyan:    '#9AD4C8'
+      white:   '#E1E1E1'
+
+    # Bright colors
+    bright:
+      black:    '#2F343F'
+      red:     '#DE8990'
+      green:   '#94DAA9'
+      yellow:  '#DEE7AA'
+      blue:    '#9CDBDF'
+      magenta: '#CCA8C9'
+      cyan:    '#9AD4C8'
+      white:   '#E1E1E1'
+
+  colors: &crayon
+    primary:
+      # background: '#282828'
+      background: '#2A2C3A'
+      foreground: '#EEEEEE'
+
+    cursor:
+      text: '#2A2C3A'
+      cursor: '#EEEEEE'
+
+    # Normal colors
+    normal:
+      black:    '#2A2C3A'
+      red:     '#fd6b85'
+      green:   '#b2e07d'
+      yellow:  '#fed270'
+      blue:    '#67D4F2'
+      magenta: '#FF8167'
+      cyan:    '#63E0BE'
+      white:   '#B1A6EE'
+
+    # Bright colors
+    bright:
+      black:   '#2A2C3A'
+      red:     '#fd6b85'
+      green:   '#b2e07d'
+      yellow:  '#fed270'
+      blue:    '#67D4F2'
+      magenta: '#FF8167'
+      cyan:    '#63E0BE'
+      white:   '#B1A6EE'
+  
+colors: *crayon
 
 background_opacity: 1.0
 
@@ -180,22 +273,4 @@ mouse:
   hide_when_typing: false
 
   url:
-    #    launcher:
-    # program: xdg-open
-    #  args: []
     modifiers: None
-
-# key_bindings:
-#   - { key: K,          mods: Alt,     mode: ~Alt, action: ScrollLineUp,  }
-#   - { key: J,          mods: Alt,     mode: ~Alt, action: ScrollLineDown }
-#   - { key: U,          mods: Alt,     mode: ~Alt, action: ScrollPageUp   }
-#   - { key: D,          mods: Alt,     mode: ~Alt, action: ScrollPageDown }
-#   - { key: V,          mods: Alt,                 action: Paste          }
-#   - { key: C,          mods: Alt,                 action: Copy           }
-
-#   # (Windows, Linux, and BSD only)
-#   - { key: Home,     mods: Alt,                     action: ResetFontSize    }
-#   - { key: K,        mods: Alt|Shift,               action: IncreaseFontSize }
-#   - { key: J,        mods: Alt|Shift,               action: DecreaseFontSize }
-#   - { key: Subtract, mods: Control,                 action: DecreaseFontSize }
-#   - { key: Minus,    mods: Control,                 action: DecreaseFontSize }

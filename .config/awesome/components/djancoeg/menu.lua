@@ -17,7 +17,7 @@ local menu = awful.menu(
          { icon.gylph.terminal .. "Terminal", apps.terminal },
          { icon.gylph.firefox .. " Browser", apps.browser },
          { icon.gylph.edit .. " Text Editor", apps.text_editor },
-         { icon.gylph.folder_open .. "File Manager", apps.file_manager }
+         { icon.gylph.folder_open .. "File Manager", apps.file_manager },
       },
    }
 )

@@ -5,7 +5,6 @@ local awful = require('awful')
 local beautiful = require('beautiful')
 local gears = require('gears')
 local icon = require('utils.icon')
-local hdd = require('widget.hdd')
 
 local home = os.getenv('HOME')
 
@@ -14,7 +13,7 @@ local shape = function (cr, w, h)
 end
 
 local shape2 = function (cr, w, h)
-   gears.shape.partially_rounded_rect(cr, w, h, true, false, true, true, 18)
+   gears.shape.partially_rounded_rect(cr, w, h, true, true, true, true, 18)
 end
 
 local box_radius = shape
@@ -152,7 +151,7 @@ local cpu_bar = wibox.widget {
    {
       max_value     = dpi(100),
       value         =  dpi(30),
-      forced_height = dpi(50),
+      forced_height = dpi(40),
       forced_width  = dpi(300),
       border_width  = 0,
       margins       = {
@@ -194,7 +193,7 @@ local ram_bar = wibox.widget {
    {
       max_value     = dpi(4000),
       value         =  dpi(2100),
-      forced_height = dpi(50),
+      forced_height = dpi(40),
       forced_width  = dpi(300),
       bar_shape        = gears.shape.rounded_bar,
       border_width  = 0,
@@ -235,7 +234,7 @@ local volume_bar = wibox.widget {
    {
       max_value     = dpi(100),
       value         =  dpi(70),
-      forced_height = dpi(50),
+      forced_height = dpi(40),
       forced_width  = dpi(300),
       border_width  = 0,
       margins       = {
@@ -355,9 +354,18 @@ end
 
 local mpd_song = wibox.widget {
    {
+   {
+      text = icon.gylph.music,
+      font = 'pragmatapro 20',
+      widget  = wibox.widget.textbox
+   },
+   {
       text = mpc(),
       font = 'PragmataPro bold 15',
       widget = wibox.widget.textbox
+   },
+      spacing = dpi(10),
+      layout = wibox.layout.fixed.horizontal
    },
    fg = color.color4,
    widget = wibox.container.background

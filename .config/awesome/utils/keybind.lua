@@ -47,7 +47,7 @@ awful.keyboard.append_global_keybindings({
 -- Workspaces keybindings --
 awful.keyboard.append_global_keybindings({
    awful.key(
-      { Mod }, 'k',
+      { Mod, 'Shift' }, 'k',
       awful.tag.viewnext,
       {
          description = 'Go to next workspace',
@@ -55,7 +55,23 @@ awful.keyboard.append_global_keybindings({
       }
    ),
    awful.key(
-      { Mod }, 'j',
+      { Mod, 'Shift' }, 'j',
+      awful.tag.viewprev,
+      {
+         description = 'Go to previous workspace',
+         group = 'Tag'
+      }
+   ),
+    awful.key(
+      { Mod, 'Shift' }, 'Right',
+      awful.tag.viewnext,
+      {
+         description = 'Go to next workspace',
+         group = 'Tag'
+      }
+   ),
+   awful.key(
+      { Mod, 'Shift' }, 'Left',
       awful.tag.viewprev,
       {
          description = 'Go to previous workspace',
@@ -141,7 +157,7 @@ awful.keyboard.append_global_keybindings({
 -- Window keybindings --
 awful.keyboard.append_global_keybindings({
    awful.key(
-      { Mod, 'Shift' }, 'k',
+      { Mod }, 'k',
       function() awful.client.focus.byidx(1) end,
       {
          description = 'Gp to next window',
@@ -149,7 +165,23 @@ awful.keyboard.append_global_keybindings({
       }
    ),
    awful.key(
-      { Mod, 'Shift' }, 'j',
+      { Mod }, 'j',
+      function() awful.client.focus.byidx(-1) end,
+      {
+         description = 'Gp to prev window',
+         group = 'client'
+      }
+   ),
+    awful.key(
+      { Mod }, 'Right',
+      function() awful.client.focus.byidx(1) end,
+      {
+         description = 'Gp to next window',
+         group = 'client'
+      }
+   ),
+   awful.key(
+      { Mod }, 'Left',
       function() awful.client.focus.byidx(-1) end,
       {
          description = 'Gp to prev window',

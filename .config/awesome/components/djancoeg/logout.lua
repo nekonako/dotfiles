@@ -29,14 +29,14 @@ logout:buttons(gears.table.join(
    end)
 ))
 
-local function create_button(button_icon, action)
+local function create_button(button_icon, action, button_color)
    local widget = wibox.widget {
       {
          text = button_icon,
          font = 'pragmatapro 30',
          widget = wibox.widget.textbox
       },
-      fg = color.foreground,
+      fg = button_color,
       widget = wibox.container.background
    }
 
@@ -58,37 +58,41 @@ local sugeng_ndalu = wibox.widget {
 
 local clock = wibox.widget {
    format = '%R',
-   font = 'pragmatapro 25',
+   font = 'Iosevka Mayukai 25',
    widget = wibox.widget.textclock
 }
 
 local day = wibox.widget {
    format = '%d %B, %Y',
-   font = 'pragmatapro 15',
+   font = 'Iosevka Mayukai 15',
    widget = wibox.widget.textclock
 }
 
 local text_left = wibox.widget {
    nil,
    {
-      sugeng_ndalu,
       {
-         clock,
-         day,
-         spacing = dpi(5),
+         sugeng_ndalu,
+         {
+            clock,
+            day,
+            spacing = dpi(5),
+            layout = wibox.layout.fixed.vertical
+         },
+         spacing = dpi(20),
          layout = wibox.layout.fixed.vertical
       },
-      spacing = dpi(20),
-      layout = wibox.layout.fixed.vertical
+      fg = color.color3,
+      widget = wibox.container.background
    },
    nil,
    layout = wibox.layout.align.vertical
 }
 
-local power_button = create_button(icon.gylph.power, 'poweoff')
-local logout_button = create_button(icon.gylph.logout, 'pkill awesome')
-local reboot_button = create_button(icon.gylph.reboot, 'reboot')
-local home_button = create_button(icon.gylph.home, nil)
+local power_button = create_button(icon.gylph.power, 'poweoff', color.color1)
+local logout_button = create_button(icon.gylph.logout, 'pkill awesome', color.color2)
+local reboot_button = create_button(icon.gylph.reboot, 'reboot', color.color6)
+local home_button = create_button(icon.gylph.home, nil, color.color4)
 
 home_button:buttons(gears.table.join(
    awful.button({ }, 1, function ()
