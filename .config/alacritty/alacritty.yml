@@ -8,8 +8,8 @@ window:
   #   y: 50
 
   padding:
-    x: 10
-    y: 10
+    x: 15
+    y: 15
 
   dynamic_title: false
   dynamic_padding: true
@@ -27,15 +27,15 @@ font:
     style: Regular
 
   bold:
-    family: PragmataPro liga
+    family: pragmatapro liga
     style: Bold
 
   italic:
-    family: PragmataPro liga
+    family: pragmatapro liga
     style: Italic
 
   bold_italic:
-    family: PragmataPro liga
+    family: pragmatapro liga
     style: Bold Italic
 
   size: 12
@@ -57,7 +57,7 @@ schemes:
   colors: &fuel
     primary:
       # background: '#282828'
-      background: '#484461'
+      background: '#3E424F'
       foreground: '#EEEBFF'
 
     cursor:
@@ -66,18 +66,18 @@ schemes:
 
     # Normal colors
     normal:
-      black:   '#282828'
+      black:   '#5E5867'
       red:     '#FEA2A2'
-      green:   '#BEE6AE'
-      yellow:  '#E4D3AA'
-      blue:    '#B0AEE6'
-      magenta: '#DAAEE6'
-      cyan:    '#AFC9E7'
+      green:   '#A1E3BB'
+      yellow:  '#FEDCA2'
+      blue:    '#ACC2FF'
+      magenta: '#E5AFF4'
+      cyan:    '#A5EFEE'
       white:   '#EEEBFF'
 
     # Bright colors
     bright:
-      black:   '#282828'
+      black:   '#5E5867'
       red:     '#FEA2A2'
       green:   '#BEE6AE'
       yellow:  '#E4D3AA'
@@ -214,7 +214,7 @@ schemes:
       cyan:    '#9AD4C8'
       white:   '#E1E1E1'
 
-  colors: &crayon
+  colors: &djancoeg
     primary:
       # background: '#282828'
       background: '#2A2C3A'
@@ -245,8 +245,41 @@ schemes:
       magenta: '#FF8167'
       cyan:    '#63E0BE'
       white:   '#B1A6EE'
+
+  colors: &material
+    primary:
+      # background: '#282828'
+      background: '#212432'
+      foreground: '#E6F2F1'
+
+    cursor:
+      text: '#212432'
+      cursor: '#E6F2F1'
+
+    # Normal colors
+    normal:
+      black:    '#212432'
+      red:     '#F07178'
+      green:   '#C3E88D'
+      yellow:  '#EDBE87'
+      blue:    '#82AAFF'
+      magenta: '#C792EA'
+      cyan:    '#85D0EE'
+      white:   '#E6F2F1'
+
+    # Bright colors
+    bright:
+      black:   '#383B4A'
+      red:     '#F07178'
+      green:   '#C3E88D'
+      yellow:  '#EDBE87'
+      blue:    '#82AAFF'
+      magenta: '#C792EA'
+      cyan:    '#85D0EE'
+      white:   '#E6F2F1'
+ 
   
-colors: *crayon
+colors: *material
 
 background_opacity: 1.0
 

@@ -16,11 +16,7 @@ local logout = wibox {
 awful.placement.maximize(logout)
 
 local function logout_visibility()
-   if logout.visible == true then
-      logout.visible = false
-   else
-      logout.visible = true
-   end
+   logout.visible = not logout.visible
 end
 
 logout:buttons(gears.table.join(

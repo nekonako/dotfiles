@@ -13,6 +13,7 @@ local function shapemanager(c)
    end
 end
 
+
 client.connect_signal("manage", function(c)
    if awesome.startup and not c.size_hints.user_position and not c.size_hints.program_position then
       awful.placement.no_offscreen(c)
@@ -22,6 +23,7 @@ end)
 
 client.connect_signal("request::geometry", function(c) shapemanager(c) end)
 client.connect_signal("request::activate", function(c) shapemanager(c) end)
+
 
 client.connect_signal("request::titlebars", function(c)
    local buttons = gears.table.join(
@@ -35,45 +37,35 @@ client.connect_signal("request::titlebars", function(c)
       end)
    )
 
-   local SP = wibox.widget {
-      widget = wibox.widget.separator,
-      forced_width = 10,
-      opacity = 0
-   }
-
    local titlebar_button = {
-      awful.titlebar.widget.minimizebutton(c),
-      SP,
-      awful.titlebar.widget.maximizedbutton(c),
-      SP,
       awful.titlebar.widget.closebutton(c),
-      layout = wibox.layout.fixed.horizontal
+      awful.titlebar.widget.maximizedbutton(c),
+      awful.titlebar.widget.minimizebutton(c),
+      spacing = 10,
+      layout = wibox.layout.fixed.vertical
    }
 
    local titlebar_title = {
       {
-         {
-            align = "center",
-            widget = awful.titlebar.widget.titlewidget(c)
-         },
-         right = 70,
-         widget = wibox.container.margin
+         align = "center",
+         widget = awful.titlebar.widget.titlewidget(c)
       },
-      buttons = buttons,
-      layout = wibox.layout.flex.horizontal
+      direction = 'west',
+      layout = wibox.container.rotate
    }
 
-   awful.titlebar(c, {size = beautiful.titlebar_height,position = 'top'}):setup {
+   awful.titlebar(c, {size = beautiful.titlebar_height, position = 'left'}):setup {
       {
-         awful.titlebar.widget.ontopbutton(c),
-         nil,
          titlebar_button,
-         layout = wibox.layout.align.horizontal
+         nil,
+         --titlebar_title,
+         awful.titlebar.widget.ontopbutton(c),
+         layout = wibox.layout.align.vertical
       },
-      left = 20,
-      right = 20,
-      top = 5,
-      bottom = 5,
+      left = 7,
+      right = 7,
+      top = 10,
+      bottom = 10,
       layout = wibox.container.margin
    }
 

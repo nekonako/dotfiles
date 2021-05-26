@@ -5,7 +5,6 @@
 local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
 local gears = require('gears')
-local rnotification = require("ruled.notification")
 local dpi = xresources.apply_dpi
 local color = xresources.get_current_theme ()
 local gfs = require("gears.filesystem")
@@ -16,7 +15,7 @@ local theme = {}
 theme.font          = "PragmataPro liga 12"
 
 theme.bg_normal = color.background
-theme.bg_focus = color.color4
+theme.bg_focus = color.color3
 theme.bg_urgent = color.color1
 theme.bg_minimize = color.background
 theme.bg_systray = color.background
@@ -27,22 +26,19 @@ theme.fg_urgent = color.foreground
 theme.fg_minimize = color.foreground
 
 theme.border_width = dpi(0)
-theme.border_normal = color.background
+theme.border_normal = color.color3
 theme.border_focus = color.color4
 theme.border_marked = color.color1
 theme.border_radius = dpi(9)
-theme.border_color_normal = color.color2
-theme.border_color_active = color.color3
-theme.border_color_marked = color.color5
 
 theme.titlebar_height = dpi(27)
 theme.wibar_height = dpi(27)
 theme.wibar_corner_radius = dpi(0)
 
-theme.titlebar_bg_focus = color.color0
-theme.titlebar_bg_normal = color.color0
+theme.titlebar_bg_focus = color.color3
+theme.titlebar_bg_normal = color.color5
 theme.titlebar_fg_normal = color.foreground
-theme.titlebar_fg_focus = color.foreground
+theme.titlebar_fg_focus = color.background
 
 theme.useless_gap         = dpi(5)
 
@@ -72,9 +68,9 @@ theme.taglist_fg_empty = color.foreground
 theme.taglist_bg_empty = color.background
 
 theme.taglist_fg_occupied = color.background
-theme.taglist_bg_occupied = color.color3
+theme.taglist_bg_occupied = color.color6
 
-theme.taglist_bg_focus = color.color2
+theme.taglist_bg_focus = color.color3
 theme.taglist_fg_focus = color.background
 
 -- Variables set for theming notifications:
@@ -151,23 +147,15 @@ theme.layout_cornerse = themes_path.."djancoeg/layouts/cornersew.png"
 
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
-theme.icon_theme = nil
-
--- Set different colors for urgent notifications.
-rnotification.connect_signal('request::rules', function()
-   rnotification.append_rule {
-      rule       = { urgency = 'critical' },
-      properties = { bg = color.background, fg = color.color1 }
-   }
-end)
+-- theme.icon_theme = nil
 
 theme.notification_border_width = 0
 theme.notification_bg = theme.bg_normal
 theme.notification_border_color = theme.bg_normal
-theme.notification_width = dpi(300)
-theme.notification_max_width = dpi(400)
+theme.notification_width = dpi(400)
+theme.notification_max_width = dpi(600)
 theme.notification_shape = function(cr, w, h)
-   gears.shape.rounded_rect(cr, w, h, 6)
+  gears.shape.rounded_rect(cr, w, h, 6)
 end
 
 

@@ -1,0 +1,36 @@
+! ~/.Xresource
+*.foreground:   #E4F1F0
+*.background:   #212432
+*.cursorColor:  #E4F1F0
+
+! black
+*.color0:       #212432
+*.color8:       #212432
+
+! red
+*.color1:       #F07178
+*.color9:       #F07178
+
+! green
+*.color2:       #C3E88D
+*.color10:      #C3E88D
+
+! yellow
+*.color3:       #EDBE87
+*.color11:      #EDBE87
+
+! blue
+*.color4:       #82AAFF
+*.color12:      #82AAFF
+
+! magenta
+*.color5:       #C792EA
+*.color13:      #C792EA
+
+! cyan
+*.color6:       #89DDFF
+*.color14:      #89DDFF
+
+! white
+*.color7:       #E4F1F0
+*.color15:      #E4F1F0

@@ -2,6 +2,7 @@ local awful = require("awful")
 local wibox = require("wibox")
 local dpi = require("beautiful.xresources").apply_dpi
 local icon = require('utils.icon')
+local color = require("beautiful.xresources").get_current_theme()
 
 --  widget
 local ram = require("widget.ram")
@@ -20,22 +21,6 @@ awful.screen.connect_for_each_screen(function(scr)
       position = "top",
       screen = scr
    }
-
-   -- taglist a.k.a workspaces
-   local function create_tag(identifier, workspace_icon)
-      awful.tag.add(
-         identifier,
-         {
-            icon = workspace_icon,
-            layout = awful.layout.suit.title
-         }
-      )
-   end
-
-   create_tag('one', icon.png.w1)
-   create_tag('two', icon.png.w2)
-   create_tag('three', icon.png.w3)
-   create_tag('four', icon.png.w4)
 
    local btn_tag = awful.button({}, 1, function(t) t:view_only() end)
 
@@ -57,7 +42,7 @@ awful.screen.connect_for_each_screen(function(scr)
             id = "background_role",
             widget = wibox.container.background
          },
-         right = 5,
+         right = 0,
          widget = wibox.container.margin,
       }
    }
@@ -74,22 +59,44 @@ awful.screen.connect_for_each_screen(function(scr)
       layout = wibox.layout.fixed.horizontal
    }
 
+   local function create_icon(i, c)
+      local widget = {
+         {
+            text = ' ' .. i,
+            widget = wibox.widget.textbox
+         },
+         fg = c,
+         widget = wibox.container.background
+      }
+      return widget
+   end
+
+   local date_icon = create_icon(icon.gylph.calendar, color.color4)
+   local cpu_icon = create_icon(icon.gylph.heart, color.color1)
+   local memory_icon = create_icon(icon.gylph.memory, color.color3)
+   local storage_icon = create_icon(icon.gylph.storage, color.color2)
+   local wifi_icon = create_icon(icon.gylph.wifi, color.color4)
+   local net_icon = create_icon(icon.gylph.signal, color.color6)
+   local volume_icon = create_icon(icon.gylph.volume, color.color2)
+   local temp_icon = create_icon(icon.gylph.temp, color.color6)
+
+
    local right = {
-      net.icon,
+      net_icon,
       net.text,
-      hdd.icon,
+      storage_icon,
       hdd.text,
-      wifi.icon,
+      wifi_icon,
       wifi.text,
-      vol.icon,
+      volume_icon,
       vol.text,
-      temp.icon,
+      temp_icon,
       temp.text,
-      cpu.icon,
+      cpu_icon,
       cpu.text,
-      ram.icon,
+      memory_icon,
       ram.text,
-      date.icon,
+      date_icon,
       date.text,
       spacing = dpi(10),
       layout = wibox.layout.fixed.horizontal

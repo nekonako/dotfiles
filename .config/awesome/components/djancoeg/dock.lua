@@ -4,6 +4,7 @@ local wibox  = require('wibox')
 local awful = require('awful')
 local icon = require('utils.icon')
 local apps = require('utils.apps')
+local color = require("beautiful.xresources").get_current_theme()
 local dashboard = require('components.djancoeg.dashboard')
 local logout = require('components.djancoeg.logout')
 
@@ -15,6 +16,7 @@ awful.screen.connect_for_each_screen(function (scr)
       height = dpi(40),
       screen = scr,
       visible = true,
+      bg = color.background
    }
 
    local function create_img_widget(image, action)
@@ -60,7 +62,7 @@ awful.screen.connect_for_each_screen(function (scr)
 
    dock : setup {
       {
-         dashboard_button,
+                  dashboard_button,
          layout = wibox.layout.fixed.horizontal,
       },
       {
@@ -82,7 +84,7 @@ awful.screen.connect_for_each_screen(function (scr)
          layout = wibox.container.place,
       },
       {
-         logout_button,
+                  logout_button,
          layout = wibox.layout.fixed.horizontal,
       },
       layout = wibox.layout.align.horizontal

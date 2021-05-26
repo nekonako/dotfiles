@@ -2,9 +2,12 @@ local apps = require('utils.apps')
 local awful = require('awful')
 local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
-local menu = require('components.djancoeg.menu')
-local dashboard = require('components.djancoeg.dashboard')
-local logout = require('components.djancoeg.logout')
+
+local theme = require('theme')
+
+local menu = require('components.' .. theme .. '.menu')
+local dashboard = require('components.' .. theme .. '.dashboard')
+local logout = require('components.' .. 'djancoeg' .. '.logout')
 
 Mod = 'Mod4'
 
@@ -13,6 +16,14 @@ awful.keyboard.append_global_keybindings({
    awful.key(
       { Mod }, 'l',
       function() awful.spawn(apps.screenshoot) end,
+      {
+         description = "Take Screenshoot",
+         group = "launcher"
+      }
+   ),
+      awful.key(
+      { Mod, "Shift" }, 'w',
+      function() awful.spawn("networkmanager_dmenu") end,
       {
          description = "Take Screenshoot",
          group = "launcher"
@@ -38,7 +49,15 @@ awful.keyboard.append_global_keybindings({
       { Mod }, 'f',
       function() awful.spawn(apps.file_manager) end,
       {
-         description = "Open launcher app",
+         description = "Open file manager",
+         group = 'launcher'
+      }
+   ),
+   awful.key(
+      { Mod }, 'Insert',
+      function() awful.spawn("skrinsut") end,
+      {
+         description = "Open file manager",
          group = 'launcher'
       }
    ),
@@ -62,7 +81,7 @@ awful.keyboard.append_global_keybindings({
          group = 'Tag'
       }
    ),
-    awful.key(
+   awful.key(
       { Mod, 'Shift' }, 'Right',
       awful.tag.viewnext,
       {
@@ -172,7 +191,7 @@ awful.keyboard.append_global_keybindings({
          group = 'client'
       }
    ),
-    awful.key(
+   awful.key(
       { Mod }, 'Right',
       function() awful.client.focus.byidx(1) end,
       {
@@ -217,7 +236,7 @@ client.connect_signal("request::default_keybindings", function()
       -- Float toggle
       awful.key(
          { Mod, "Shift" }, "space",
-         awful.client.floating.toggle                     ,
+         awful.client.floating.toggle,
          {
             description = "toggle floating",
             group = "client"
@@ -307,7 +326,7 @@ end)
 --- Layout keybindings ---
 awful.keyboard.append_global_keybindings({
    awful.key(
-      { Mod, 'Control' }, "space",
+      { Mod, "Control" }, "space",
       function () awful.layout.inc(-1) end,
       {
          description = "select next",
@@ -364,7 +383,6 @@ awful.keyboard.append_global_keybindings({
       }
    ),
 })
-
 
 -- Utility keybindings --
 awful.keyboard.append_global_keybindings({
@@ -434,18 +452,26 @@ awful.keyboard.append_global_keybindings({
 })
 
 
--- media
-local function volume(method)
-   awful.spawn("ponymix "..method.." 5 --max-volume 150")
-end
-local function brightness(method)
-   awful.spawn("light -"..method.." 5")
-end
-
 awful.keyboard.append_client_keybindings({
    awful.key(
+      {}, 'XF86AudioMute',
+      function() awful.spawn('amixer -D pulse -q sset Master toggle') end,
+      {
+         description = 'Mute audio',
+         group = 'media'
+      }
+   ),
+   awful.key(
+      {}, 'XF86AudioMic',
+      function() awful.spawn('amixer -D pulse -q sset Mic toggle"') end,
+      {
+         description = 'Mic audio',
+         group = 'media'
+      }
+   ),
+   awful.key(
       {}, "XF86AudioRaiseVolume",
-      function() volume("increase") end,
+      function() awful.spawn('amixer -D pulse sset Master 5%+') end,
       {
          description = "increase volume",
          group = "media"
@@ -453,16 +479,15 @@ awful.keyboard.append_client_keybindings({
    ),
    awful.key(
       {}, "XF86AudioLowerVolume",
-      function() volume("decrease") end,
+      function() awful.spawn('amixer -D pulse sset Master 5%-') end,
       {
          description = "decrease volume",
          group = "media"
       }
    ),
-   -- Brightness
    awful.key(
       {}, "XF86MonBrightnessUp",
-      function() brightness("A,") end,
+      function() awful.spawn('light -A 5') end,
       {
          description = "increase brightness",
          group = "media"
@@ -470,15 +495,45 @@ awful.keyboard.append_client_keybindings({
    ),
    awful.key(
       {}, "XF86MonBrightnessDown",
-      function() brightness("U") end,
+      function() awful.spawn('light -U 5') end,
       {
          description = "decrease brightness",
          group = "media"
       }
-   )
+   ),
+   awful.key(
+      {}, 'XF86AudioPlay',
+      function() awful.spawn('mpc toggle') end,
+      {
+         description = 'Toggle media button',
+         group = 'media'
+      }
+   ),
+   awful.key(
+      {}, 'XF86AudioStop',
+      function() awful.spawn('mpc stop') end,
+      {
+         description = 'Stop media button',
+         group = 'media'
+      }
+   ),
+   awful.key(
+      {}, 'XF86AudioPrev',
+      function() awful.spawn('mpc prev') end,
+      {
+         description = 'prev media button',
+         group = 'media'
+      }
+   ),
+   awful.key(
+      {}, 'XF86AudioNext',
+      function() awful.spawn('mpc next') end,
+      {
+         description = 'next media button',
+         group = 'media'
+      }
+   ),
 })
-
-
 
 -- Mouse binding
 client.connect_signal("request::default_mousebindings", function()

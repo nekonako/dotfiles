@@ -8,20 +8,10 @@ ruled.client.connect_signal("request::rules", function()
       id         = "global",
       rule       = { },
       properties = {
-         border_width = beautiful.border_width,
-         border_color = beautiful.border_normal,
-         focus = awful.client.focus.filter,
-         raise = true,
-         -- screen = awful.screen.preferred,
-         screen = awful.screen.focused,
-         size_hints_honor = false,
-         honor_workarea = true,
-         honor_padding = true,
-         maximized = false,
-         titlebars_enabled = beautiful.titlebars_enabled,
-         maximized_horizontal = false,
-         maximized_vertical = false,
-         placement = awful.placement.centered,
+         focus     = awful.client.focus.filter,
+         raise     = false,
+         screen    = awful.screen.preferred,
+         placement = awful.placement.no_overlap+awful.placement.no_offscreen,
       }
    }
 
@@ -63,7 +53,10 @@ ruled.client.connect_signal("request::rules", function()
             "dialog",
          }
       },
-      properties = { floating = true }
+      properties = {
+         floating = true,
+         placement = awful.placement.centered,
+      }
    }
 
    -- Add titlebars to normal clients and dialogs

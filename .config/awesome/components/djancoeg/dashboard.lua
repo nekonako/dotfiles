@@ -136,12 +136,11 @@ local clock = wibox.widget {
    layout = wibox.layout.fixed.horizontal
 }
 
-
 -- CPU
 local cpu_icon = wibox.widget {
    {
       font = 'PragmataPro 30',
-      text = icon.gylph.heart,
+      text = icon.gylph.heart .. ' ',
       widget = wibox.widget.textbox
    },
    fg = color.color1,
@@ -183,7 +182,7 @@ local cpu = wibox.widget {
 local ram_icon = wibox.widget {
    {
       font = 'PragmataPro 30',
-      text = icon.gylph.cpu,
+      text = icon.gylph.memory .. ' ',
       widget = wibox.widget.textbox
    },
    fg = color.color3,
@@ -224,7 +223,7 @@ local ram = wibox.widget {
 local volume_icon = wibox.widget {
    {
       font = 'PragmataPro 30',
-      text = icon.gylph.volume,
+      text = icon.gylph.volume .. ' ',
       widget = wibox.widget.textbox
    },
    fg = color.color4,
