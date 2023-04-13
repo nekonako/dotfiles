@@ -1,9 +1,14 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#eval "$(~/.rbenv/bin/rbenv init - zsh)"
+#rbenv init
+
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+eval "$(rbenv init - zsh)"
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 export BAT_PAGER="less -RF"
 # Zge
@@ -15,9 +20,9 @@ zgen oh-my-zsh plugins/gitfast
 zgen oh-my-zsh plugins/sudo
 zgen oh-my-zsh plugins/aws
 zgen oh-my-zsh plugins/archlinux
-zgen oh-my-zsh plugins/django
+#zgen oh-my-zsh plugins/django
 zgen oh-my-zsh plugins/docker
-#zgen oh-my-zsh plugins/kubectl
+zgen oh-my-zsh plugins/kubectl
 zgen oh-my-zsh plugins/golang
 zgen oh-my-zsh plugins/golang
 zgen oh-my-zsh plugins/gem
@@ -40,7 +45,7 @@ zgen oh-my-zsh plugins/command-not-found
 #zgen load romkatv/powerlevel10k
 #zgen oh-my-zsh themes/agnoster
 #zgen load subnixr/minimal
- zgen load romkatv/powerlevel10k powerlevel10k
+#zgen load romkatv/powerlevel10k powerlevel10k
 
 # Zsh auto suggestiona
 zgen load zsh-users/zsh-autosuggestions
@@ -79,19 +84,19 @@ alias docker-disable='systemctl disable docker'
 alias docker-start='systemctl start docker'
 alias docker-restart='systemctl restart docker'
 alias docker-stop='systemctl stop docker'
+alias cat='bat'
 
 # youtubeDL
 alias ytmp3='youtube-dl -x --audio-format mp3'
 
 # lokasi folder untuk node packages kamu
 NPM_PREFIX="${HOME}/.local/share/node"
-
-# mencegah duplikat lokasi node packages
-if [[ -z $(printf $PATH | grep $NPM_PREFIX/bin) ]]; then
-    export PATH="$NPM_PREFIX/bin:$PATH"
-fi
+BAT_THEME="gruvbox-dark"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
- [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(starship init zsh)"
+source ~/.profile

@@ -1,11 +1,7 @@
 window:
   dimensions:
-    columns: 70
-    lines: 15
-
-  # position:
-  #   x: 50
-  #   y: 50
+    columns: 90
+    lines: 23
 
   padding:
     x: 15
@@ -23,27 +19,27 @@ window:
 
 font:
   normal:
-    family: PragmataPro liga
+    family: Jetbrains Mono Nerd Font
     style: Regular
 
   bold:
-    family: pragmatapro liga
-    style: Bold
+    family: Jetbrains Mono Nerd Font
+    style: Regular
 
   italic:
-    family: pragmatapro liga
+    family: Jetbrains Mono Nerd Font
     style: Italic
 
   bold_italic:
-    family: pragmatapro liga
-    style: Bold Italic
+    family: Jetbrains Mono Nerd Font
+    style: Italic
 
-  size: 12
+  size: 11.5
   # size: 8
 
   offset:
     x: 0
-    y: -1
+    y: 0
 
 
   glyph_offset:
@@ -53,7 +49,40 @@ font:
 draw_bold_text_with_bright_colors: false
 
 schemes:
+    
+  colors: &gruvbox
+  # Default colors
+    primary:
+      background: '#232323'
+      foreground: '#d5c4a1'
 
+  # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '#282828'
+      cursor: '#d5c4a1'
+
+  # Normal colors
+    normal:
+      black:   '#232323'
+      red:     '#fb4934'
+      green:   '#b8bb26'
+      yellow:  '#fabd2f'
+      blue:    '#83a598'
+      magenta: '#d3869b'
+      cyan:    '#8ec07c'
+      white:   '#d5c4a1'
+
+  # Bright colors
+    bright:
+      black:   '#665c54'
+      red:     '#fe8019'
+      green:   '#3c3836'
+      yellow:  '#504945'
+      blue:    '#bdae93'
+      magenta: '#ebdbb2'
+      cyan:    '#d65d0e'
+      white:   '#fbf1c7'
+ 
   colors: &fuel
     primary:
       # background: '#282828'
@@ -249,7 +278,8 @@ schemes:
   colors: &material
     primary:
       # background: '#282828'
-      background: '#212432'
+      #background: '#212432'!
+      background: '#1e222a'
       foreground: '#E6F2F1'
 
     cursor:
@@ -279,9 +309,9 @@ schemes:
       white:   '#E6F2F1'
  
   
-colors: *material
-
-background_opacity: 1.0
+colors: *gruvbox
+draw_bold_text_with_bright_colors: false
+#background_opacity: 1.0
 
 cursor:
   style: Beam
@@ -305,5 +335,5 @@ mouse:
 
   hide_when_typing: false
 
-  url:
-    modifiers: None
+  #url:
+  #  modifiers: None
